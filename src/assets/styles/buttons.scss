@@ -1,0 +1,57 @@
+@mixin ease-in {
+  -moz-transition: background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+.button-primary {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: rgb(170, 129, 21);
+  border-radius: 7px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  height: 3rem;
+  line-height: 3rem;
+  overflow: hidden;
+  padding: 0 3.5rem 0 1rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  @include ease-in;
+
+  &:hover {
+    background-color: rgb(155, 116, 12);
+
+    &:after {
+      background-color: #a37d1c;
+    }
+  }
+
+  &:after {
+    content: url("../images/arrow-right.svg");
+    background: #af881e;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+    text-align: center;
+    width: 2.5rem;
+
+    @include ease-in;
+  }
+}

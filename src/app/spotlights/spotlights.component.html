@@ -1,0 +1,21 @@
+<div class="spotlights-background">
+  <div
+    *ngFor="let spotlight of spotlights; let i = index"
+    class="inner spotlight"
+    [class.image-right]="(i + 1) % 2 === 0"
+  >
+    <div class="image">
+      <img [src]="spotlight.image" alt="spotlight.image" />
+    </div>
+
+    <div class="text">
+      <h1>{{ spotlight.header }}</h1>
+
+      <span>{{ spotlight.content }}</span>
+
+      <div>
+        <button class="button-primary">Learn more</button>
+      </div>
+    </div>
+  </div>
+</div>

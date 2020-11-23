@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;700&display=swap");
+@import "/src/assets/styles/buttons.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: #e3e1de;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  margin-bottom: 2.0625rem;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+span {
+  color: #ffffff80;
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+  color: #e3e1de80;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &::selection {
+    color: #e3e1de;
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  z-index: 20;
+  width: 80rem;
+  margin: 0 auto;
+}

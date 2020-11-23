@@ -1,0 +1,23 @@
+<div class="bar" [class.locked]="navigationBarLocked">
+  <a class="logo" href="/">devboosters</a>
+
+  <ul>
+    <li
+      *ngFor="let menuItem of menuItems"
+      [class.selected]="menuItem.selected"
+      (click)="navigate(menuItem.path)"
+    >
+      <a>{{ menuItem.displayValue }}</a>
+    </li>
+  </ul>
+
+  <button
+    class="hamburger hamburger--vortex"
+    [class.is-active]="hamburgerActive"
+    type="button"
+  >
+    <span class="hamburger-box" (click)="hamburgerActive = !hamburgerActive">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</div>

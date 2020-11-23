@@ -1,0 +1,31 @@
+.inner {
+  top: 16rem;
+}
+
+.text {
+  width: 50%;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 1.2;
+}
+
+span {
+  font-size: 20px;
+  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
+  -webkit-transition: opacity 0.75s ease-in-out,
+    -webkit-transform 0.75s ease-in-out;
+  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  padding-right: 2.75rem;
+}
+
+.image {
+  height: auto;
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+}

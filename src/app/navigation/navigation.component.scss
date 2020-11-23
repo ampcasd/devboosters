@@ -1,0 +1,112 @@
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.bar {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 96px;
+  width: 100vw;
+  padding: 0 32px;
+  align-items: center;
+  z-index: 1000;
+  background: transparent;
+
+  &.locked {
+    animation: reveal-header 0.75s;
+    position: fixed;
+    height: 64px;
+    background: #2a2c2e;
+    box-shadow: rgba(6, 6, 6, 0.45) 0px 0px 20px 0px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e3e1de;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+
+    &--selected {
+      border-bottom: 3px solid #edb92e;
+    }
+  }
+
+  .logo,
+  li {
+    margin-bottom: 7px;
+  }
+
+  ul,
+  .hamburger {
+    margin-left: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1032px) {
+  .bar {
+    height: 44px;
+    padding: 0 20px;
+
+    .logo {
+      font-size: 16px;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+    ul {
+      display: none;
+    }
+  }
+}
+
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-ms-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
