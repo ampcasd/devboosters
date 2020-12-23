@@ -10,6 +10,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SpotlightsComponent } from './spotlights/spotlights.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { FeaturesComponent } from './features/features.component';
+import { CallToActionComponent } from './call-to-action/call-to-action.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FooterComponent } from './footer/footer.component';
     HomePageComponent,
     SpotlightsComponent,
     BannerComponent,
-    FooterComponent
+    FooterComponent,
+    FeaturesComponent,
+    CallToActionComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 .spotlights-background {
   margin-top: 28rem;
   background: #1d2021;
+  padding-bottom: 4.8125rem;
 
   &::before {
     content: "";
@@ -70,6 +71,6 @@
 
 @media screen and (max-width: 1280px) {
   .spotlights .spotlight {
-    margin-bottom: 4.125rem;
+    margin-bottom: 0;
   }
 }

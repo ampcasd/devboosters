@@ -1,0 +1,28 @@
+.background {
+  background: #1d2021;
+
+  .spotlight {
+    position: relative;
+    top: 8.7rem;
+    margin-bottom: 0;
+  }
+
+  .actions {
+    margin: auto 0;
+    width: 35%;
+    padding: 4.125rem;
+
+    .button-primary {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16rem;
+    z-index: 10;
+    background: #222526;
+  }
+}

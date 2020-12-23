@@ -1,0 +1,11 @@
+<div class="background">
+  <div class="inner features">
+    <div *ngFor="let feature of features" class="feature">
+      <div class="icon-wrapper">
+        <span class="icon fas" [class]="feature.icon"></span>
+      </div>
+      <h1>{{ feature.header }}</h1>
+      <span>{{ feature.description }}</span>
+    </div>
+  </div>
+</div>

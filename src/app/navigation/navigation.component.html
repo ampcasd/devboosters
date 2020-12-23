@@ -5,7 +5,7 @@
     <li
       *ngFor="let menuItem of menuItems"
       [class.selected]="menuItem.selected"
-      (click)="navigate(menuItem.path)"
+      [routerLink]="menuItem.path"
     >
       <a>{{ menuItem.displayValue }}</a>
     </li>

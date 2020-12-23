@@ -43,12 +43,12 @@
   }
 
   &:after {
-    content: url("../images/arrow-right.svg");
     background: #af881e;
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
     right: 0;
-    padding-top: 5px;
     text-align: center;
     width: 2.5rem;
 
