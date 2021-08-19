@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 240px;
+  text-align: center;
+
+  span {
+    text-align: center;
+  }
+
+  .divider {
+    margin: 0 5px;
+  }
+}

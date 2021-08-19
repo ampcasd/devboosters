@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from '../modal.service';
 
 @Component({
   selector: 'spotlights',
@@ -16,14 +17,20 @@ export class SpotlightsComponent {
     {
       header: 'Career management',
       content:
-        'Next, we take ownership of driving your growth fast forward. We max out your image, talk with recruiters and apply to jobs for you.',
+        'Next, we take ownership of driving your growth fast forward. We max out your online presence, talk with recruiters and apply to jobs for you.',
       image: 'assets/images/management.svg',
     },
     {
       header: 'Retrospections',
       content:
-        'After each of your job interviews we do a retro and prepare a summary of what should to be done for you to improve.',
+        'After each of your job interviews we do a retro and prepare a summary of what should be done for you to improve.',
       image: 'assets/images/retro.svg',
     },
   ];
+
+  constructor(private modalService: ModalService) { }
+
+  showModal(): void {
+    this.modalService.modalVisible = true;
+  }
 }

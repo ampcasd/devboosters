@@ -24,8 +24,20 @@ span {
 .image {
   height: auto;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .image {
+    display: none;
+  }
+  .text {
     width: 100%;
   }
 }

@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "vetur.format.defaultFormatter.sass": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "vetur.format.enable": false,
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.css": "none",
+  "css.validate": false,
+  "angular.enable-strict-mode-prompt": false
+}

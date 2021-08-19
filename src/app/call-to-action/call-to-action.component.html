@@ -1,21 +1,55 @@
 <div class="background">
   <div class="inner spotlight">
     <div class="text">
-      <h1>Let's boost your career!</h1>
+      <h1>Let's bring you to the next level</h1>
 
       <span>
         Don't be on the mercy of recruiters for whom you are the product.
         <br />
-        Partner with us instead, and invest in your growth.
+        Partner with us instead. Get your own assistant working for you and invest in your growth.
         <br />
         Here it is <strong>your</strong> interest that is the priority.
       </span>
     </div>
 
     <div class="actions">
-      <button class="button-primary" [routerLink]="'/pricing'">
-        Get started!
-      </button>
+
+      <ng-container *ngIf="showForm; else thankYou">
+
+        <form (submit)="submit()">
+
+          <div class="input short">
+            <input 
+              [(ngModel)]="name"
+              [class.invalid]="nameInvalid"
+              type="text"
+              name="name" 
+              placeholder="Name"
+            >
+          </div>
+          
+          <div class="input">
+            <input 
+              [(ngModel)]="email"
+              type="email" 
+              name="email" 
+              placeholder="Email" 
+              [class.invalid]="emailInvalid"
+            >
+          </div>
+
+          <button type="submit" class="button-primary">
+            Get started!
+          </button>
+
+        </form>
+        
+      </ng-container>
+
+      <ng-template #thankYou>
+        <span class="thank-you">Thank you for your interest, we will reach out to you as soon as humanly possible.</span>
+      </ng-template>
+
     </div>
   </div>
 </div>

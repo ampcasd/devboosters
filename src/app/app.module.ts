@@ -13,6 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { FeaturesComponent } from './features/features.component';
 import { CallToActionComponent } from './call-to-action/call-to-action.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ModalComponent } from './modal/modal.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,14 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FooterComponent,
     FeaturesComponent,
     CallToActionComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
