@@ -35,7 +35,7 @@ exports.sendMail = functions.https.onRequest((req: any, res: any) => {
       if (error) {
         return res.send(error.toString());
       }
-      return res.send('Sended');
+      return res.send('Sent');
     });
   });
 });

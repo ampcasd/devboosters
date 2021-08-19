@@ -14,5 +14,10 @@ export class AppComponent {
 
   constructor(public modalService: ModalService) {
     firebase.initializeApp(environment.firebase);
+    const appCheck = firebase.appCheck();
+    appCheck.activate(
+      '6LeGoxAcAAAAAHtvZjEcmVlI6G7nR6uxezk4fxZ1', 
+      true
+    )
   }
 }
