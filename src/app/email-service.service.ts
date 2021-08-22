@@ -8,9 +8,9 @@ export class EmailService {
 
   constructor(private httpClient: HttpClient) { }
 
-  sendConfirmationEmail(emailAddress: string) {
+  sendConfirmationEmail(emailAddress: string, name: string) {
     return this.httpClient.get(
-      `https://us-central1-devboosterscom.cloudfunctions.net/sendMail?dest=${emailAddress}`
+      `https://us-central1-devboosterscom.cloudfunctions.net/sendMail?email=${emailAddress}?name=${name}`
     ).subscribe(response => {
       console.log(response);
     });

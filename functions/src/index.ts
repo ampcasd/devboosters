@@ -18,15 +18,16 @@ exports.sendMail = functions.https.onRequest((req: any, res: any) => {
   cors(req, res, () => {
 
     // getting dest email by query string
-    const dest = req.query.dest;
+    const clientName = req.query.name;
+    const clientEmail = req.query.email;
 
     const mailOptions = {
-      from: 'New DevBoosters Client <albert.cieplinski@gmail.com>',
-      to: dest,
-      subject: 'Let me give you my money', // email subject
-      html: `<p style="font-size: 16px;">Pickle Riiiiiiiiiiiiiiiick!!</p>
+      from: `${clientName} <${clientEmail}>`,
+      to: 'albert.cieplinski@gmail.com',
+      subject: 'New DevBoosters Client', // email subject
+      html: `<p style="font-size: 16px;">Hi, I'm ${clientName}. Let me give you my money.</p>
                 <br />
-                <img src="https://images.prod.meredith.com/product/fc8754735c8a9b4aebb786278e7265a5/1538025388228/l/rick-and-morty-pickle-rick-sticker" />
+                <img src="https://i.giphy.com/media/3o6gDWzmAzrpi5DQU8/200w.webp" />
             ` // email content in HTML
     };
 

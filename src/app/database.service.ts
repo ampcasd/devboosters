@@ -12,7 +12,7 @@ export class DatabaseService {
   constructor(private emailService: EmailService) { }
 
   saveRecord(email: string, name?: string): void {
-    this.emailService.sendConfirmationEmail(email);
+    this.emailService.sendConfirmationEmail(email, name);
 
     const save = firebase.functions().httpsCallable('saveMail');
 
