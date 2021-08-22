@@ -13,6 +13,13 @@ export class DatabaseService {
 
   saveRecord(email: string, name?: string): void {
     this.emailService.sendConfirmationEmail(email);
+
+    const save = firebase.functions().httpsCallable('saveMail');
+
+    save(email).then((response) => {
+      console.log('httpsCallable response', response);
+    }).catch((err) => console.log('err', err))
+
     firebase.firestore().collection('emails').add({
       email
     })

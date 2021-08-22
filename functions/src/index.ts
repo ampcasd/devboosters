@@ -64,3 +64,27 @@ exports.checkRecaptcha = functions.https.onRequest((req: any, res: any) => {
     res.send("Recaptcha request failed.")
   })
 })
+
+exports.saveMail = functions.https.onCall((data: any, context: any) => {
+  // context.app will be undefined if the request doesn't include a valid
+  // App Check token.
+  if (context.app == undefined) {
+    throw new functions.https.HttpsError(
+        'failed-precondition',
+        'The function must be called from an App Check verified app.')
+  }
+
+  console.log(data);
+
+  functions.firestore.collection('emails').add({
+    data
+  })
+    .then((docRef: any) => {
+      console.log('Document written with ID: ', docRef.id);
+    })
+    .catch((error: any) => {
+      console.error('Something went terribly wrong :(', error);
+    });
+  
+  // Your function logic follows.
+});

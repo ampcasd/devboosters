@@ -10,7 +10,7 @@ export class EmailService {
 
   sendConfirmationEmail(emailAddress: string) {
     return this.httpClient.get(
-      `https://us-central1-devboosterscom.cloudfunctions.net/sendMail?dest=${emailAddress}?`
+      `https://us-central1-devboosterscom.cloudfunctions.net/sendMail?dest=${emailAddress}`
     ).subscribe(response => {
       console.log(response);
     });
