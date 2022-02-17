@@ -75,11 +75,13 @@
 }
 
 @media screen and (max-width: 750px) {
-  .inner, .spotlight.image-right {
+  .inner,
+  .spotlight.image-right {
     flex-direction: column;
     padding-top: 2rem;
   }
-  .spotlight .image, .spotlight .text {
+  .spotlight .image,
+  .spotlight .text {
     width: unset;
   }
   .spotlights-background {

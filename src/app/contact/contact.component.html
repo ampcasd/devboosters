@@ -1,1 +1,80 @@
-<p>contact works!</p>
+<div class="contact-component">
+  <div class="address-and-map">
+    <div class="address">
+      <br />contact@devboosters.com<br /><br />Irkucka 11<br />51-210 Wrocław<br />POLAND,
+      EU
+    </div>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.389851233545!2d17.12018821575708!3d51.15660177957901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe8936e9dc2c5%3A0x9c06fa37dc9278f6!2sIrkucka%2011%2C%2051-210%20Wroc%C5%82aw!5e0!3m2!1sen!2spl!4v1644929642084!5m2!1sen!2spl"
+        width="409px"
+        height="500px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+  <div class="contact-form">
+    <div class="left-column">
+      <img
+        src="/assets/images/envelope.png"
+        alt="envelope-image"
+        width="440px"
+        class="envelope-image"
+        height="400px"
+      />
+    </div>
+    <div class="right-column">
+      <div class="text">
+        <h1>Contact us</h1>
+
+        <span>
+          Don't be on the mercy of recruiters for whom you are the product.
+          <br />
+          Partner with us instead. Get your own assistant working for you and
+          invest in your growth.
+          <br />
+          Here it is <strong>your</strong> interest that is the priority.
+        </span>
+      </div>
+
+      <div class="actions">
+        <ng-container *ngIf="showForm; else thankYou">
+          <form (submit)="submit()">
+            <div class="input-short">
+              <input
+                [(ngModel)]="name"
+                [class.invalid]="nameInvalid"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="input">
+              <input
+                [(ngModel)]="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                [class.invalid]="emailInvalid"
+              />
+            </div>
+
+            <input class="message-input" />
+            <button class="button2">Send your message</button>
+          </form>
+        </ng-container>
+
+        <ng-template #thankYou>
+          <span class="thank-you"
+            >Thank you for your interest, we will reach out to you as soon as
+            humanly possible.</span
+          >
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

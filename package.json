@@ -20,8 +20,14 @@
     "@angular/platform-browser-dynamic": "~12.2.2",
     "@angular/router": "~12.2.2",
     "@fortawesome/fontawesome-free": "^5.15.1",
+<<<<<<< Updated upstream
     "firebase": "^8.10.1",
+=======
+    "@types/googlemaps": "^3.43.3",
+    "firebase": "^8.9.1",
+>>>>>>> Stashed changes
     "hamburgers": "^1.1.3",
+    "ng-gmaps": "0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
