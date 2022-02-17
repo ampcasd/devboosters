@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PricingComponent as assistantComponent } from './pricing.component';
+import { AssistantComponent } from './assistant.component';
 
-describe('PricingComponent', () => {
-  let component: assistantComponent;
-  let fixture: ComponentFixture<assistantComponent>;
+describe('LaunchpadComponent', () => {
+  let component: AssistantComponent;
+  let fixture: ComponentFixture<AssistantComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [assistantComponent],
+      declarations: [AssistantComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(assistantComponent);
+    fixture = TestBed.createComponent(AssistantComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -16,6 +16,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LaunchpadComponent } from './launchpad/launchpad.component';
+import { AssistantComponent } from './assistant/assistant.component';
+import { SourcingComponent } from './sourcing/sourcing.component';
 
 @NgModule({
   declarations: [
@@ -30,15 +33,13 @@ import { HttpClientModule } from '@angular/common/http';
     FeaturesComponent,
     CallToActionComponent,
     ContactFormComponent,
-    ModalComponent
+    ModalComponent,
+    LaunchpadComponent,
+    AssistantComponent,
+    SourcingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
