@@ -1,29 +1,14 @@
-<div class="contact-component">
-  <div class="address-and-map">
-    <div class="address">
-      <br />contact@devboosters.com<br /><br />Irkucka 11<br />51-210 Wrocław<br />POLAND,
-      EU
-    </div>
+<!-- src="https://maps.google.com/maps?q=wroc%C5%82aw&t=k&z=4&ie=UTF8&iwloc=&output=embed" -->
 
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.389851233545!2d17.12018821575708!3d51.15660177957901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe8936e9dc2c5%3A0x9c06fa37dc9278f6!2sIrkucka%2011%2C%2051-210%20Wroc%C5%82aw!5e0!3m2!1sen!2spl!4v1644929642084!5m2!1sen!2spl"
-        width="409px"
-        height="500px"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
+<div class="contact-component">
   <div class="contact-form">
     <div class="left-column">
       <img
         src="/assets/images/envelope.png"
         alt="envelope-image"
-        width="440px"
+        width="490vw"
+        height="430vh"
         class="envelope-image"
-        height="400px"
       />
     </div>
     <div class="right-column">
@@ -63,8 +48,8 @@
               />
             </div>
 
-            <input class="message-input" />
-            <button class="button2">Send your message</button>
+            <textarea class="message-input"></textarea>
+            <button class="button">Send your message</button>
           </form>
         </ng-container>
 
@@ -75,6 +60,39 @@
           >
         </ng-template>
       </div>
+    </div>
+  </div>
+  <div class="address-and-map">
+    <div class="map">
+      <div class="mapouter">
+        <div #map class="gmap_canvas">
+          <iframe
+            style="filter: invert(90%)"
+            width="550"
+            height="300"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps/embed/v1/view?key=AIzaSyAqj6srjdOlHhsQHWsIorAbOwU2QrIWAu4&center=51.127057,16.9218246&zoom=4"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 300px;
+              width: 550px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="address">
+      <p>
+        <strong>contact@devboosters.com</strong><br /><br />Irkucka 11<br />51-210
+        Wrocław<br />POLAND, EU
+      </p>
     </div>
   </div>
 </div>

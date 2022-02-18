@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { DatabaseService } from '../database.service';
 
 @Component({
@@ -6,7 +6,9 @@ import { DatabaseService } from '../database.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  @ViewChild('map') map: any;
+
   name: string;
   email: string;
 
@@ -14,6 +16,11 @@ export class ContactComponent {
   emailInvalid: boolean;
 
   showForm = true;
+
+  ngOnInit(): void {
+    console.log(this.map);
+    this.map.click();
+  }
 
   constructor(private databaseService: DatabaseService) {}
 
