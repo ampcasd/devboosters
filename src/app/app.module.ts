@@ -17,7 +17,7 @@ import { ModalComponent } from './modal/modal.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LaunchpadComponent } from './launchpad/launchpad.component';
-import { AssistantComponent } from './assistant/assistant.component';
+import { AssistantsComponent } from './assistants/assistants.component';
 import { SourcingComponent } from './sourcing/sourcing.component';
 
 @NgModule({
@@ -35,7 +35,7 @@ import { SourcingComponent } from './sourcing/sourcing.component';
     ContactFormComponent,
     ModalComponent,
     LaunchpadComponent,
-    AssistantComponent,
+    AssistantsComponent,
     SourcingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],

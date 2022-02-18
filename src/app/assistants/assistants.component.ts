@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'assistant',
-  templateUrl: './assistant.component.html',
-  styleUrls: ['./assistant.component.scss'],
+  selector: 'assistants',
+  templateUrl: './assistants.component.html',
+  styleUrls: ['./assistants.component.scss'],
 })
-export class AssistantComponent implements OnInit {
+export class AssistantsComponent implements OnInit {
   features = [
     {
       icon: 'fa-search',

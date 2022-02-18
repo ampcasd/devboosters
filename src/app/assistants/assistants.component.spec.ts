@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AssistantComponent } from './assistant.component';
+import { AssistantComponent } from './assistants.component';
 
 describe('LaunchpadComponent', () => {
   let component: AssistantComponent;
