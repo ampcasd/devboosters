@@ -45,7 +45,11 @@ export class AssistantsComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  header = 'Let us focus on your career';
+  subHeader = 'While we focus on boosting your career';
+  imageUrl = 'assets/images/laptop.png';
+  imageDescription = 'Laptop with IDE';
 
+  constructor() {}
   ngOnInit(): void {}
 }
