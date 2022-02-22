@@ -1,1 +1,96 @@
-<p>contact works!</p>
+<div class="contact-component">
+  <div class="contact-form">
+    <div class="left-column">
+      <img
+        src="/assets/images/envelope.png"
+        alt="envelope-image"
+        width="490vw"
+        height="430vh"
+        class="envelope-image"
+      />
+    </div>
+    <div class="right-column">
+      <div class="text">
+        <h1>Contact us</h1>
+
+        <span>
+          Don't be on the mercy of recruiters for whom you are the product.
+          <br />
+          Partner with us instead. Get your own assistant working for you and
+          invest in your growth.
+          <br />
+          Here it is <strong>your</strong> interest that is the priority.
+        </span>
+      </div>
+
+      <div class="actions">
+        <ng-container *ngIf="showForm; else thankYou">
+          <form (submit)="submit()">
+            <div class="input-short">
+              <input
+                [(ngModel)]="name"
+                [class.invalid]="nameInvalid"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="input">
+              <input
+                [(ngModel)]="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                [class.invalid]="emailInvalid"
+              />
+            </div>
+
+            <textarea class="message-input"></textarea>
+            <button class="button">Send your message</button>
+          </form>
+        </ng-container>
+
+        <ng-template #thankYou>
+          <span class="thank-you"
+            >Thank you for your interest, we will reach out to you as soon as
+            humanly possible.</span
+          >
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="address-and-map">
+    <div class="map">
+      <div class="mapouter">
+        <div #map class="gmap_canvas">
+          <iframe
+            style="filter: invert(90%)"
+            width="550"
+            height="300"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps/embed/v1/view?key=AIzaSyAqj6srjdOlHhsQHWsIorAbOwU2QrIWAu4&center=51.127057,16.9218246&zoom=4"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 300px;
+              width: 550px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="address">
+      <p>
+        <strong>contact@devboosters.com</strong><br /><br />Irkucka 11<br />51-210
+        Wrocław<br />POLAND, EU
+      </p>
+    </div>
+  </div>
+</div>
