@@ -1,12 +1,17 @@
 <div class="inner">
   <div class="text">
-    <h1>Let us boost your career</h1>
+    <h1>{{ header }}</h1>
+    <!-- // Let us boost your career -->
+
     <!-- <h1>Let us focus on your career</h1> -->
 
     <!-- <span>While we focus on boosting your career</span> -->
-    <span>While you focus on your code</span>
+    <span>{{ subHeader }}</span>
+    <!-- While you focus on your code -->
   </div>
   <div class="image">
-    <img src="assets/images/laptop.png" alt="Laptop with IDE" />
+    <img [src]="imageUrl" [alt]="imageDescription" />
+    <!-- assets/images/laptop.png
+    Laptop with IDE -->
   </div>
 </div>

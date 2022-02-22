@@ -16,6 +16,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AssistantsComponent } from './assistants/assistants.component';
+import { SourcingComponent } from './sourcing/sourcing.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     CallToActionComponent,
     ContactFormComponent,
     ModalComponent,
+    LaunchpadComponent,
+    AssistantsComponent,
+    SourcingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'launchpas',
+  selector: 'launchpad',
   templateUrl: './launchpad.component.html',
   styleUrls: ['./launchpad.component.scss'],
 })
