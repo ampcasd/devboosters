@@ -11,8 +11,8 @@ export const environment = {
     projectId: 'devboosterscom',
     storageBucket: 'devboosterscom.appspot.com',
     messagingSenderId: '21456592135',
-    appId: '1:21456592135:web:4bbad751cf399d21ba79a2',
-    measurementId: 'G-69H6HYEKTG',
+    appId: '1:21456592135:web:d7e47aaba8878704ba79a2',
+    measurementId: 'G-3NNN37H99Z',
   },
 };
 
