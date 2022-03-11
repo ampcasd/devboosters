@@ -1,8 +1,238 @@
-.wrapper {
+.background {
+  overflow-x: hidden;
+  color: white;
   position: relative;
-  top: -96px;
+}
 
-  h1 {
-    padding: 0 5rem;
-  }
+.header {
+  padding: 6%;
+  margin-top: 7%;
+}
+
+.header1 {
+  color: white;
+  font-size: 25px;
+  margin-top: -42vh;
+  padding: 6%;
+}
+
+.top-circle {
+  height: 100vh;
+  width: 200vw;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -90vw;
+  margin-top: -50vh;
+}
+
+.middle-circle {
+  height: 215vh;
+  width: 300vw;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -100vw;
+  margin-top: -205vh;
+}
+
+.bottom-circle-purple {
+  height: 150vh;
+  width: 300vw;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -100vw;
+  margin-top: -95vh;
+}
+
+.bottom-circle-gray {
+  height: 150vh;
+  width: 300vw;
+  background-color: rgba(67, 64, 82, 255);
+  border-radius: 100%;
+  margin-left: -100vw;
+  margin-top: -110vh;
+}
+
+.bottom-rectangle-gray {
+  height: 20vh;
+  width: 200vw;
+  background-color: rgba(67, 64, 82, 255);
+  margin-left: -100vw;
+  margin-top: -10vh;
+  margin-bottom: -100vh;
+  position: static;
+}
+
+.laptop-image {
+  margin-top: 20px;
+  margin-left: 60px;
+  height: 100%;
+  width: 100%;
+}
+
+.what-is-it .header {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.description {
+  color: white;
+  font-size: 17px;
+  padding: 7%;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  margin-top: 10vh;
+  margin-left: 40px;
+}
+
+.how-it-works-description {
+  color: white;
+  font-size: 17px;
+  padding: 7%;
+}
+
+.numbers {
+  border: solid 2px blueviolet;
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px;
+  margin-top: 100px;
+}
+
+.how-it-works-explanation {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-and-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.explanation-blocks .text {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px;
+  width: 80%;
+}
+
+.explanation-blocks {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.launchpad-perks .header {
+  font-size: 25px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.launchpad-perks .explanation-blocks {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-items: center;
+}
+
+.launchpad-perks .image-and-number {
+  margin-top: -80px;
+}
+
+.stars {
+  border: solid 2px blueviolet;
+  padding-top: 1px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.launchpad-perks .summary {
+  font-size: 17px;
+  padding: 40px;
+  margin-top: -20px;
+  color: rgb(156, 156, 156);
+}
+
+.call-to-action {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 140px;
+}
+
+.button {
+  background-image: linear-gradient(40deg, #bb30ee 0%, #671cf3 100%);
+  font-size: 14px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 70px;
+  color: white;
+  margin-top: 50px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.incentive {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+}
+
+.phone-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}
+
+.phone-image {
+  height: 100%;
+  padding-top: 8px;
+}
+
+.phone-number {
+  margin-left: 30px;
+}
+
+.email-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-image {
+  height: 100%;
+  padding-top: 8px;
+}
+
+.email-address {
+  margin-left: 30px;
+}
+
+.contact {
+  margin-left: 40px;
+  margin-top: 250px;
+}
+
+.explained-image {
+  width: 200px;
+  height: 100px;
 }
