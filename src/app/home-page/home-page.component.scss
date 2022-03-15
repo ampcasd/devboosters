@@ -1,37 +1,24 @@
 .background {
   overflow-x: hidden;
   color: white;
-  position: relative;
-}
-
-.header {
-  padding: 6%;
-  margin-top: 7%;
+  min-width: 400px;
+  justify-content: center;
 }
 
 .header1 {
   color: white;
   font-size: 25px;
-  margin-top: -42vh;
+  margin-top: -330px;
   padding: 6%;
 }
 
 .top-circle {
-  height: 100vh;
+  height: 700px;
   width: 200vw;
   background-color: rgba(35, 23, 45, 255);
   border-radius: 100%;
   margin-left: -90vw;
-  margin-top: -50vh;
-}
-
-.middle-circle {
-  height: 215vh;
-  width: 300vw;
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  margin-left: -100vw;
-  margin-top: -205vh;
+  margin-top: -300px;
 }
 
 .bottom-circle-purple {
@@ -40,25 +27,24 @@
   background-color: rgba(35, 23, 45, 255);
   border-radius: 100%;
   margin-left: -100vw;
-  margin-top: -95vh;
+  margin-top: -650px;
 }
 
 .bottom-circle-gray {
-  height: 150vh;
-  width: 300vw;
+  height: 2000px;
+  width: 400vw;
   background-color: rgba(67, 64, 82, 255);
   border-radius: 100%;
-  margin-left: -100vw;
+  margin-left: -150vw;
   margin-top: -110vh;
 }
 
 .bottom-rectangle-gray {
-  height: 20vh;
-  width: 200vw;
+  height: 300px;
+  width: 100vw;
   background-color: rgba(67, 64, 82, 255);
   margin-left: -100vw;
-  margin-top: -10vh;
-  margin-bottom: -100vh;
+  margin-top: -100px;
   position: static;
 }
 
@@ -74,38 +60,95 @@
   flex-direction: row;
   font-size: 25px;
   flex-shrink: 0;
+  margin-left: 40px;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  div.what-is-it {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1024px) {
+  div.what-is-it .header {
+    font-size: 35px;
+  }
 }
 
 .description {
   color: white;
   font-size: 17px;
   padding: 7%;
+  margin-bottom: 60px;
 }
 
-.how-it-works {
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.description {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.description {
+    font-size: 17px;
+  }
+}
+
+.how-it-works-header {
   display: flex;
   flex-direction: row;
-  font-size: 25px;
-  margin-top: 10vh;
+  margin-top: 5%;
   margin-left: 40px;
 }
 
-.how-it-works-description {
-  color: white;
-  font-size: 17px;
-  padding: 7%;
+.how-it-works {
+  background-color: rgba(35, 23, 45, 255);
+  justify-content: center;
+  align-items: center;
+  width: 250vw;
+  border-radius: 90%;
+  padding-left: 77vw;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  margin-left: -77vw;
+}
+
+@media screen and (min-width: 1024px) {
+  div.how-it-works {
+    padding-left: 87vw;
+    margin-right: 10vw;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.how-it-works-header {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.how-it-works-header {
+    font-size: 30px;
+  }
 }
 
 .numbers {
   border: solid 2px blueviolet;
   border-radius: 100%;
-  width: 55px;
-  height: 55px;
   text-align: center;
-  font-size: 30px;
+  font-size: max(30px, 5vw);
   font-weight: 600;
-  padding: 5px;
-  margin-top: 100px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-left: 5%;
 }
 
 .how-it-works-explanation {
@@ -119,16 +162,74 @@
   align-items: center;
 }
 
+.image-and-number2 {
+  display: flex;
+  flex-direction: row;
+}
+
 .explanation-blocks .text {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px;
+  width: 50%;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.explanation-blocks .text {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.hexplanation-blocks .text {
+    font-size: 17px;
+  }
+}
+
+.explanation-blocks {
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.explanation-blocks2 {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.explanation-blocks2 .text {
   font-size: 15px;
   font-weight: 500;
   padding: 20px;
   width: 80%;
 }
 
-.explanation-blocks {
-  margin-left: 30px;
-  margin-top: 20px;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.explanation-blocks2 .text {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.hexplanation-blocks2 .text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.launchpad-perks {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 
 .launchpad-perks .header {
@@ -136,6 +237,22 @@
   margin-left: 0px;
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.launchpad-perks .header {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.launchpad-perks .header {
+    font-size: 30px;
+  }
 }
 
 .launchpad-perks .explanation-blocks {
@@ -151,15 +268,20 @@
 
 .stars {
   border: solid 2px blueviolet;
-  padding-top: 1px;
+  min-width: 55px;
+  min-height: 55px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: max(30px, 5vw);
   font-weight: 600;
-  margin-top: 100px;
 }
+
+// font-size: 6vw;
+// padding-left: 2vw;
+// padding-right: 2vw;
+// margin-left: 5%;
 
 .launchpad-perks .summary {
   font-size: 17px;
@@ -168,10 +290,38 @@
   color: rgb(156, 156, 156);
 }
 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.explanation-blocks .summary {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.explanation-blocks .summary {
+    font-size: 17px;
+  }
+}
+
 .call-to-action {
   font-size: 25px;
   text-align: center;
   padding-top: 140px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.call-to-action {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.call-to-action {
+    font-size: 25px;
+  }
 }
 
 .button {
@@ -191,11 +341,28 @@
   color: white;
   font-weight: 500;
   font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.incentive {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.incentive {
+    font-size: 25px;
+  }
 }
 
 .image {
-  height: 100px;
-  width: 100px;
+  width: 15vw;
+  min-width: 100px;
+  height: auto;
 }
 
 .phone-block {
@@ -233,6 +400,8 @@
 }
 
 .explained-image {
-  width: 200px;
-  height: 100px;
+  width: 50vw;
+  height: auto;
+  min-width: 250px;
+  max-width: 350px;
 }
