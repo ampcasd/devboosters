@@ -1,3 +1,5 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 .contact-component {
   background: #222526;
 
@@ -14,30 +16,6 @@
   }
 }
 
-.address-and-map {
-  background-color: #2e2e35;
-  border-radius: 8px;
-  width: 90%;
-  display: flex;
-  overflow: hidden;
-  margin-left: 5%;
-}
-
-.map {
-  border-radius: 8px;
-  display: flex;
-  justify-content: end;
-  filter: grayscale(75%);
-}
-
-.address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 4%;
-  font-size: 18px;
-}
-
 .contact-form {
   background-color: #2e2e35;
   border-radius: 8px;
@@ -48,14 +26,18 @@
   margin-bottom: 80px;
 }
 
-.text {
-  width: 90%;
+.contact-form .right-column {
+  width: 70%;
+  padding-left: 6%;
 }
 
-.envelope-image {
-  padding-top: 100px;
-  padding-left: 10%;
-  padding-right: 100px;
+.contact-form .text {
+  width: 90%;
+  padding-top: 5%;
+}
+
+.contact-image {
+  padding-top: 50px;
 }
 
 .input-short {
@@ -71,7 +53,7 @@
 
 .message-input {
   height: 200px;
-  width: 76%;
+  width: 76.8%;
   background-color: transparent;
   border-radius: 8px;
   color: lightgray;
@@ -80,9 +62,10 @@
   resize: none;
   outline: none;
   padding: 10px;
+  border: solid 2px rgba(110, 110, 122, 0.5);
 }
 
-button {
+.button {
   margin-top: 20px;
   margin-left: 60px;
   margin-bottom: 20px;
@@ -96,9 +79,43 @@ button {
   background-clip: padding-box;
   background: linear-gradient(90deg, #f17006, #eca622);
   color: #fff;
+  margin-left: 27%;
 }
 
-.right-column {
+.button:hover {
+  background: linear-gradient(90deg, #ff7300, #f59313);
+  color: #fff;
+  cursor: pointer;
+}
+
+.address-and-map {
+  background-color: #2e2e35;
+  border-radius: 8px;
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  overflow: hidden;
+  margin-left: 5%;
+}
+
+.address-and-map.right-column {
+}
+
+.map {
+  border-radius: 8px;
+  display: flex;
+  justify-content: end;
+  filter: grayscale(75%);
+}
+
+.address {
+  padding: 4%;
+  font-size: 18px;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.address2 {
+  margin-left: 15%;
 }

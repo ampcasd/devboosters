@@ -2,25 +2,17 @@
   <div class="contact-form">
     <div class="left-column">
       <img
-        src="/assets/images/envelope.png"
-        alt="envelope-image"
+        src="/assets/images/contact.png"
+        alt="contact-image"
         width="490vw"
-        height="430vh"
-        class="envelope-image"
+        height="490vh"
+        class="contact-image"
       />
     </div>
     <div class="right-column">
       <div class="text">
         <h1>Contact us</h1>
-
-        <span>
-          Don't be on the mercy of recruiters for whom you are the product.
-          <br />
-          Partner with us instead. Get your own assistant working for you and
-          invest in your growth.
-          <br />
-          Here it is <strong>your</strong> interest that is the priority.
-        </span>
+        <i class="fa-solid-fa-location-dot"></i>
       </div>
 
       <div class="actions">
@@ -35,7 +27,6 @@
                 placeholder="Name"
               />
             </div>
-
             <div class="input">
               <input
                 [(ngModel)]="email"
@@ -88,9 +79,18 @@
     </div>
     <div class="address">
       <p>
-        <strong>contact@devboosters.com</strong><br /><br />Irkucka 11<br />51-210
-        Wrocław<br />POLAND, EU
+        <span class="icon fas fa-envelope"> </span
+        ><a href="mailto:contact@devboosters.com">contact@devboosters.com</a>
       </p>
+      <p>
+        <span class="icon fas fa-phone"></span>
+        <a href="tel:+48732253993">+48 732 253 993</a>
+      </p>
+      <span class="icon fas fa-home"></span>Irkucka 11<br />
+      <div class="address2">
+        51-210 Wrocław<br />
+        POLAND, EU
+      </div>
     </div>
   </div>
 </div>
