@@ -1,0 +1,263 @@
+.background {
+  overflow-x: hidden;
+  color: white;
+  min-width: 400px;
+  justify-content: center;
+}
+
+.top-circle {
+  height: 700px;
+  width: 200vw;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -90vw;
+  margin-top: -300px;
+}
+
+.header1 {
+  color: white;
+  font-size: 25px;
+  margin-top: -330px;
+  padding: 6%;
+}
+
+.header-assistant-image {
+  position: relative;
+  width: 323px;
+  height: 486px;
+  top: -120px;
+  left: 176px;
+}
+
+.container {
+  background: #23172d;
+  border-radius: 100%;
+  width: 237vw;
+  margin-left: -70vw;
+  padding-left: 70vw;
+  padding-bottom: 100px;
+  margin-top: -160px;
+  display: column;
+  flex-direction: row;
+}
+
+.career-analysis {
+  display: column;
+  flex-direction: row;
+  font-size: 25px;
+  flex-shrink: 0;
+  margin-left: 40px;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.description-career-analysis {
+  font-size: 16px;
+}
+
+.career-management {
+  display: column;
+  flex-direction: row;
+  font-size: 25px;
+  flex-shrink: 0;
+  margin-left: 40px;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.description-career-management {
+  font-size: 16px;
+}
+
+.retrospection {
+  display: column;
+  flex-direction: row;
+  font-size: 25px;
+  flex-shrink: 0;
+  margin-left: 40px;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.description-retrospections {
+  font-size: 16px;
+}
+
+.what-can-we-do-container {
+  display: column;
+  flex-direction: row;
+}
+
+.header-what-we-can {
+  font-size: 30px;
+}
+
+.job-hunting-wrapper {
+  display: flex;
+}
+
+.job-hunting-image {
+  height: 48px;
+}
+
+.job-hunting-text-wrapper{
+  margin-top: -18px;
+  margin-left: 30px;
+}
+
+.job-hunting-header {
+  font-size: 20px;
+}
+
+.job-hunting-description {
+  font-size: 16px;
+  margin-top: -15px;
+}
+
+.feed-wrapper{
+display: flex;
+margin-top: 30px;
+}
+
+.feed-image{
+  height: 48px;
+}
+
+.feed-text-wrapper{
+  margin-top: -18px;
+  margin-left: 30px;
+}
+
+.feed-header {
+  font-size: 20px;
+}
+
+.feed-description {
+  font-size: 16px;
+  margin-top: -15px
+}
+
+.community-wrapper{
+  display: flex;
+  margin-top: 30px;
+}
+
+.community-image{
+  height: 48px;
+}
+
+.community-text-wrapper{
+  margin-top: -18px;
+  margin-left: 30px;
+}
+
+.community-header {
+  font-size: 20px;
+}
+
+.community-description {
+  font-size: 16px;
+  margin-top: -15px
+}
+
+.growth-drive-wrapper{
+  display: flex;
+  margin-top: 30px;
+}
+
+.growth-drive-image{
+  height: 48px;
+}
+
+.growth-drive-text-wrapper{
+  margin-top: -18px;
+  margin-left: 30px;
+}
+
+.growth-drive-header {
+  font-size: 20px;
+}
+
+.growth-drive-description {
+  font-size: 16px;
+  margin-top: -15px
+}
+
+.lab-wrapper{
+  display: flex;
+  margin-top: 30px;
+}
+
+.lab-image{
+  height: 48px;
+}
+
+.lab-text-wrapper{
+  margin-top: -18px;
+  margin-left: 30px;
+}
+
+.lab-header {
+  font-size: 20px;
+}
+
+.lab-description {
+  font-size: 16px;
+  margin-top: -15px
+}
+
+.candidate-analysis-wrapper{
+  display: flex;
+  margin-top: 30px;
+}
+
+.candidate-analysis-image{
+  height: 48px;
+}
+
+.candidate-analysis-text-wrapper{
+  margin-top: -18px;
+  margin-left: 30px;
+}
+
+.candidate-analysis-header {
+  font-size: 20px;
+}
+
+.candidate-analysis-description {
+  font-size: 16px;
+  margin-top: -15px
+}
+
+.are-you-interested-header {
+  font-size: 30px;
+}
+
+.are-you-interested-description {
+  font-size: 16px;
+  margin-top: -15px
+}
+
+.are-you-interested-container {
+  background: #23172d;
+  border-radius: 100%;
+  width: 237vw;
+  margin-left: -70vw;
+  padding-left: 70vw;
+  padding-bottom: 100px;
+  margin-top: 90px;
+}
+
+.get-started-button {
+  background-image: linear-gradient(40deg, #bb30ee 0%, #671cf3 100%);
+  font-size: 14px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 70px;
+  color: white;
+  margin-top: 50px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
