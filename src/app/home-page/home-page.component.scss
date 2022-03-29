@@ -12,91 +12,161 @@
   padding: 6%;
 }
 
-.top-circle {
-  height: 700px;
-  width: 200vw;
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  margin-left: -90vw;
-  margin-top: -300px;
+@media screen and (min-width: 601px) {
+  div.header1 {
+    color: white;
+    font-size: 30px;
+    margin-top: -420px;
+    padding: 6%;
+  }
 }
 
-.bottom-circle-purple {
-  height: 150vh;
-  width: 300vw;
+@media screen and (min-width: 1024px) {
+  div.header1 {
+    color: white;
+    font-size: 35px;
+    padding: 6%;
+  }
+}
+
+.top-circle {
+  height: 1000px;
+  width: 1000px;
   background-color: rgba(35, 23, 45, 255);
   border-radius: 100%;
-  margin-left: -100vw;
-  margin-top: -650px;
+  margin-left: -400px;
+  margin-top: -600px;
+}
+
+@media screen and (min-width: 601px) {
+  div.top-circle {
+    height: 1200px;
+    width: 1200px;
+    background-color: rgba(35, 23, 45, 255);
+    border-radius: 100%;
+    margin-left: -400px;
+    margin-top: -700px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.top-circle {
+    height: 1400px;
+    width: 1400px;
+    background-color: rgba(35, 23, 45, 255);
+    border-radius: 100%;
+    margin-left: -500px;
+    margin-top: -800px;
+  }
 }
 
 .bottom-circle-gray {
-  height: 2000px;
-  width: 400vw;
+  height: 500px;
+  width: 250vw;
   background-color: rgba(67, 64, 82, 255);
   border-radius: 100%;
-  margin-left: -150vw;
-  margin-top: -110vh;
+  margin-left: -75vw;
+  margin-top: -32vh;
+  min-width: 1000px;
+}
+
+@media screen and (max-width: 400px) {
+  div.bottom-circle-gray {
+    margin-left: -80vw;
+  }
 }
 
 .bottom-rectangle-gray {
   height: 300px;
-  width: 100vw;
+  width: 150vw;
   background-color: rgba(67, 64, 82, 255);
-  margin-left: -100vw;
   margin-top: -100px;
-  position: static;
+  margin-left: -50vw;
 }
 
 .laptop-image {
   margin-top: 20px;
   margin-left: 60px;
-  height: 100%;
-  width: 100%;
+  height: calc(150px + 25vw);
+  width: auto;
 }
 
-.what-is-it .header {
+@media screen and (min-width: 601px) {
+  .laptop-image {
+    margin-top: -20px;
+    margin-left: 30vw;
+    height: calc(120px + 25vw);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .laptop-image {
+    margin-top: -400px;
+    margin-left: 0vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -100px;
+  }
+}
+
+.what-is-it {
+  margin-left: 10vw;
   display: flex;
-  flex-direction: row;
-  font-size: 25px;
-  flex-shrink: 0;
-  margin-left: 40px;
-  margin-top: 140px;
-  margin-bottom: 30px;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1024px) {
   div.what-is-it {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 0vw;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 1024px) {
-  div.what-is-it .header {
-    font-size: 35px;
-  }
-}
-
-.description {
-  color: white;
+.what-is-it-text {
   font-size: 17px;
-  padding: 7%;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 100px;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1024px) {
+  div.what-is-it-text {
+    font-size: 30px;
+    width: 40vw;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 601px) {
+  div.description {
+    font-size: 20px;
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   div.description {
     font-size: 20px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   div.description {
     font-size: 17px;
+    width: 85%;
   }
 }
 
@@ -105,6 +175,7 @@
   flex-direction: row;
   margin-top: 5%;
   margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 .how-it-works {
@@ -117,23 +188,46 @@
   padding-top: 10px;
   padding-bottom: 100px;
   margin-left: -77vw;
+  min-width: 850px;
+}
+
+@media screen and (max-width: 300px) {
+  div.how-it-works {
+    margin-left: -300vw;
+    padding-left: 300vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.how-it-works {
+    margin-left: -73vw;
+    padding-left: 73vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   div.how-it-works {
-    padding-left: 87vw;
-    margin-right: 10vw;
+    padding-left: 80vw;
+  }
+  .header-text {
+    font-size: 45px;
+  }
+  div.how-it-works .image-and-number {
+    flex-direction: row-reverse;
+  }
+  div.how-it-works-header {
+    justify-content: center;
+    width: 100vw;
+    margin-left: 0px;
   }
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
   div.how-it-works-header {
     font-size: 35px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   div.how-it-works-header {
     font-size: 30px;
@@ -144,22 +238,38 @@
   border: solid 2px blueviolet;
   border-radius: 100%;
   text-align: center;
-  font-size: max(30px, 5vw);
+  font-size: max(45px, 4vw);
   font-weight: 600;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin-left: 5%;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
 
-.how-it-works-explanation {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1024px) {
+  div.numbers {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.how-it-works-explanation {
+    align-items: flex-start;
+    width: 100vw;
+  }
 }
 
 .image-and-number {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  div.image-and-number {
+    justify-content: space-around;
+    width: 100vw;
+  }
 }
 
 .image-and-number2 {
@@ -171,29 +281,50 @@
   font-size: 15px;
   font-weight: 500;
   padding: 20px;
-  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-self: inherit;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 1024px) {
   div.explanation-blocks .text {
-    font-size: 20px;
+    padding-left: 7vw;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.hexplanation-blocks .text {
+@media screen and (min-width: 600px) {
+  div.explanation-blocks .text {
     font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.explanation-blocks .text {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.explanation-blocks .text {
+    width: 30vw;
   }
 }
 
 .explanation-blocks {
   margin-left: 30px;
   margin-top: 20px;
-  align-items: center;
-  justify-content: center;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  div.explanation-blocks {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .explanation-blocks2 {
@@ -202,6 +333,24 @@
   flex-direction: row;
   margin-top: 30px;
   align-items: center;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  div.launchpad-perks-bulletpoints {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  div.explanation-blocks2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.explanation-blocks2 .text {
+    width: 25vw;
+  }
 }
 
 .explanation-blocks2 .text {
@@ -209,48 +358,55 @@
   font-weight: 500;
   padding: 20px;
   width: 80%;
+  color: white !important;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
   div.explanation-blocks2 .text {
     font-size: 20px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
-  div.hexplanation-blocks2 .text {
+  div.explanation-blocks2 .text {
     font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  div.launchpad-perks {
-    margin-left: 10vw;
-    margin-right: 10vw;
+  div.explanation-blocks2 .text {
+    font-size: 15px;
   }
 }
 
-.launchpad-perks .header {
+.header {
   font-size: 25px;
   margin-left: 0px;
   display: flex;
   flex-direction: row;
   margin-top: 50px;
   margin-left: 40px;
+  align-items: center;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
-  div.launchpad-perks .header {
+  div.header {
     font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.header {
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
-  div.launchpad-perks .header {
+  div.header {
     font-size: 30px;
   }
 }
@@ -270,24 +426,39 @@
   border: solid 2px blueviolet;
   min-width: 55px;
   min-height: 55px;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
   border-radius: 100%;
   text-align: center;
   font-size: max(30px, 5vw);
   font-weight: 600;
 }
 
-// font-size: 6vw;
-// padding-left: 2vw;
-// padding-right: 2vw;
-// margin-left: 5%;
+@media screen and (min-width: 1024px) {
+  div.launchpad-perks-explanation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 .launchpad-perks .summary {
-  font-size: 17px;
+  font-size: 20px;
   padding: 40px;
-  margin-top: -20px;
-  color: rgb(156, 156, 156);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  div.launchpad-perks .summary {
+    width: 60vw;
+    text-align: center;
+    font-size: 17px;
+    color: lightgray;
+  }
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -304,23 +475,39 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  div.explanation-blocks .summary {
+    font-size: 17px;
+  }
+}
+
 .call-to-action {
   font-size: 25px;
   text-align: center;
-  padding-top: 140px;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  width: 200vw;
+  padding-top: 5vh;
+  padding-bottom: 20vh;
+  margin-left: -50vw;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
   div.call-to-action {
     font-size: 35px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   div.call-to-action {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  div.call-to-action {
+    font-size: 25px;
+    padding-left: 20px;
   }
 }
 
@@ -360,20 +547,53 @@
 }
 
 .image {
-  width: 15vw;
+  width: 17vw;
   min-width: 100px;
+  max-width: 240px;
   height: auto;
+  margin-right: 5vw;
+}
+
+@media screen and (max-width: 1024px) {
+  div.what-is-it .image {
+    display: none;
+  }
+}
+
+.mobile-header {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.mobile-image {
+  width: 17vw;
+  min-width: 100px;
+  max-width: 240px;
+  height: auto;
+  margin-right: 5vw;
+}
+
+@media screen and (min-width: 1024px) {
+  img.mobile-image {
+    display: none;
+  }
+  div.mobile-header {
+    padding-bottom: 0px;
+  }
 }
 
 .phone-block {
   display: flex;
   flex-direction: row;
-  margin-top: 200px;
+  align-items: center;
 }
 
 .phone-image {
-  height: 100%;
-  padding-top: 8px;
+  height: 40px;
+  width: auto;
 }
 
 .phone-number {
@@ -383,11 +603,12 @@
 .email-block {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .email-image {
-  height: 100%;
-  padding-top: 8px;
+  height: 40px;
+  width: auto;
 }
 
 .email-address {
@@ -396,7 +617,23 @@
 
 .contact {
   margin-left: 40px;
-  margin-top: 250px;
+}
+
+.address-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.address {
+  padding-left: 40px;
+}
+
+.location-image {
+  height: 30px;
+  width: auto;
+  padding-left: 3px;
+  align-self: center;
 }
 
 .explained-image {
@@ -404,4 +641,10 @@
   height: auto;
   min-width: 250px;
   max-width: 350px;
+}
+@media screen and (min-width: 1024px) {
+  img.explained-image {
+    width: 30vw;
+    max-width: none;
+  }
 }
