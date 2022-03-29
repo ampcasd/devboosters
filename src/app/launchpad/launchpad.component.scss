@@ -1,6 +1,5 @@
 .launchpad-component {
   background: #222526;
-
   padding-top: 100px;
 
   &::before {
@@ -37,4 +36,241 @@
 
 .text {
   padding: 10px;
+}
+
+// baner
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main-container {
+    position: relative;
+    top: 10vh;
+    left: 0;
+    min-width: 320px;
+    max-height: 500px;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .baner-circle {
+    position: absolute;
+    top: -73%;
+    left: -81%;
+    width: 225%;
+    height: 120%;
+    border-radius: 50%;
+    background-color: rgba(35, 23, 45, 255);
+    z-index: -1;
+  }
+
+  .baner-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+
+  .main-baner {
+    width: 60%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+  .main-mission {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .stripes1 {
+    position: absolute;
+    width: 25%;
+    margin: 10% 5%;
+    top: 0;
+    right: 0;
+  }
+
+  .stripes2 {
+    position: absolute;
+    width: 25%;
+    margin: 5% 5% 10% 5%;
+    bottom: 0;
+    left: 0;
+  }
+  //  375 600 1024
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 600px) and (orientation: portrait) {
+  .main-container {
+    position: relative;
+    top: 10vh;
+    left: 0;
+    min-width: 320px;
+    max-height: 500px;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .baner-circle {
+    position: absolute;
+    top: -105%;
+    left: -147%;
+    width: 340%;
+    height: 159%;
+    border-radius: 50%;
+    background-color: rgba(35, 23, 45, 255);
+    z-index: -1;
+  }
+
+  .baner-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+
+  .main-baner {
+    width: 60%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+  .main-mission {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .stripes1 {
+    position: absolute;
+    width: 25%;
+    margin: 10% 5%;
+    top: 0;
+    right: 0;
+  }
+
+  .stripes2 {
+    position: absolute;
+    width: 25%;
+    margin: 5% 5% 10% 5%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 600px) and (orientation: portrait) {
+  .main-container {
+    position: relative;
+    top: 10vh;
+    left: 0;
+    min-width: 320px;
+    max-height: 500px;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .baner-circle {
+    position: absolute;
+    top: -105%;
+    left: -147%;
+    width: 340%;
+    height: 159%;
+    border-radius: 50%;
+    background-color: rgba(35, 23, 45, 255);
+    z-index: -1;
+  }
+
+  .baner-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+
+  .main-baner {
+    width: 60%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+  .main-mission {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .stripes1 {
+    position: absolute;
+    width: 25%;
+    margin: 10% 5%;
+    top: 0;
+    right: 0;
+  }
+
+  .stripes2 {
+    position: absolute;
+    width: 25%;
+    margin: 5% 5% 10% 5%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+////////////////////// how button
+.how {
+  margin: 80px 0 0 0;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-button {
+  width: 70%;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #222526;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.how-button img {
+  height: 1rem;
+  margin: 0 5px;
+  transform: translateY(15%);
+}
+
+////// launchpad section
+
+.launchpad-logo {
+  position: relative;
+}
+
+.launchpad-circle {
+  position: absolute;
+  top: 13%;
+  left: 26%;
+  width: 65vw;
+  height: 65vw;
+  border-radius: 50%;
+  background-color: rgba(35, 23, 45, 255);
+  z-index: -1;
+}
+
+.launchpad-txt-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.launchpad-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.launchpad-content p {
+  margin: 20px 0;
+}
+
+.launchpad-button {
+  background-color: #ac00ff;
+  border-color: #ac00ff;
+  font-size: 12px;
 }
