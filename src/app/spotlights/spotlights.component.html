@@ -1,23 +1,16 @@
+
 <div class="spotlights-background">
-  <div
-    *ngFor="let spotlight of spotlights; let i = index"
-    class="inner spotlight"
-    [class.image-right]="(i + 1) % 2 === 0"
-  >
-    <div class="image">
-      <img [src]="spotlight.image" alt="spotlight.image" />
-    </div>
-
-    <div class="text">
-      <h1>{{ spotlight.header }}</h1>
-
-      <span>{{ spotlight.content }}</span>
-
-      <!-- <div>
-        <button class="button-primary" (click)="showModal()">
-          Learn more
-        </button>
-      </div> -->
+  <div *ngFor="let spotlight of spotlights" class="spotlights">
+    <div class="spotlights">
+      <div class="header-spotlights">
+        <img class="image-spotlights" [src]="spotlight.image" />
+        <p><strong>{{ spotlight.header }}</strong></p>
+      </div>
+      <div class="description-spotlights">
+        <span>
+          {{ spotlight.description }}
+        </span>
+      </div>
     </div>
   </div>
 </div>
