@@ -1,16 +1,145 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: fit-content;
-  margin-top: 240px;
-  text-align: center;
-
+  padding-top: 200px;
+  position: relative;
+  overflow: hidden;
   span {
     text-align: center;
   }
 
   .divider {
     margin: 0 5px;
+  }
+}
+
+.footer-circle {
+  position: absolute;
+  bottom: -45%;
+  left: -50%;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  background-color: #433f51;
+  z-index: -1;
+}
+
+.footer-circle-two {
+  position: absolute;
+  bottom: -15%;
+  left: -50%;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  background-color: #23172d;
+  z-index: -2;
+}
+
+.contact-container {
+  position: relative;
+  padding-left: 15px;
+}
+
+.telephone {
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.telephone p {
+  padding-left: 10px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+ul {
+  width: 50%;
+  display: inline-block;
+  list-style: none;
+}
+
+li {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.address-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  text-align: end;
+  width: 50%;
+  padding: 15px;
+}
+
+.credits {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.intrested {
+  margin-bottom: 80px;
+}
+
+.intrested-content {
+  text-align: center;
+  font-size: 24px;
+}
+
+.intrested-content-slogan {
+  font-size: 16px;
+}
+
+.intrested-button {
+  font-weight: bold;
+  margin: 5%;
+  width: 90%;
+  height: 40px;
+  color: white;
+  background-color: #ac00ff;
+  border: 1px solid #ac00ff;
+  border-radius: 20px;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 480px) {
+  .footer-circle {
+    top: 50%;
+  }
+
+  .footer-circle-two {
+    top: 20%;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 819px) {
+  .footer-circle {
+    top: 50%;
+  }
+
+  .footer-circle-two {
+    top: 20%;
+  }
+}
+
+@media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .telephone {
+    margin-left: 15px;
+  }
+
+  .footer-circle {
+    top: 50%;
+  }
+
+  .footer-circle-two {
+    top: 20%;
   }
 }
