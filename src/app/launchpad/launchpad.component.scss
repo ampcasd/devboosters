@@ -1,539 +1,407 @@
-.wrapper {
+.background {
   overflow-x: hidden;
-}
-.launchpad-component {
-  background: #222526;
-  padding-top: 100px;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 56rem;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background: #222526;
-  }
+  color: white;
+  min-width: 400px;
+  justify-content: center;
 }
 
-.launchpad {
-  background-color: #2e2e35;
-  border-radius: 8px;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-bottom: 80px;
-}
-
-.launchpad-text {
-  width: 90%;
+.header1 {
+  color: white;
+  font-size: 25px;
+  margin-top: -330px;
   padding: 6%;
 }
 
-.text {
-  padding: 10px;
-}
-
-// baner
-
-.main-container {
-  position: relative;
-  top: 10vh;
-  left: 0;
-  min-width: 320px;
-  max-height: 500px;
-  height: 90vh;
-  overflow: hidden;
-}
-
-.baner-circle {
-  position: absolute;
-  top: -73%;
-  left: -81%;
-  width: 225%;
-  height: 120%;
-  border-radius: 50%;
-  background-color: rgba(35, 23, 45, 255);
-  z-index: -1;
-}
-
-.baner-img {
-  position: absolute;
-  top: 20%;
-  right: 0;
-}
-
-.main-baner {
-  width: 60%;
-  margin-left: 5%;
-  font-weight: normal;
-  font-size: 2em;
-}
-
-.main-mission {
-  width: 50%;
-  margin-left: 5%;
-}
-
-.stripes1 {
-  position: absolute;
-  width: 25%;
-  margin: 10% 5%;
-  top: 0;
-  right: 0;
-}
-
-.stripes2 {
-  position: absolute;
-  width: 25%;
-  margin: 5% 5% 10% 5%;
-  bottom: 0;
-  left: 0;
-}
-
-@media screen and (min-device-width: 481px) and (max-device-width: 600px) and (orientation: portrait) {
-  .main-container {
-    position: relative;
-    top: 10vh;
-    left: 0;
-    min-width: 320px;
-    max-height: 500px;
-    height: 90vh;
-    overflow: hidden;
-  }
-
-  .baner-circle {
-    position: absolute;
-    top: -105%;
-    left: -147%;
-    width: 340%;
-    height: 159%;
-    border-radius: 50%;
-    background-color: rgba(35, 23, 45, 255);
-    z-index: -1;
-  }
-
-  .baner-img {
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
-
-  .main-baner {
-    width: 60%;
-    margin-left: 5%;
-    font-weight: normal;
-    font-size: 2em;
-  }
-
-  .main-mission {
-    width: 40%;
-    margin-left: 5%;
-  }
-
-  .stripes1 {
-    position: absolute;
-    width: 25%;
-    margin: 10% 5%;
-    top: 0;
-    right: 0;
-  }
-
-  .stripes2 {
-    position: absolute;
-    width: 25%;
-    margin: 5% 5% 10% 5%;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-@media screen and (min-device-width: 481px) and (max-device-width: 600px) and (orientation: portrait) {
-  .main-container {
-    position: relative;
-    top: 10vh;
-    left: 0;
-    min-width: 320px;
-    max-height: 500px;
-    height: 90vh;
-    overflow: hidden;
-  }
-
-  .baner-circle {
-    position: absolute;
-    top: -105%;
-    left: -147%;
-    width: 340%;
-    height: 159%;
-    border-radius: 50%;
-    background-color: rgba(35, 23, 45, 255);
-    z-index: -1;
-  }
-
-  .baner-img {
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
-
-  .main-baner {
-    width: 60%;
-    margin-left: 5%;
-    font-weight: normal;
-    font-size: 2em;
-  }
-
-  .main-mission {
-    width: 40%;
-    margin-left: 5%;
-  }
-
-  .stripes1 {
-    position: absolute;
-    width: 25%;
-    margin: 10% 5%;
-    top: 0;
-    right: 0;
-  }
-
-  .stripes2 {
-    position: absolute;
-    width: 25%;
-    margin: 5% 5% 10% 5%;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-////////////////////// how button
-.how {
-  margin: 40px 0 0 0;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.how-button {
-  width: 70%;
-  line-height: 40px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  background-color: #433f51;
-  color: white;
-  border: 1px solid white;
-  border-radius: 20px;
-  margin-top: 5vh;
-}
-
-.how-button img {
-  height: 1rem;
-  margin: 0 5px;
-  transform: translateY(15%);
-}
-
-////// launchpad section
-
-.launchpad-logo {
-  position: relative;
-}
-
-.launchpad-circle {
-  position: absolute;
-  top: 18%;
-  left: 26%;
-  width: 65vw;
-  height: 65vw;
-  border-radius: 50%;
-  background-color: rgba(35, 23, 45, 255);
-  z-index: -1;
-}
-
-.launchpad-txt-container {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.launchpad-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 35px;
-}
-
-.launchpad-content p {
-  margin: 20px 0;
-}
-
-.launchpad-button {
-  background-color: #ac00ff;
-  border-color: #ac00ff;
-  font-size: 12px;
-}
-
-//// sourcing section
-
-.sourcing-logo {
-  position: relative;
-}
-
-.sourcing-circle {
-  position: absolute;
-  top: 18%;
-  left: 26%;
-  width: 65vw;
-  height: 65vw;
-  border-radius: 50%;
-  background-color: rgba(35, 23, 45, 255);
-  z-index: -1;
-}
-
-.sourcing-txt-container {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.sourcing-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 35px;
-}
-
-.sourcing-content p {
-  margin: 20px 0;
-}
-
-.sourcing-button {
-  background-color: #ac00ff;
-  border-color: #ac00ff;
-  font-size: 12px;
-}
-
-.sourcing-img {
-  padding: 25% 10%;
-}
-//// assistance
-
-.assistance-logo {
-  position: relative;
-}
-
-.assistance-circle {
-  position: absolute;
-  top: 18%;
-  left: 26%;
-  width: 65vw;
-  height: 65vw;
-  border-radius: 50%;
-  background-color: rgba(35, 23, 45, 255);
-  z-index: -1;
-}
-
-.assistance-txt-container {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.assistance-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 35px;
-}
-
-.assistance-content p {
-  margin: 20px 0;
-}
-
-.assistance-button {
-  background-color: #ac00ff;
-  border-color: #ac00ff;
-  font-size: 12px;
-}
-
-.assistance-img {
-  padding: 25% 10%;
-}
-
-// ourway
-.ourway-container {
-  position: relative;
-  margin-top: 100px;
-  // overflow-y: hidden;
-}
-
-.ourway-circle {
-  position: absolute;
-  top: -10%;
-  left: -50%;
-  transform: translateX(-9%);
-  width: 250vw;
-  height: 250vw;
-  border-radius: 50%;
-  background-color: #23172d;
-  z-index: -2;
-}
-
-.ourway-title-wrapper {
-  display: inline-flex;
-}
-
-.ourway-title-wrapper img {
-  margin: 5%;
-}
-
-.ourway-title {
-  font-size: 24px;
-  margin: 5%;
-}
-
-.ourway-slogan {
-  font-size: 20px;
-}
-
-.flag {
-  display: inline-flex;
-}
-
-.flag-border {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ac00ff;
-  border-radius: 50%;
-  margin: 10px;
-  background-color: #23172d;
-}
-
-.flag-content p {
-  width: 70vw;
-}
-
-.flag img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.stick {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translatex(-50%);
-  width: 1px;
-  height: 150px;
-  z-index: -1;
-  background-color: #ac00ff;
-}
-
-.perspective-content {
-  margin: 0 15px;
-}
-
-.header {
-  position: relative;
-}
-
-.perspectives-circle {
-  position: absolute;
-  top: -60%;
-  left: -50%;
+.top-circle {
+  height: 700px;
   width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  background-color: #23172d;
-  z-index: -2;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -90vw;
+  margin-top: -300px;
 }
 
-.overview {
-  margin-top: 200px;
-  margin-bottom: 100px;
+.bottom-circle-purple {
+  height: 150vh;
+  width: 300vw;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -100vw;
+  margin-top: -650px;
 }
-.logo-overview img {
-  width: 90%;
-  padding: 5%;
+
+.bottom-circle-gray {
+  height: 2000px;
+  width: 400vw;
+  background-color: rgba(67, 64, 82, 255);
+  border-radius: 100%;
+  margin-left: -150vw;
+  margin-top: -110vh;
+}
+
+.bottom-rectangle-gray {
+  height: 300px;
+  width: 100vw;
+  background-color: rgba(67, 64, 82, 255);
+  margin-left: -100vw;
+  margin-top: -100px;
+  position: static;
+}
+
+.laptop-image {
+  margin-top: 20px;
+  margin-left: 60px;
+  height: 100%;
+  width: 100%;
+}
+
+.what-is-it .header {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  flex-shrink: 0;
+  margin-left: 40px;
+  margin-top: 140px;
   margin-bottom: 30px;
 }
 
-.overview-content {
-  margin: 0 15px;
-}
-
-.overview-title {
-  font-size: 24px;
-  margin: 0;
-}
-
-.overview-slogan {
-  font-size: 18px;
-  margin-bottom: 35px;
-}
-
-.spec {
-  margin-top: 60px;
-}
-
-// ///////////////////////////////////////
-// TABLETY
-// ///////////////////////////////////////
-
-@media screen and (min-device-width: 481px) and (max-device-width: 819px) {
-  .main-container {
-    min-width: 481px;
-  }
-
-  .launchpad-img {
-    width: 90vw;
-    height: 90vw;
-  }
-
-  .sourcing-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
-  }
-
-  .assistance-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
-  }
-
-  .overview {
-    margin-top: 50px;
-  }
-
-  .overview-title-wrapper {
-    margin-top: 100px;
-  }
-  perspectives-circle {
-    top: 0;
+@media screen and (min-width: 1024px) {
+  div.what-is-it {
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 }
 
-//////////////////////////////
-//////////////////////////////
-//////////////////////////////
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1024px) {
+  div.what-is-it .header {
+    font-size: 35px;
+  }
+}
 
-@media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
-  .stripes1,
-  .stripes2 {
-    width: 10%;
-  }
-  .launchpad-img {
-    width: 90vw;
-    height: 90vw;
-  }
+.description {
+  color: white;
+  font-size: 17px;
+  padding: 7%;
+  margin-bottom: 60px;
+}
 
-  .sourcing-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.description {
+    font-size: 20px;
   }
+}
 
-  .assistance-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.description {
+    font-size: 17px;
   }
+}
+
+.how-it-works-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 40px;
+}
+
+.how-it-works {
+  background-color: rgba(35, 23, 45, 255);
+  justify-content: center;
+  align-items: center;
+  width: 250vw;
+  border-radius: 90%;
+  padding-left: 77vw;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  margin-left: -77vw;
+}
+
+@media screen and (min-width: 1024px) {
+  div.how-it-works {
+    padding-left: 87vw;
+    margin-right: 10vw;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.how-it-works-header {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.how-it-works-header {
+    font-size: 30px;
+  }
+}
+
+.numbers {
+  border: solid 2px blueviolet;
+  border-radius: 100%;
+  text-align: center;
+  font-size: max(30px, 5vw);
+  font-weight: 600;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-left: 5%;
+}
+
+.how-it-works-explanation {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-and-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-and-number2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.explanation-blocks .text {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px;
+  width: 50%;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.explanation-blocks .text {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.hexplanation-blocks .text {
+    font-size: 17px;
+  }
+}
+
+.explanation-blocks {
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.explanation-blocks2 {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.explanation-blocks2 .text {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px;
+  width: 80%;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.explanation-blocks2 .text {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.hexplanation-blocks2 .text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.launchpad-perks {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+.launchpad-perks .header {
+  font-size: 25px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.launchpad-perks .header {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.launchpad-perks .header {
+    font-size: 30px;
+  }
+}
+
+.launchpad-perks .explanation-blocks {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-items: center;
+}
+
+.launchpad-perks .image-and-number {
+  margin-top: -80px;
+}
+
+.stars {
+  border: solid 2px blueviolet;
+  min-width: 55px;
+  min-height: 55px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 100%;
+  text-align: center;
+  font-size: max(30px, 5vw);
+  font-weight: 600;
+}
+
+// font-size: 6vw;
+// padding-left: 2vw;
+// padding-right: 2vw;
+// margin-left: 5%;
+
+.launchpad-perks .summary {
+  font-size: 17px;
+  padding: 40px;
+  margin-top: -20px;
+  color: rgb(156, 156, 156);
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.explanation-blocks .summary {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.explanation-blocks .summary {
+    font-size: 17px;
+  }
+}
+
+.call-to-action {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 140px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.call-to-action {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.call-to-action {
+    font-size: 25px;
+  }
+}
+
+.button {
+  background-image: linear-gradient(40deg, #bb30ee 0%, #671cf3 100%);
+  font-size: 14px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 70px;
+  color: white;
+  margin-top: 50px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.incentive {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.incentive {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.incentive {
+    font-size: 25px;
+  }
+}
+
+.image {
+  width: 15vw;
+  min-width: 100px;
+  height: auto;
+}
+
+.phone-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}
+
+.phone-image {
+  height: 100%;
+  padding-top: 8px;
+}
+
+.phone-number {
+  margin-left: 30px;
+}
+
+.email-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-image {
+  height: 100%;
+  padding-top: 8px;
+}
+
+.email-address {
+  margin-left: 30px;
+}
+
+.contact {
+  margin-left: 40px;
+  margin-top: 250px;
+}
+
+.explained-image {
+  width: 50vw;
+  height: auto;
+  min-width: 250px;
+  max-width: 350px;
 }

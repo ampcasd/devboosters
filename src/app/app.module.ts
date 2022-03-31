@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactComponent } from './contact/contact.component';
-import { LaunchpadComponent } from './launchpad/launchpad.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { SpotlightsComponent } from './spotlights/spotlights.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,8 +14,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AssistantsComponent } from './assistants/assistants.component';
 import { SourcingComponent } from './sourcing/sourcing.component';
+import { AssistantsComponent } from './assistants/assistants.component';
+import { LaunchpadComponent } from './launchpad/launchpad.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,6 @@ import { SourcingComponent } from './sourcing/sourcing.component';
     CallToActionComponent,
     ContactFormComponent,
     ModalComponent,
-    LaunchpadComponent,
     AssistantsComponent,
     SourcingComponent,
   ],

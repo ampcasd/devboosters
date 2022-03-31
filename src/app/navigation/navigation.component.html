@@ -21,3 +21,18 @@
     </span>
   </button>
 </div>
+<div [className]="hamburgerActive ? 'popup in' : 'popup out'">
+  <div>
+    <ul class="ul-container" (click)="hamburgerActive = false">
+      <li><a routerLink="/homepage" routerLinkActive="active">homepage</a></li>
+      <li>
+        <a routerLink="/launchpad" routerLinkActive="active">launchpad</a>
+      </li>
+      <li>
+        <a routerLink="/assistants" routerLinkActive="active">assistants</a>
+      </li>
+      <li><a routerLink="/sourcing" routerLinkActive="active">sourcing</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">contact</a></li>
+    </ul>
+  </div>
+</div>
