@@ -60,16 +60,6 @@
   }
 }
 
-.bottom-circle-gray {
-  height: 500px;
-  width: 250vw;
-  background-color: rgba(67, 64, 82, 255);
-  border-radius: 100%;
-  margin-left: -75vw;
-  margin-top: -32vh;
-  min-width: 1000px;
-}
-
 @media screen and (max-width: 400px) {
   div.bottom-circle-gray {
     margin-left: -80vw;
@@ -180,12 +170,12 @@
 
 .how-it-works {
   background-color: rgba(35, 23, 45, 255);
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
   align-items: center;
   width: 250vw;
   border-radius: 90%;
-  padding-left: 77vw;
-  padding-top: 10px;
   padding-bottom: 100px;
   margin-left: -77vw;
   min-width: 850px;
@@ -194,20 +184,20 @@
 @media screen and (max-width: 300px) {
   div.how-it-works {
     margin-left: -300vw;
-    padding-left: 300vw;
+    // padding-left: 300vw;
   }
 }
 
 @media screen and (max-width: 400px) {
   div.how-it-works {
     margin-left: -73vw;
-    padding-left: 73vw;
+    // padding-left: 73vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
   div.how-it-works {
-    padding-left: 80vw;
+    // padding-left: 80vw;
   }
   .header-text {
     font-size: 45px;
@@ -324,6 +314,7 @@
   div.explanation-blocks {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -341,11 +332,13 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
+    text-align: center;
   }
 
   div.explanation-blocks2 {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
   }
 
   div.explanation-blocks2 .text {
@@ -433,7 +426,7 @@
   padding-right: 0.2em;
   border-radius: 100%;
   text-align: center;
-  font-size: max(30px, 5vw);
+  font-size: max(30px, 4vw);
   font-weight: 600;
 }
 
@@ -487,8 +480,8 @@
   background-color: rgba(35, 23, 45, 255);
   border-radius: 100%;
   width: 200vw;
-  padding-top: 5vh;
-  padding-bottom: 20vh;
+  padding-top: 7vh;
+  padding-bottom: 23vh;
   margin-left: -50vw;
 }
 
@@ -550,6 +543,14 @@
   width: 17vw;
   min-width: 100px;
   max-width: 240px;
+  height: auto;
+  margin-right: 5vw;
+}
+
+.launchpad-perks .header .image {
+  width: 17vw;
+  min-width: 100px;
+  max-width: 140px;
   height: auto;
   margin-right: 5vw;
 }
