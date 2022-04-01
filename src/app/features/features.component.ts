@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 export interface Feature {
-  icon: string;
+  image: string;
   header: string;
   description: string;
 }
@@ -12,5 +12,5 @@ export interface Feature {
   styleUrls: ['./features.component.scss'],
 })
 export class FeaturesComponent {
-  @Input() features: Feature[];
+  @Input() features: Feature[] | any;
 }

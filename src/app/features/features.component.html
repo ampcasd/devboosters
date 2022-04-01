@@ -1,11 +1,20 @@
-<div class="background">
-  <div class="inner features">
-    <div *ngFor="let feature of features" class="feature">
-      <div class="icon-wrapper">
-        <span class="icon fas" [class]="feature.icon"></span>
+<div class="what-can-we-do-container">
+  <div class="header-what-we-can">
+    <p>What can we <strong>do for You?</strong></p>
+  </div>
+  <div class="features-wrapper">
+    <div *ngFor="let feature of features" class="features">
+      <img class="features-image" [src]="feature.image" />
+      <div class="features-text-wrapper">
+        <div class="features-header">
+          <p>
+            <strong>{{ feature.header }}</strong>
+          </p>
+        </div>
+        <div class="features-description">
+          <span>{{ feature.description }}</span>
+        </div>
       </div>
-      <h1>{{ feature.header }}</h1>
-      <span>{{ feature.description }}</span>
     </div>
   </div>
 </div>
