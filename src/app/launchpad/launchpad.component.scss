@@ -5,10 +5,26 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .header1 {
   color: white;
   font-size: 25px;
   margin-top: -330px;
+=======
+.launchpad {
+  background-color: #2e2e35;
+  border-radius: 8px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-bottom: 80px;
+  }
+
+
+.launchpad-text {
+  width: 90%;
+>>>>>>> master
   padding: 6%;
 }
 
