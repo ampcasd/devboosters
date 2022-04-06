@@ -18,6 +18,7 @@ import { SourcingComponent } from './sourcing/sourcing.component';
 import { AssistantsComponent } from './assistants/assistants.component';
 import { LaunchpadComponent } from './launchpad/launchpad.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,13 @@ import { HomePageComponent } from './home-page/home-page.component';
     AssistantsComponent,
     SourcingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgxPageScrollCoreModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
