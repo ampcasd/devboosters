@@ -44,3 +44,132 @@
     width: unset;
   }
 }
+
+.interested {
+  margin-bottom: 80px;
+}
+
+.interested-content {
+  text-align: center;
+  font-size: 24px;
+}
+
+.interested-content-slogan {
+  font-size: 16px;
+}
+
+.interested-button {
+  font-weight: bold;
+  margin: 5%;
+  width: 90%;
+  height: 40px;
+  color: white;
+  background-color: #ac00ff;
+  border: 1px solid #ac00ff;
+  border-radius: 20px;
+}
+
+.are-you-interested-container {
+  height: 900px;
+  width: 300vw;
+  background-color: rgba(35, 23, 45, 255);
+  border-radius: 100%;
+  margin-left: -100vw;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.are-you-interested-header {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 166px;
+}
+
+.are-you-interested-wrapper {
+  width: 90vw;
+}
+
+.are-you-interested-description {
+  font-size: 16px;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.inputs {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.name {
+  margin-top: -37px;
+  padding: 10px;
+  position: absolute;
+}
+
+.e-mail {
+  margin-top: -37px;
+  padding: 10px;
+  position: absolute;
+}
+
+.second-input {
+  margin-top: 50px;
+}
+
+.get-started-button {
+  background-image: linear-gradient(40deg, #bb30ee 0%, #671cf3 100%);
+  font-size: 14px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 70px;
+  color: white;
+  margin-top: 50px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.rectangle-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 531px;
+  right: 240px;
+}
+
+.rectangle-container.second {
+  position: relative;
+  top: -20px;
+  right: auto;
+  width: 0vh;
+}
+
+.rectangle-container.reversed {
+  position: relative;
+  right: auto;
+  top: 701px;
+  align-items: end;
+  width: 0vw;
+}
+
+.rectangle-cyan {
+  width: 63px;
+  height: 8px;
+  background: #00ffd1;
+}
+
+.rectangle-yellow {
+  width: 35px;
+  height: 8px;
+  margin: 20px 0;
+  background: #ffa800;
+}
+
+.rectangle-purple {
+  width: 63px;
+  height: 8px;
+  background: #ad00ff;
+}

@@ -91,75 +91,15 @@
   background: #ad00ff;
 }
 
-.are-you-interested-container {
-  height: 125vh;
-  width: 300vw;
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  margin-left: -100vw;
-  margin-top: 10vh;
-  display: flex;
-  justify-content: center;
-}
 
-.are-you-interested-header {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 166px;
-}
-
-.are-you-interested-wrapper {
-  width: 90vw;
-}
-
-.are-you-interested-description {
-  font-size: 16px;
-  margin-top: -15px;
-  text-align: center;
-}
-
-.inputs {
-  margin-top: 90px;
-  text-align: center;
-}
-
-.name {
-  margin-top: -37px;
-  padding: 10px;
-  position: absolute;
-}
-
-.e-mail {
-  margin-top: -37px;
-  padding: 10px;
-  position: absolute;
-}
-
-.second-input {
-  margin-top: 50px;
-}
-
-.get-started-button {
-  background-image: linear-gradient(40deg, #bb30ee 0%, #671cf3 100%);
-  font-size: 14px;
-  padding: 20px;
-  width: 300px;
-  border-radius: 70px;
-  color: white;
-  margin-top: 50px;
-  border: none;
-  font-weight: 600;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
 
 .bottom-circle-gray {
-  height: 475px;
-  width: 400vw;
+  height: 900px;
+  width: 300vw;
   background-color: rgba(67, 64, 82, 255);
   border-radius: 100%;
-  margin-left: -150vw;
-  margin-top: -43vh;
+  position: absolute;
+  overflow: hidden;
 }
 
 .menus {
@@ -181,5 +121,3 @@
   margin-top: 48px;
   text-align: right;
 }
-
-
