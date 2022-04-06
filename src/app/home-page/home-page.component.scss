@@ -1,17 +1,89 @@
-.background {
+.wrapper {
   overflow-x: hidden;
-  color: white;
-  min-width: 400px;
-  justify-content: center;
+}
+.launchpad-component {
+  background: #222526;
+  padding-top: 100px;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 56rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #222526;
+  }
 }
 
-.header1 {
-  color: white;
-  font-size: 25px;
-  margin-top: -330px;
+.launchpad {
+  background-color: #2e2e35;
+  border-radius: 8px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-bottom: 80px;
+}
+
+.launchpad-text {
+  width: 90%;
   padding: 6%;
 }
 
+<<<<<<< HEAD
+.text {
+  padding: 10px;
+}
+
+// baner
+
+.main-container {
+  position: relative;
+  top: 15vh;
+  left: 0;
+  min-width: 320px;
+  max-height: 500px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.baner-circle {
+  position: absolute;
+  top: -73%;
+  left: -81%;
+  width: 225%;
+  height: 120%;
+  border-radius: 50%;
+  background-color: rgba(35, 23, 45, 255);
+  z-index: -1;
+}
+
+.baner-img {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.main-baner {
+  width: 60%;
+  margin-left: 5%;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.main-mission {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.stripes1 {
+  position: absolute;
+  width: 25%;
+  margin: 10% 5%;
+  top: 0;
+  right: 0;
+=======
 @media screen and (min-width: 601px) {
   div.header1 {
     color: white;
@@ -247,14 +319,183 @@
     align-items: flex-start;
     width: 100vw;
   }
+>>>>>>> master
 }
 
-.image-and-number {
+.stripes2 {
+  position: absolute;
+  width: 25%;
+  margin: 5% 5% 10% 5%;
+  bottom: 0;
+  left: 0;
+}
+
+<<<<<<< HEAD
+@media screen and (min-device-width: 481px) and (max-device-width: 600px) and (orientation: portrait) {
+  .main-container {
+    position: relative;
+    top: 15vh;
+    left: 0;
+    min-width: 320px;
+    max-height: 500px;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .baner-circle {
+    position: absolute;
+    top: -105%;
+    left: -147%;
+    width: 340%;
+    height: 159%;
+    border-radius: 50%;
+    background-color: rgba(35, 23, 45, 255);
+    z-index: -1;
+  }
+
+  .baner-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+
+  .main-baner {
+    width: 60%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+  .main-mission {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .stripes1 {
+    position: absolute;
+    width: 25%;
+    margin: 10% 5%;
+    top: 0;
+    right: 0;
+  }
+
+  .stripes2 {
+    position: absolute;
+    width: 25%;
+    margin: 5% 5% 10% 5%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 600px) and (orientation: portrait) {
+  .main-container {
+    position: relative;
+    top: 15vh;
+    left: 0;
+    min-width: 320px;
+    max-height: 500px;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .baner-circle {
+    position: absolute;
+    top: -105%;
+    left: -147%;
+    width: 340%;
+    height: 159%;
+    border-radius: 50%;
+    background-color: rgba(35, 23, 45, 255);
+    z-index: -1;
+  }
+
+  .baner-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+
+  .main-baner {
+    width: 60%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+  .main-mission {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .stripes1 {
+    position: absolute;
+    width: 25%;
+    margin: 10% 5%;
+    top: 0;
+    right: 0;
+  }
+
+  .stripes2 {
+    position: absolute;
+    width: 25%;
+    margin: 5% 5% 10% 5%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+#ourway-title-wrapper {
+  scroll-behavior: smooth !important;
+}
+
+////////////////////// how button
+.how {
+  margin: 40px 0 0 0;
+  justify-content: center;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
+.how-button {
+  width: 70%;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #433f51;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-top: 5vh;
+}
+
+.how-button img {
+  height: 1rem;
+  margin: 0 5px;
+  transform: translateY(15%);
+}
+
+////// launchpad section
+
+.launchpad-logo {
+  position: relative;
+}
+
+.launchpad-circle {
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  width: 65vw;
+  height: 65vw;
+  border-radius: 50%;
+  background-color: rgba(35, 23, 45, 255);
+  z-index: -1;
+}
+
+.launchpad-txt-container {
+  margin: 0 auto;
+=======
 @media screen and (max-width: 1024px) {
   div.image-and-number {
     justify-content: space-around;
@@ -305,6 +546,7 @@
 .explanation-blocks {
   margin-left: 30px;
   margin-top: 20px;
+>>>>>>> master
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -318,6 +560,54 @@
   }
 }
 
+<<<<<<< HEAD
+.launchpad-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.launchpad-content p {
+  margin: 20px 0;
+}
+
+.launchpad-button {
+  background-color: #ac00ff;
+  border-color: #ac00ff;
+  font-size: 12px;
+}
+
+//// sourcing section
+
+.sourcing-logo {
+  position: relative;
+}
+
+.sourcing-circle {
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  width: 65vw;
+  height: 65vw;
+  border-radius: 50%;
+  background-color: rgba(35, 23, 45, 255);
+  z-index: -1;
+}
+
+.sourcing-txt-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.sourcing-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.sourcing-content p {
+  margin: 20px 0;
+=======
 .explanation-blocks2 {
   margin-left: 30px;
   display: flex;
@@ -402,19 +692,40 @@
   div.header {
     font-size: 30px;
   }
+>>>>>>> master
 }
 
-.launchpad-perks .explanation-blocks {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
-  justify-items: center;
+.sourcing-button {
+  background-color: #ac00ff;
+  border-color: #ac00ff;
+  font-size: 12px;
 }
 
-.launchpad-perks .image-and-number {
-  margin-top: -80px;
+.sourcing-img {
+  padding: 25% 10%;
+}
+//// assistance
+
+.assistance-logo {
+  position: relative;
 }
 
+<<<<<<< HEAD
+.assistance-circle {
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  width: 65vw;
+  height: 65vw;
+  border-radius: 50%;
+  background-color: rgba(35, 23, 45, 255);
+  z-index: -1;
+}
+
+.assistance-txt-container {
+  margin: 0 auto;
+  width: 90%;
+=======
 .stars {
   border: solid 2px blueviolet;
   min-width: 55px;
@@ -452,22 +763,48 @@
     font-size: 17px;
     color: lightgray;
   }
+>>>>>>> master
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.explanation-blocks .summary {
-    font-size: 20px;
-  }
+.assistance-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.explanation-blocks .summary {
-    font-size: 17px;
-  }
+.assistance-content p {
+  margin: 20px 0;
 }
 
+<<<<<<< HEAD
+.assistance-button {
+  background-color: #ac00ff;
+  border-color: #ac00ff;
+  font-size: 12px;
+}
+
+.assistance-img {
+  padding: 25% 10%;
+}
+
+// ourway
+.ourway-container {
+  position: relative;
+  margin-top: 100px;
+  // overflow-y: hidden;
+}
+
+.ourway-circle {
+  position: absolute;
+  top: -10%;
+  left: -50%;
+  transform: translateX(-9%);
+  width: 250vw;
+  height: 250vw;
+  border-radius: 50%;
+  background-color: #23172d;
+  z-index: -2;
+=======
 @media screen and (max-width: 1024px) {
   div.explanation-blocks .summary {
     font-size: 17px;
@@ -515,30 +852,95 @@
   border: none;
   font-weight: 600;
   letter-spacing: 2px;
+>>>>>>> master
 }
 
-.incentive {
-  color: white;
-  font-weight: 500;
-  font-size: 25px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.ourway-title-wrapper {
+  display: inline-flex;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.incentive {
-    font-size: 30px;
-  }
+.ourway-title-wrapper img {
+  margin: 5%;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.incentive {
-    font-size: 25px;
-  }
+.ourway-title {
+  font-size: 24px;
+  margin: 5%;
 }
 
+<<<<<<< HEAD
+.ourway-slogan {
+  font-size: 20px;
+}
+
+.flag {
+  display: inline-flex;
+}
+
+.flag-border {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ac00ff;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #23172d;
+}
+
+.flag-content p {
+  width: 70vw;
+}
+
+.flag img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stick {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 1px;
+  height: 150px;
+  z-index: -1;
+  background-color: #ac00ff;
+}
+
+.perspective-content {
+  margin: 0 15px;
+}
+
+.header {
+  position: relative;
+}
+
+.perspectives-circle {
+  position: absolute;
+  top: -60%;
+  left: -50%;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  background-color: #23172d;
+  z-index: -2;
+}
+
+.overview {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.logo-overview img {
+  width: 90%;
+  padding: 5%;
+  margin-bottom: 30px;
+}
+
+.overview-content {
+  margin: 0 15px;
+=======
 .image {
   width: 17vw;
   min-width: 100px;
@@ -595,12 +997,23 @@
 .phone-image {
   height: 40px;
   width: auto;
+>>>>>>> master
 }
 
-.phone-number {
-  margin-left: 30px;
+.overview-title {
+  font-size: 24px;
+  margin: 0;
 }
 
+<<<<<<< HEAD
+.overview-slogan {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.spec {
+  margin-top: 60px;
+=======
 .email-block {
   display: flex;
   flex-direction: row;
@@ -610,12 +1023,52 @@
 .email-image {
   height: 40px;
   width: auto;
+>>>>>>> master
 }
 
-.email-address {
-  margin-left: 30px;
+// ///////////////////////////////////////
+// TABLETY
+// ///////////////////////////////////////
+
+@media screen and (min-device-width: 481px) and (max-device-width: 819px) {
+  .main-container {
+    min-width: 481px;
+  }
+
+  .launchpad-img {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .sourcing-img {
+    padding: 15% 10%;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .assistance-img {
+    padding: 15% 10%;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .overview {
+    margin-top: 50px;
+  }
+
+  .overview-title-wrapper {
+    margin-top: 100px;
+  }
+  perspectives-circle {
+    top: 0;
+  }
 }
 
+<<<<<<< HEAD
+//////////////////////////////
+//////////////////////////////
+//////////////////////////////
+=======
 .contact {
   margin-left: 40px;
 }
@@ -636,12 +1089,33 @@
   padding-left: 3px;
   align-self: center;
 }
+>>>>>>> master
 
-.explained-image {
-  width: 50vw;
-  height: auto;
-  min-width: 250px;
-  max-width: 350px;
+@media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .stripes1,
+  .stripes2 {
+    width: 10%;
+  }
+  .launchpad-img {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .sourcing-img {
+    padding: 15% 10%;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .assistance-img {
+    padding: 15% 10%;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  div.how {
+    margin-top: 100px;
+  }
 }
 @media screen and (min-width: 1024px) {
   img.explained-image {
