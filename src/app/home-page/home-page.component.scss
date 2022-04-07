@@ -176,8 +176,6 @@
 }
 
 .how {
-  // margin: 20px 0 0 0;
-  // justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,14 +223,6 @@
   width: 90%;
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (min-width: 1024px) {
-  div.explanation-blocks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
 }
 
 .launchpad-title {
@@ -396,7 +386,7 @@
   left: 50%;
   transform: translatex(-50%);
   width: 1px;
-  height: 150px;
+  height: 236%;
   z-index: -1;
   background-color: #ac00ff;
 }
