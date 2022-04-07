@@ -1,38 +1,5 @@
 .wrapper {
-  overflow-x: hidden;
-}
-.launchpad-component {
-  background: #222526;
-  padding-top: 100px;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 56rem;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background: #222526;
-  }
-}
-
-.launchpad {
-  background-color: #2e2e35;
-  border-radius: 8px;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-bottom: 80px;
-}
-
-.launchpad-text {
-  width: 90%;
-  padding: 6%;
-}
-
-.text {
-  padding: 10px;
+  overflow: hidden;
 }
 
 .main-container {
@@ -209,8 +176,8 @@
 }
 
 .how {
-  margin: 40px 0 0 0;
-  justify-content: center;
+  // margin: 20px 0 0 0;
+  // justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,6 +193,10 @@
   border: 1px solid white;
   border-radius: 20px;
   margin-top: 5vh;
+}
+
+.top-button {
+  margin-top: 15vh;
 }
 
 .how-button img {
@@ -440,7 +411,7 @@
 
 .perspectives-circle {
   position: absolute;
-  top: -60%;
+  top: -35%;
   left: -50%;
   width: 200vw;
   height: 200vw;
@@ -477,14 +448,24 @@
   margin-top: 60px;
 }
 
+.launchpad-logo {
+  position: relative;
+}
+
+.launchpad-img {
+  padding: 15% 10%;
+  width: 70vw;
+}
+
 @media screen and (min-device-width: 481px) and (max-device-width: 819px) {
   .main-container {
     min-width: 481px;
   }
 
   .launchpad-img {
-    width: 90vw;
-    height: 90vw;
+    padding: 15% 10%;
+    width: 50vw;
+    height: 50vw;
   }
 
   .sourcing-img {
@@ -515,10 +496,6 @@
   .stripes1,
   .stripes2 {
     width: 10%;
-  }
-  .launchpad-img {
-    width: 90vw;
-    height: 90vw;
   }
 
   .sourcing-img {
