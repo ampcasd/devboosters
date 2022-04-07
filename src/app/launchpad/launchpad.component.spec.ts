@@ -1,19 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HomePageComponent } from '../home-page/home-page.component';
 
-import { LaunchpadComponent } from './launchpad.component';
-
-describe('LaunchpadComponent', () => {
-  let component: LaunchpadComponent;
-  let fixture: ComponentFixture<LaunchpadComponent>;
+describe('HomePageComponent', () => {
+  let component: HomePageComponent;
+  let fixture: ComponentFixture<HomePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LaunchpadComponent],
+      declarations: [HomePageComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LaunchpadComponent);
+    fixture = TestBed.createComponent(HomePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ContactComponent } from 'src/app/contact/contact.component';
-import { HomePageComponent } from 'src/app/home-page/home-page.component';
 import { AssistantsComponent } from './assistants/assistants.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { LaunchpadComponent } from './launchpad/launchpad.component';
 import { SourcingComponent } from './sourcing/sourcing.component';
 
