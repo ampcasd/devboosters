@@ -1,6 +1,13 @@
-import { Component } from '@angular/core';
-import * as firebase from 'firebase/app';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { DatabaseService } from '../database.service';
+
+export interface CTAConfiguration {
+  showForm: boolean;
+  header: string;
+  description: string;
+  buttonText: string;
+}
+
 @Component({
   selector: 'call-to-action',
   templateUrl: './call-to-action.component.html',
@@ -9,7 +16,8 @@ import { DatabaseService } from '../database.service';
     '../spotlights/spotlights.component.scss',
   ],
 })
-export class CallToActionComponent {
+export class CallToActionComponent implements OnChanges {
+  @Input() configuration: CTAConfiguration;
 
   name: string;
   email: string;
@@ -21,6 +29,12 @@ export class CallToActionComponent {
 
   constructor(private databaseService: DatabaseService) {}
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if ('configuration' in changes) {
+      this.showForm = this.configuration.showForm;0
+    }
+  }
+
   submit(): void {
     const name = this.name?.trim();
     const email = this.email?.trim();
@@ -28,7 +42,7 @@ export class CallToActionComponent {
     console.log(name, email, emailIsValid);
 
     if (name && email && emailIsValid) {
-      this.databaseService.saveRecord(email, name)
+      this.databaseService.saveRecord(email, name);
       this.showForm = false;
     } else {
       if (!name) {

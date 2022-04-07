@@ -1,5 +1,4 @@
 .footer {
-<<<<<<< HEAD
   padding-top: 50px;
   position: relative;
   overflow: hidden;
@@ -9,11 +8,6 @@
   margin-top: -100px;
   margin-left: -25vw;
 
-=======
-  padding-top: 200px;
-  position: relative;
-  overflow: hidden;
->>>>>>> master
   span {
     text-align: center;
   }
@@ -23,7 +17,6 @@
   }
 }
 
-<<<<<<< HEAD
 .footer-wrapper {
 }
 
@@ -40,33 +33,6 @@
     margin-left: 6vw;
     width: 32%;
   }
-=======
-.footer-circle {
-  position: absolute;
-  bottom: -45%;
-  left: -50%;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  background-color: #433f51;
-  z-index: -1;
-}
-
-.footer-circle-two {
-  position: absolute;
-  bottom: -15%;
-  left: -50%;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  background-color: #23172d;
-  z-index: -2;
-}
-
-.contact-container {
-  position: relative;
-  padding-left: 15px;
->>>>>>> master
 }
 
 .telephone {
@@ -80,7 +46,6 @@
 }
 
 .link-container {
-<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -153,31 +118,6 @@ li {
     margin: none;
     padding: 30px;
   }
-=======
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-ul {
-  width: 50%;
-  display: inline-block;
-  list-style: none;
-}
-
-li {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.address-container {
-  display: flex;
-  flex-flow: column;
-  justify-content: end;
-  text-align: end;
-  width: 50%;
-  padding: 15px;
->>>>>>> master
 }
 
 .credits {
@@ -187,6 +127,8 @@ li {
   margin: 0 auto;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 
 @media screen and (min-width: 1024px) {
@@ -210,21 +152,8 @@ li {
   text-align: center;
   font-size: 24px;
 }
+>>>>>>> master
 
-.intrested-content-slogan {
-  font-size: 16px;
-}
-
-.intrested-button {
-  font-weight: bold;
-  margin: 5%;
-  width: 90%;
-  height: 40px;
-  color: white;
-  background-color: #ac00ff;
-  border: 1px solid #ac00ff;
-  border-radius: 20px;
-}
 
 @media screen and (min-device-width: 280px) and (max-device-width: 480px) {
   .footer-circle {
