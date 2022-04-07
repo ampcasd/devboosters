@@ -1,7 +1,13 @@
 .footer {
-  padding-top: 200px;
+  padding-top: 50px;
   position: relative;
   overflow: hidden;
+  border-radius: 100% 100% 0% 0%;
+  background-color: #433f51;
+  width: 150vw;
+  margin-top: -100px;
+  margin-left: -25vw;
+
   span {
     text-align: center;
   }
@@ -11,31 +17,22 @@
   }
 }
 
-.footer-circle {
-  position: absolute;
-  bottom: -45%;
-  left: -50%;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  background-color: #433f51;
-  z-index: -1;
-}
-
-.footer-circle-two {
-  position: absolute;
-  bottom: -15%;
-  left: -50%;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  background-color: #23172d;
-  z-index: -2;
+.footer-wrapper {
 }
 
 .contact-container {
   position: relative;
-  padding-left: 15px;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  div.contact-container {
+    padding: 30px;
+    margin-left: 6vw;
+    width: 32%;
+  }
 }
 
 .telephone {
@@ -51,7 +48,7 @@
 .link-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
 }
 
 ul {
@@ -65,13 +62,62 @@ li {
   font-weight: bold;
 }
 
+.link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+  div.link-container {
+    width: 75%;
+    justify-content: space-between;
+  }
+}
+
 .address-container {
   display: flex;
   flex-flow: column;
   justify-content: end;
   text-align: end;
+  color: #ffffff80;
   width: 50%;
   padding: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  div.address-container {
+    justify-content: flex-start;
+    padding: 30px;
+    margin-right: 6vw;
+  }
+}
+
+.above-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+  div.above-credits {
+    flex-direction: row;
+    align-items: space-around;
+    margin-left: 25vw;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  ul.menu-list {
+    align-items: center;
+    margin: none;
+    padding: 30px;
+  }
 }
 
 .credits {
@@ -81,6 +127,32 @@ li {
   margin: 0 auto;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+@media screen and (min-width: 1024px) {
+  div.credits {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.intrested {
+  margin-bottom: 80px;
+}
+
+=======
+.intrested {
+  margin-bottom: 80px;
+}
+
+>>>>>>> master
+.intrested-content {
+  text-align: center;
+  font-size: 24px;
+}
+>>>>>>> master
 
 
 @media screen and (min-device-width: 280px) and (max-device-width: 480px) {
@@ -105,12 +177,26 @@ li {
 
 @media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
   .contact-container {
+<<<<<<< HEAD
+=======
     flex-direction: column;
+>>>>>>> master
     text-align: center;
   }
 
   .telephone {
     margin-left: 15px;
+<<<<<<< HEAD
+=======
+  }
+
+  .footer-circle {
+    top: 50%;
+  }
+
+  .footer-circle-two {
+    top: 20%;
+>>>>>>> master
   }
 
   .footer-circle {
@@ -120,4 +206,19 @@ li {
   .footer-circle-two {
     top: 20%;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  div.footer {
+    flex-direction: row;
+  }
+}
+
+.img {
+  margin-right: 20px;
+}
+
+.background {
+  width: 100vw;
+  overflow-x: clip;
 }
