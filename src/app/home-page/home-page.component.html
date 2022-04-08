@@ -22,7 +22,17 @@
       </div>
       <div class="baner-img">
         <div class="baner-circle"></div>
-        <img src="../../assets/images/devbooter 3.png" />
+        <picture class="picture">
+          <source
+            media="(max-width: 1023px)"
+            srcset="../../assets/images/devbooter 3.png, 550x"
+          />
+          <source
+            media="(min-width: 1024px)"
+            srcset="../../assets/images/devbooter 2.svg, 550x"
+          />
+          <!-- <img src="../../assets/images/devbooter 2.svg" alt="" /> -->
+        </picture>
       </div>
     </div>
   </div>

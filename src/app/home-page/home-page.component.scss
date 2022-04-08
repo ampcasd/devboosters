@@ -321,6 +321,11 @@
   padding: 25% 10%;
 }
 
+.picture img {
+  width: 50vw;
+  height: 50vh;
+}
+
 .ourway-container {
   position: relative;
   margin-top: 100px;
@@ -505,8 +510,12 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  img.explained-image {
-    width: 30vw;
-    max-width: none;
+  .baner-img {
+    margin-right: 10vh;
+  }
+
+  .baner-circle {
+    // top: 0;
+    // left: 0;
   }
 }
