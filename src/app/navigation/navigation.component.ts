@@ -8,10 +8,11 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
   readonly menuItems = [
-    { displayValue: 'launchpad', path: '/launchpad' },
-    { displayValue: 'assistants', path: '/assistants' },
-    { displayValue: 'sourcing', path: '/sourcing' },
-    { displayValue: 'contact', path: '/contact' },
+    { displayValue: 'HOME', path: '/' },
+    { displayValue: 'LAUNCHPAD', path: '/launchpad' },
+    { displayValue: 'ASSISTANTS', path: '/assistants' },
+    { displayValue: 'SOURCING', path: '/sourcing' },
+    { displayValue: 'CONTACT', path: '/contact' },
   ];
 
   navigationBarLocked: boolean;
