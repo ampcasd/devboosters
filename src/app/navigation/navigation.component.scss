@@ -189,14 +189,17 @@
     height: 5vh;
     .logo,
     .logo:hover {
-      font-size: 100px;
+      font-size: calc(1vw + 20px);
     }
     li {
-      font-size: 60px;
-      margin-right: calc(1rem + 3vw);
+      font-size: calc(1vw + 20px);
+      margin-right: 1vw;
     }
     &.locked {
       height: 5vh;
     }
+  }
+  a {
+    font-size: calc(1vw + 5px);
   }
 }

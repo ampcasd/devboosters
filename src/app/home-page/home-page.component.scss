@@ -51,7 +51,7 @@
   width: 60%;
   margin-left: 5%;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .picture-guy-big {
@@ -61,10 +61,6 @@
 .main-mission {
   width: 50%;
   margin-left: 5%;
-}
-
-#ourway-title-wrapper {
-  scroll-behavior: smooth !important;
 }
 
 .how {
@@ -301,6 +297,7 @@
 
 .header {
   position: relative;
+  justify-content: center;
 }
 
 .perspectives-circle {
@@ -533,7 +530,7 @@
       position: relative;
       top: 5vh;
       left: 0;
-      min-height: calc(50vw);
+      min-height: calc(47vw);
       overflow: visible;
       .main-baner {
         position: relative;
@@ -545,7 +542,7 @@
       .desktop-banner-circle {
         display: block;
         position: absolute;
-        top: -163vw;
+        top: -160vw;
         left: -60vw;
         width: 200vw;
         height: 200vw;
@@ -559,14 +556,15 @@
 
       .main-mission {
         width: 25%;
-        font-size: calc(1vw + 16px);
-        padding-top: calc(1vw + 10px);
+        font-size: calc(0.5vw + 10px);
       }
 
       h1.main-baner {
         width: 40%;
-        font-size: calc(3vw + 40px);
-        padding-top: calc(2vw + 10px);
+        font-size: calc(2.5vw + 36px);
+        padding-top: calc(1vw);
+
+        line-height: calc(2.5vw + 36px);
       }
       img.stripes1,
       img.stripes2 {
@@ -586,7 +584,7 @@
       top: 0;
       right: 0;
       display: block;
-      height: calc(42vw + 100px);
+      height: calc(41vw + 100px);
       width: auto;
     }
   }
@@ -600,15 +598,15 @@
       position: relative;
       top: 0;
       left: 0;
-      margin: 0;
-      width: calc(5vw + 400px);
-      line-height: calc(3vw + 16px);
-      font-size: calc(0.5vw + 16px);
+      margin: 2.5vh 0;
+      width: calc(2vw + 200px);
+      line-height: calc(2vw + 16px);
+      font-size: calc(0.5vw + 7px);
       font-weight: bold;
       border-radius: calc(2vw + 20px);
     }
     .how-button img {
-      height: calc(0.5vw + 16px);
+      height: calc(0.5vw + 7px);
       margin: 0 calc(0.5vw + 5px);
       transform: translateY(15%);
     }
@@ -647,13 +645,14 @@
     }
 
     .launchpad-title {
-      font-size: calc(3vw + 40px);
+      font-size: calc(1vw + 40px);
       font-weight: bold;
+      margin: 0;
     }
 
     .launchpad-content p {
-      margin: calc(1vw + 40px) 0;
-      font-size: calc(0.5vw + 30px);
+      margin: calc(1vw + 10px) 0;
+      font-size: calc(0.5vw + 5px);
       max-width: 30vw;
     }
 
@@ -684,18 +683,18 @@
     }
 
     .sourcing-title {
-      font-size: calc(3vw + 40px);
+      font-size: calc(1vw + 40px);
       font-weight: bold;
     }
 
     .sourcing-content p {
-      margin: calc(1vw + 40px) 0;
-      font-size: calc(0.5vw + 30px);
+      margin: calc(1vw + 10px) 0;
+      font-size: calc(0.5vw + 5px);
       max-width: 30vw;
     }
 
     .sourcing-button {
-      font-size: calc(0.5vw + 16px);
+      font-size: calc(0.5vw + 7px);
     }
 
     .how {
@@ -771,21 +770,15 @@
     }
 
     .assistance-title {
-      font-size: calc(3vw + 40px);
+      font-size: calc(1vw + 40px);
       font-weight: bold;
     }
 
     .assistance-content p {
-      margin: calc(1vw + 40px) 0;
-      font-size: calc(0.5vw + 30px);
+      margin: calc(1vw + 10px) 0;
+      font-size: calc(0.5vw + 5px);
       max-width: 30vw;
     }
-
-    // .assistance-button {
-    //   background-color: #ac00ff;
-    //   border-color: #ac00ff;
-    //   font-size: 12px;
-    // }
 
     .desktop-assistance-stripes {
       display: block;
@@ -802,6 +795,63 @@
 
     .assistance-img {
       display: none;
+    }
+  }
+  .ourway-container {
+    margin-top: 15vw;
+    width: 100%;
+
+    .ourway-circle {
+      top: -10vw;
+      left: -60vw;
+    }
+
+    .signpost {
+      width: calc(16vw + 20px);
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .ourway-title {
+      font-size: calc(1vw + 40px);
+      min-width: 25vw;
+      margin: 0;
+    }
+    .ourway-slogan {
+      font-size: calc(0.5vw + 16px);
+      margin-top: -5vh;
+    }
+
+    .flags {
+      display: flex;
+      flex-direction: row;
+    }
+    .flag {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+    }
+
+    .flag-content {
+      flex-grow: 1;
+    }
+
+    .flag-content p {
+      overflow-wrap: break-word;
+    }
+    .stick {
+      position: absolute;
+      top: 0;
+      left: 300%;
+      transform: rotate(90deg);
+      width: 1px;
+      height: 20vw;
+      z-index: -1;
+      background-color: #ac00ff;
     }
   }
 }
