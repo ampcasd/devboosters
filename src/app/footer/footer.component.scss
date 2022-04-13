@@ -1,7 +1,11 @@
+.background {
+  overflow-x: clip;
+}
+
 .footer {
   padding-top: 50px;
-  position: relative;
-  overflow: hidden;
+  // position: relative;
+  overflow: clip;
   border-radius: 100% 100% 0% 0%;
   background-color: #433f51;
   width: 150vw;
@@ -95,42 +99,42 @@ li {
   font-size: 24px;
 }
 
-@media screen and (min-device-width: 280px) and (max-device-width: 480px) {
-  .footer-circle {
-    top: 50%;
-  }
+// @media screen and (min-device-width: 280px) and (max-device-width: 480px) {
+//   .footer-circle {
+//     top: 50%;
+//   }
 
-  .footer-circle-two {
-    top: 20%;
-  }
-}
+//   .footer-circle-two {
+//     top: 20%;
+//   }
+// }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 819px) {
-  .footer-circle {
-    top: 50%;
-  }
+// @media screen and (min-device-width: 481px) and (max-device-width: 819px) {
+//   .footer-circle {
+//     top: 50%;
+//   }
 
-  .footer-circle-two {
-    top: 20%;
-  }
-}
+//   .footer-circle-two {
+//     top: 20%;
+//   }
+// }
 
-@media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
-  .contact-container {
-    flex-direction: column;
-    text-align: center;
-  }
+// @media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
+//   .contact-container {
+//     flex-direction: column;
+//     text-align: center;
+//   }
 
-  .footer-circle,
-  .footer-circle-two {
-    top: 50%;
-  }
+//   .footer-circle,
+//   .footer-circle-two {
+//     top: 50%;
+//   }
 
-  .footer-circle-two,
-  .footer-circle {
-    top: 20%;
-  }
-}
+//   .footer-circle-two,
+//   .footer-circle {
+//     top: 20%;
+//   }
+// }
 
 @media screen and (min-width: 1024px) {
   div.link-container {
