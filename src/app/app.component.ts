@@ -37,10 +37,10 @@ export class AppComponent {
       .subscribe((params: NavigationEnd) => {
         console.log(params);
         switch (params.url) {
-          case '/assistants':
+          case '/assistants' && '/assistants#features':
             this.callToActionConfiguration =
               this.callToActionConfigurations.assistants;
-            break;
+            break; 
           default:
             this.callToActionConfiguration =
               this.callToActionConfigurations.default;
