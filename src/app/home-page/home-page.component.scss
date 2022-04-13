@@ -255,6 +255,10 @@
   font-size: 20px;
 }
 
+.ourway-desktop-message {
+  display: none;
+}
+
 .flag {
   display: inline-flex;
 }
@@ -289,6 +293,14 @@
   height: 236%;
   z-index: -1;
   background-color: #ac00ff;
+}
+
+.perspective-content-desktop {
+  display: none;
+}
+
+.perspectives-stripes {
+  display: none;
 }
 
 .perspective-content {
@@ -802,8 +814,9 @@
     width: 100%;
 
     .ourway-circle {
-      top: -10vw;
-      left: -60vw;
+      top: -20%;
+      left: -80%;
+      height: calc(80vw + 35vh);
     }
 
     .signpost {
@@ -819,7 +832,7 @@
     .ourway-title {
       font-size: calc(1vw + 40px);
       min-width: 25vw;
-      margin: 0;
+      margin: 0 5vw;
     }
     .ourway-slogan {
       font-size: calc(0.5vw + 16px);
@@ -829,29 +842,113 @@
     .flags {
       display: flex;
       flex-direction: row;
+      background-color: #281b32;
+      border-radius: calc(1vw + 8px);
+      box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
     }
     .flag {
+      position: relative;
       display: flex;
       flex-direction: column;
       width: 25%;
+      z-index: 10;
     }
 
-    .flag-content {
-      flex-grow: 1;
+    .stick {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform-origin: 0 0;
+      transform: rotate(270deg);
+      height: 20vw;
+    }
+    .flag-border {
+      margin: calc(1vw + 16px) auto 0;
+
+      background-color: #2e2b39;
     }
 
     .flag-content p {
-      overflow-wrap: break-word;
+      font-size: calc(0.5vw + 8px);
+      display: inline;
     }
-    .stick {
-      position: absolute;
-      top: 0;
-      left: 300%;
-      transform: rotate(90deg);
-      width: 1px;
-      height: 20vw;
-      z-index: -1;
-      background-color: #ac00ff;
+
+    .flag-content {
+      padding: calc(1vw + 16px);
+    }
+
+    .ourway-desktop-message {
+      display: block;
+      margin: 5vw;
+    }
+
+    .ourway-desktop-message p {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .perspectives-container {
+    width: 90%;
+    margin: 0 auto;
+    .ourway-title-wrapper {
+      width: 100%;
+    }
+
+    .stars {
+      width: calc(25vw + 200px);
+      margin: 0 5vw;
+    }
+
+    .perspectives-header {
+      font-size: calc(1vw + 40px);
+      margin-bottom: 0;
+    }
+
+    .ourway-slogan {
+      font-size: calc(1vw + 16px);
+      margin: 5vw 0;
+    }
+
+    .perspective-content {
+      display: none;
+    }
+
+    .perspective-content-desktop {
+      display: block;
+      font-size: 16px;
+    }
+
+    .perspectives-stripes {
+      display: block;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: calc(5vw + 20px);
+      height: calc(5vw + 20px);
+    }
+
+    .perspectives-circle {
+      display: none;
+    }
+  }
+
+  .overview {
+    margin: 5vw;
+
+    .flex-item-container {
+      display: flex;
+      float: left;
+      margin: 2vw 0;
+    }
+    .logo-overview {
+      margin: auto;
+      width: 50%;
+    }
+    .overview-content {
+      width: 50%;
+    }
+    .reversed {
+      flex-direction: row-reverse;
     }
   }
 }
