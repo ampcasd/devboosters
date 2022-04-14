@@ -35,9 +35,13 @@ export class AppComponent {
     this.router.events
       .pipe(filter((p) => p instanceof NavigationEnd))
       .subscribe((params: NavigationEnd) => {
-        console.log(params);
+        console.log(params.url);
         switch (params.url) {
           case '/assistants':
+            this.callToActionConfiguration =
+              this.callToActionConfigurations.assistants;
+            break;
+          case '/assistants#features':
             this.callToActionConfiguration =
               this.callToActionConfigurations.assistants;
             break;
