@@ -1,4 +1,15 @@
+$desktops-button-font: calc(0.8vw + 1px);
+$desktops-small-font: calc(1vw + 2px);
+$desktops-medium-font: calc(1vw + 8px);
+$desktops-h1-font: calc(4vw + 8px);
+$desktops-h2-font: calc(3vw + 8px);
+$desktops-big-font: calc(4vw + 16px);
+$basic-stripes-margin: calc(5% + 10px);
+
 .desktop-banner-circle {
+  display: none;
+}
+.mobile {
   display: none;
 }
 
@@ -532,11 +543,20 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 601px) {
+  * {
+    font-size: $desktops-small-font;
+  }
+
   .desctop-wrapper {
-    width: 80%;
-    margin: 0 auto;
-    overflow: visible;
+    width: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      width: 80%;
+      margin: 0 auto;
+      overflow: visible;
+    }
 
     .main-container {
       position: relative;
@@ -568,19 +588,20 @@
 
       .main-mission {
         width: 25%;
-        font-size: calc(0.5vw + 10px);
+        font-size: calc(1vw + 4px);
       }
 
-      h1.main-baner {
+      h1.main-baner,
+      h1.main-baner strong {
         width: 40%;
-        font-size: calc(2.5vw + 36px);
+        font-size: calc(4vw + 16px);
         padding-top: calc(1vw);
 
         line-height: calc(2.5vw + 36px);
       }
       img.stripes1,
       img.stripes2 {
-        margin: calc(5% + 10px) calc(5% + 10px);
+        margin: $basic-stripes-margin;
         width: calc(6vw + 10px);
       }
     }
@@ -613,14 +634,17 @@
       margin: 2.5vh 0;
       width: calc(2vw + 200px);
       line-height: calc(2vw + 16px);
-      font-size: calc(0.5vw + 7px);
       font-weight: bold;
       border-radius: calc(2vw + 20px);
+      a {
+        font-size: $desktops-button-font;
+      }
     }
+
     .how-button img {
-      height: calc(0.5vw + 7px);
-      margin: 0 calc(0.5vw + 5px);
-      transform: translateY(15%);
+      width: $desktops-button-font;
+      margin-left: 0 calc(0.5vw + 5px);
+      transform: translatey(25%);
     }
   }
 
@@ -645,7 +669,7 @@
 
     .launchpad-circle {
       top: 0;
-      left: -10vh;
+      left: -5vh;
       width: 30vw;
       height: 30vw;
     }
@@ -657,14 +681,13 @@
     }
 
     .launchpad-title {
-      font-size: calc(1vw + 40px);
+      font-size: $desktops-h1-font;
       font-weight: bold;
       margin: 0;
     }
 
     .launchpad-content p {
       margin: calc(1vw + 10px) 0;
-      font-size: calc(0.5vw + 5px);
       max-width: 30vw;
     }
 
@@ -690,23 +713,18 @@
 
     .sourcing-txt-container {
       position: relative;
-      margin: 0;
+      margin: 0 5%;
       width: 50%;
     }
 
     .sourcing-title {
-      font-size: calc(1vw + 40px);
+      font-size: $desktops-h1-font;
       font-weight: bold;
     }
 
     .sourcing-content p {
       margin: calc(1vw + 10px) 0;
-      font-size: calc(0.5vw + 5px);
       max-width: 30vw;
-    }
-
-    .sourcing-button {
-      font-size: calc(0.5vw + 7px);
     }
 
     .how {
@@ -771,7 +789,7 @@
 
     .assistance-circle {
       top: 0;
-      left: -10vh;
+      left: -5vh;
       width: 30vw;
       height: 30vw;
     }
@@ -782,13 +800,12 @@
     }
 
     .assistance-title {
-      font-size: calc(1vw + 40px);
+      font-size: $desktops-big-font;
       font-weight: bold;
     }
 
     .assistance-content p {
       margin: calc(1vw + 10px) 0;
-      font-size: calc(0.5vw + 5px);
       max-width: 30vw;
     }
 
@@ -809,14 +826,26 @@
       display: none;
     }
   }
+
+  .mobile {
+    display: block;
+  }
+
+  .top-rounder {
+    position: relative;
+    margin: 0 0 -8px -10vw;
+
+    img {
+      width: 100vw;
+    }
+  }
+
   .ourway-container {
-    margin-top: 15vw;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 
     .ourway-circle {
-      top: -20%;
-      left: -80%;
-      height: calc(80vw + 35vh);
+      display: none;
     }
 
     .signpost {
@@ -830,13 +859,17 @@
     }
 
     .ourway-title {
-      font-size: calc(1vw + 40px);
       min-width: 25vw;
       margin: 0 5vw;
-    }
-    .ourway-slogan {
-      font-size: calc(0.5vw + 16px);
-      margin-top: -5vh;
+      p,
+      strong {
+        font-size: $desktops-big-font;
+      }
+
+      .ourway-slogan {
+        font-size: $desktops-medium-font;
+        margin-top: -5vh;
+      }
     }
 
     .flags {
@@ -869,7 +902,6 @@
     }
 
     .flag-content p {
-      font-size: calc(0.5vw + 8px);
       display: inline;
     }
 
@@ -887,58 +919,71 @@
       justify-content: center;
     }
   }
-  .perspectives-container {
-    width: 90%;
-    margin: 0 auto;
-    .ourway-title-wrapper {
-      width: 100%;
-    }
 
-    .stars {
-      width: calc(25vw + 200px);
-      margin: 0 5vw;
-    }
+  .ourway-desktop-wrapper {
+    width: 100vw;
+    background-color: #25192e;
+    margin-left: -10vw;
 
-    .perspectives-header {
-      font-size: calc(1vw + 40px);
-      margin-bottom: 0;
-    }
+    .perspectives-container {
+      width: 80vw;
+      margin: 0 auto;
+      .ourway-title-wrapper {
+        width: 100%;
+      }
 
-    .ourway-slogan {
-      font-size: calc(1vw + 16px);
-      margin: 5vw 0;
-    }
+      .stars {
+        width: calc(25vw + 200px);
+        margin: 0 5vw;
+      }
 
-    .perspective-content {
-      display: none;
-    }
+      .perspectives-header,
+      .perspectives-header strong {
+        font-size: $desktops-big-font;
+        margin-bottom: 0;
+      }
 
-    .perspective-content-desktop {
-      display: block;
-      font-size: 16px;
-    }
+      .ourway-slogan {
+        font-size: $desktops-medium-font;
+        margin: 5vw 0;
+      }
 
-    .perspectives-stripes {
-      display: block;
-      position: relative;
-      bottom: 0;
-      left: 0;
-      width: calc(5vw + 20px);
-      height: calc(5vw + 20px);
-    }
+      .perspective-content {
+        display: none;
+      }
 
-    .perspectives-circle {
-      display: none;
+      .perspective-content-desktop {
+        display: block;
+      }
+
+      .perspectives-stripes {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 20vw;
+        z-index: 2;
+        width: calc(5vw + 20px);
+        height: calc(5vw + 20px);
+      }
+
+      .perspectives-circle {
+        display: none;
+      }
     }
   }
 
   .overview {
     margin: 5vw;
 
+    .overview-title,
+    .overview-title strong {
+      font-size: $desktops-h2-font;
+    }
+
     .flex-item-container {
       display: flex;
       float: left;
-      margin: 2vw 0;
+      margin: 5vw 0;
     }
     .logo-overview {
       margin: auto;
@@ -948,6 +993,7 @@
       width: 50%;
     }
     .reversed {
+      // margin-left: 5%;
       flex-direction: row-reverse;
     }
   }
