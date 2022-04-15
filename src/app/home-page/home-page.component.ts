@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'home-page',
