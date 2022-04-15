@@ -616,7 +616,7 @@ $mobile-big-font: calc(6vw + 16px);
       h1.main-baner,
       h1.main-baner strong {
         width: 40%;
-        font-size: calc(4vw + 16px);
+        font-size: calc(4vw + 8px);
         padding-top: calc(1vw);
 
         line-height: calc(2.5vw + 36px);
@@ -642,6 +642,10 @@ $mobile-big-font: calc(6vw + 16px);
       height: calc(41vw + 100px);
       width: auto;
     }
+  }
+
+  .desktop-button {
+    display: block;
   }
 
   .how {
