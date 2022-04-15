@@ -4,13 +4,15 @@
 
 .footer {
   padding-top: 50px;
-  // position: relative;
+  position: relative;
   overflow: clip;
   border-radius: 100% 100% 0% 0%;
   background-color: #433f51;
-  width: 150vw;
-  margin-top: -100px;
-  margin-left: -25vw;
+  width: 120vw;
+  margin-top: -110px;
+  margin-left: -10vw;
+  display: flex;
+  justify-content: center;
 
   span {
     text-align: center;
@@ -80,6 +82,7 @@ li {
 .menu-list {
   display: flex;
   flex-direction: column;
+  line-height: 2em;
 }
 
 .credits {
@@ -89,52 +92,6 @@ li {
   margin: 0 auto;
   text-align: center;
 }
-
-.intrested {
-  margin-bottom: 80px;
-}
-
-.intrested-content {
-  text-align: center;
-  font-size: 24px;
-}
-
-// @media screen and (min-device-width: 280px) and (max-device-width: 480px) {
-//   .footer-circle {
-//     top: 50%;
-//   }
-
-//   .footer-circle-two {
-//     top: 20%;
-//   }
-// }
-
-// @media screen and (min-device-width: 481px) and (max-device-width: 819px) {
-//   .footer-circle {
-//     top: 50%;
-//   }
-
-//   .footer-circle-two {
-//     top: 20%;
-//   }
-// }
-
-// @media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
-//   .contact-container {
-//     flex-direction: column;
-//     text-align: center;
-//   }
-
-//   .footer-circle,
-//   .footer-circle-two {
-//     top: 50%;
-//   }
-
-//   .footer-circle-two,
-//   .footer-circle {
-//     top: 20%;
-//   }
-// }
 
 @media screen and (min-width: 1024px) {
   div.link-container {
@@ -154,7 +111,8 @@ li {
   div.above-credits {
     flex-direction: row;
     align-items: space-around;
-    margin-left: 25vw;
+    margin-left: 10vw;
+    margin-top: 30px;
   }
   ul.menu-list {
     align-items: center;
@@ -167,5 +125,6 @@ li {
   }
   div.footer {
     flex-direction: row;
+    display: block;
   }
 }

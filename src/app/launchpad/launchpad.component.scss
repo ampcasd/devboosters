@@ -36,6 +36,7 @@
   border-radius: 100%;
   margin-left: -400px;
   margin-top: -600px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.295);
 }
 
 @media screen and (min-width: 601px) {
@@ -64,6 +65,12 @@
   div.bottom-circle-gray {
     margin-left: -80vw;
   }
+}
+
+.stripes-top {
+  width: 100px;
+  height: auto;
+  margin-top: 30px;
 }
 
 .bottom-rectangle-gray {
@@ -116,6 +123,7 @@
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
+    margin-top: 50px;
   }
 }
 
@@ -174,31 +182,11 @@
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  width: 250vw;
-  border-radius: 90%;
   padding-bottom: 100px;
-  margin-left: -77vw;
-  min-width: 850px;
-}
-
-@media screen and (max-width: 300px) {
-  div.how-it-works {
-    margin-left: -300vw;
-    // padding-left: 300vw;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  div.how-it-works {
-    margin-left: -73vw;
-    // padding-left: 73vw;
-  }
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.295);
 }
 
 @media screen and (min-width: 1024px) {
-  div.how-it-works {
-    // padding-left: 80vw;
-  }
   .header-text {
     font-size: 45px;
   }
@@ -310,6 +298,11 @@
   flex-direction: column;
 }
 
+.deco-4 {
+  margin-left: 100px;
+  margin-bottom: -100px;
+}
+
 @media screen and (min-width: 1024px) {
   div.explanation-blocks {
     display: flex;
@@ -332,17 +325,23 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
-    text-align: center;
+    text-align: justify;
+    background-color: #33303f;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.167);
   }
 
   div.explanation-blocks2 {
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    padding: 2%;
   }
 
   div.explanation-blocks2 .text {
-    width: 25vw;
+    width: 17vw;
   }
 }
 
@@ -394,10 +393,10 @@
     align-items: center;
     justify-content: center;
     margin-left: 0;
+    margin-bottom: 70px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   div.header {
     font-size: 30px;
@@ -417,17 +416,15 @@
 
 .stars {
   border: solid 2px blueviolet;
-  min-width: 55px;
-  min-height: 55px;
+  min-width: 45px;
+  min-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
+  padding: 1em;
   border-radius: 100%;
   text-align: center;
-  font-size: max(30px, 4vw);
-  font-weight: 600;
+  background-color: #2e2b39;
 }
 
 @media screen and (min-width: 1024px) {
@@ -443,14 +440,20 @@
   padding: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
+  color: rgb(178, 178, 178);
 }
 
 @media screen and (min-width: 1024px) {
   div.launchpad-perks .summary {
     width: 60vw;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     font-size: 17px;
-    color: lightgray;
+    color: rgb(178, 178, 178);
+    margin-top: 5%;
+    margin-bottom: 3%;
   }
 }
 
