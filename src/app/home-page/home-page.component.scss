@@ -6,20 +6,21 @@ $desktops-h2-font: calc(3vw + 8px);
 $desktops-big-font: calc(4vw + 16px);
 $basic-stripes-margin: calc(4% + 5px);
 
-.desktop-banner-circle {
-  display: none;
-}
-.mobile {
-  display: none;
-}
+$mobile-big-font: calc(6vw + 16px);
 
+.desktop-banner-circle,
+.mobile,
+.desktop-girl,
+.desktop-assistance-img,
+.desktop-sourcing-stripes {
+  display: none;
+}
 .main-container {
   position: relative;
   top: 15vh;
   left: 0;
   min-width: 320px;
-  max-height: 500px;
-  height: 90vh;
+  height: 130vw;
   overflow: hidden;
 }
 
@@ -62,7 +63,7 @@ $basic-stripes-margin: calc(4% + 5px);
   width: 60%;
   margin-left: 5%;
   font-weight: normal;
-  font-size: 1em;
+  font-size: $mobile-big-font;
 }
 
 .picture-guy-big {
@@ -74,7 +75,16 @@ $basic-stripes-margin: calc(4% + 5px);
   margin-left: 5%;
 }
 
+.desktop-button {
+  display: none;
+}
+
 .how {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-how-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,9 +100,9 @@ $basic-stripes-margin: calc(4% + 5px);
   border: 1px solid white;
   border-radius: 20px;
   margin-top: 5vh;
-  .top-button {
-    margin-top: 15vh;
-  }
+}
+.how-button.top-button {
+  margin-top: 17vh;
 }
 
 .how-button img {
@@ -101,12 +111,23 @@ $basic-stripes-margin: calc(4% + 5px);
   transform: translateY(15%);
 }
 
+.assistance-button {
+  margin-bottom: 50px;
+}
+
 .launchpad-logo {
   position: relative;
 }
 
 .desktop-launchpad-laptop {
   display: none;
+}
+
+.launchpad-txt-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 .launchpad-circle {
@@ -118,13 +139,6 @@ $basic-stripes-margin: calc(4% + 5px);
   border-radius: 50%;
   background-color: rgba(35, 23, 45, 255);
   z-index: -1;
-}
-
-.launchpad-txt-container {
-  margin: 0 auto;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
 }
 
 .desktop-launchpad-stripes {
@@ -231,21 +245,22 @@ $basic-stripes-margin: calc(4% + 5px);
   padding: 25% 10%;
 }
 
+.mobile-rounder {
+  width: 100%;
+}
+.top {
+  margin-bottom: -5px;
+}
+// .bottom {
+//   margin-top: 9px;
+// }
+
 .ourway-container {
   position: relative;
-  margin-top: 100px;
 }
 
-.ourway-circle {
-  position: absolute;
-  top: -10%;
-  left: -50%;
-  transform: translateX(-9%);
-  width: 250vw;
-  height: 250vw;
-  border-radius: 50%;
-  background-color: #23172d;
-  z-index: -2;
+.ourway-desktop-wrapper {
+  background-color: #25192e;
 }
 
 .ourway-title-wrapper {
@@ -268,7 +283,15 @@ $basic-stripes-margin: calc(4% + 5px);
 .ourway-desktop-message {
   display: none;
 }
-
+.flags {
+  position: relative;
+  background-color: #281b32;
+  border-radius: calc(1vw + 8px);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  z-index: 1;
+  margin: 0 auto;
+}
 .flag {
   display: inline-flex;
 }
@@ -314,7 +337,11 @@ $basic-stripes-margin: calc(4% + 5px);
 }
 
 .perspective-content {
-  margin: 0 15px;
+  margin: -16px 15px;
+}
+
+.perspective-content p {
+  padding-bottom: 30px;
 }
 
 .header {
@@ -322,24 +349,14 @@ $basic-stripes-margin: calc(4% + 5px);
   justify-content: center;
 }
 
-.perspectives-circle {
-  position: absolute;
-  top: -35%;
-  left: -50%;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  background-color: #23172d;
-  z-index: -2;
-}
-
 .overview {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 .logo-overview img {
   width: 90%;
   padding: 5%;
+  margin-top: 75px;
   margin-bottom: 30px;
 }
 
@@ -350,11 +367,13 @@ $basic-stripes-margin: calc(4% + 5px);
 .overview-title {
   font-size: 24px;
   margin: 0;
+  text-align: center;
 }
 
 .overview-slogan {
   font-size: 18px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .spec {
@@ -546,6 +565,10 @@ $basic-stripes-margin: calc(4% + 5px);
   * {
     font-size: $desktops-small-font;
   }
+  .mobile-how-button,
+  .mobile-rounder {
+    display: none;
+  }
 
   .desctop-wrapper {
     width: 100%;
@@ -561,7 +584,7 @@ $basic-stripes-margin: calc(4% + 5px);
       position: relative;
       top: 5vh;
       left: 0;
-      min-height: calc(47vw);
+      height: calc(47vw);
       overflow: visible;
       .main-baner {
         position: relative;
@@ -660,6 +683,7 @@ $basic-stripes-margin: calc(4% + 5px);
     .desktop-launchpad-laptop {
       display: block;
       width: 35vw;
+      margin-top: 3vw;
     }
 
     .launchpad-logo {
@@ -671,10 +695,14 @@ $basic-stripes-margin: calc(4% + 5px);
     }
 
     .launchpad-circle {
-      top: 0;
+      position: absolute;
+      top: 2vh;
       left: -5vh;
       width: 30vw;
       height: 30vw;
+      background-color: rgba(35, 23, 45);
+      border-radius: 50%;
+      z-index: -1;
     }
 
     .launchpad-txt-container {
@@ -732,6 +760,7 @@ $basic-stripes-margin: calc(4% + 5px);
     }
 
     .how {
+      display: block;
       margin: 0;
     }
 
@@ -983,6 +1012,7 @@ $basic-stripes-margin: calc(4% + 5px);
 
     .overview-title,
     .overview-title strong {
+      text-align: left;
       font-size: $desktops-h2-font;
     }
 
@@ -993,6 +1023,7 @@ $basic-stripes-margin: calc(4% + 5px);
 
       .overview-slogan {
         font-size: $desktops-medium-font;
+        text-align: left;
       }
     }
     .logo-overview {
