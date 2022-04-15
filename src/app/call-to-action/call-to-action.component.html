@@ -16,31 +16,50 @@
       </div>
 
       <div class="inputs">
-        <div *ngIf="showForm" class="first-input">
-          <div class="name"><b>Name</b></div>
-          <input
-            class="name-input"
-            [(ngModel)]="name"
-            [class.invalid]="nameInvalid"
-            type="text"
-            name="name"
-            placeholder="Name"
-          />
-        </div>
-        <div *ngIf="showForm" class="second-input">
-          <div class="e-mail"><b>E-mail</b></div>
-          <input
-            class="e-mail-input"
-            [(ngModel)]="email"
-            type="email"
-            name="email"
-            placeholder="Email"
-            [class.invalid]="emailInvalid"
-          />
-        </div>
-        <button class="get-started-button">
-          {{ configuration?.buttonText }}
-        </button>
+        <ng-container *ngIf="showForm; else redirectButton" >
+          <form *ngIf="!formSubmitted; else thankYou"  (submit)="submit()">
+            <div class="first-input">
+              <div class="name"><b>Name</b></div>
+              <input
+                class="name-input"
+                [(ngModel)]="name"
+                [class.invalid]="nameInvalid"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="second-input">
+              <div class="e-mail"><b>E-mail</b></div>
+              <input
+                class="e-mail-input"
+                [(ngModel)]="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                [class.invalid]="emailInvalid"
+              />
+            </div>
+            <ng-container>
+              <button type="submit" class="get-started-button">
+                {{ configuration?.buttonText }}
+              </button>
+            </ng-container>
+          </form>
+        </ng-container>
+        <ng-template #redirectButton>
+          <a href="/contact">
+            <button class="get-started-button">
+              {{ configuration?.buttonText }}
+            </button>
+          </a>
+        </ng-template>
+        <ng-template #thankYou>
+          <span class="thank-you"
+            >Thank you for your interest, we will reach out to you as soon as
+            humanly possible.</span
+          >
+        </ng-template>
       </div>
     </div>
     <div class="rectangle-container reversed">
