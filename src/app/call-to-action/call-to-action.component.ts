@@ -26,12 +26,13 @@ export class CallToActionComponent implements OnChanges {
   emailInvalid: boolean;
 
   showForm = true;
+  formSubmitted = false;
 
   constructor(private databaseService: DatabaseService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if ('configuration' in changes) {
-      this.showForm = this.configuration.showForm;0
+      this.showForm = this.configuration?.showForm;
     }
   }
 
@@ -43,7 +44,7 @@ export class CallToActionComponent implements OnChanges {
 
     if (name && email && emailIsValid) {
       this.databaseService.saveRecord(email, name);
-      this.showForm = false;
+      this.formSubmitted = true;
     } else {
       if (!name) {
         this.nameInvalid = true;
