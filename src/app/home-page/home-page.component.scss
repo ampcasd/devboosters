@@ -15,25 +15,29 @@ $mobile-big-font: calc(6vw + 16px);
 .desktop-sourcing-stripes {
   display: none;
 }
+
 .main-container {
   position: relative;
-  top: 15vh;
+  top: 10vh;
   left: 0;
   min-width: 320px;
   height: 130vw;
   overflow: hidden;
 }
 
-.baner-circle {
-  position: absolute;
-  top: -73%;
-  left: -81%;
-  width: 225%;
-  height: 120%;
-  border-radius: 50%;
-  background-color: rgba(35, 23, 45, 255);
-  z-index: -1;
+.banner-background {
+  display: none;
 }
+
+.mobile-banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -10;
+}
+
 .stripes1 {
   position: absolute;
   width: 25%;
@@ -88,6 +92,12 @@ $mobile-big-font: calc(6vw + 16px);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -50px;
+  background-color: #2e2b39;
+}
+
+.mobile-how-button {
+  color: white;
 }
 
 .how-button {
@@ -103,6 +113,10 @@ $mobile-big-font: calc(6vw + 16px);
 }
 .how-button.top-button {
   margin-top: 17vh;
+  background-color: #25192e;
+}
+.how-button.top-button a {
+  color: white;
 }
 
 .how-button img {
@@ -125,7 +139,7 @@ $mobile-big-font: calc(6vw + 16px);
 
 .launchpad-txt-container {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -178,7 +192,7 @@ $mobile-big-font: calc(6vw + 16px);
 
 .sourcing-txt-container {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 .sourcing-title {
@@ -222,7 +236,7 @@ $mobile-big-font: calc(6vw + 16px);
 
 .assistance-txt-container {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 .assistance-title {
@@ -247,13 +261,11 @@ $mobile-big-font: calc(6vw + 16px);
 
 .mobile-rounder {
   width: 100%;
+  margin-top: 16px;
 }
 .top {
   margin-bottom: -5px;
 }
-// .bottom {
-//   margin-top: 9px;
-// }
 
 .ourway-container {
   position: relative;
@@ -264,7 +276,8 @@ $mobile-big-font: calc(6vw + 16px);
 }
 
 .ourway-title-wrapper {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 
 .ourway-title-wrapper img {
@@ -337,11 +350,15 @@ $mobile-big-font: calc(6vw + 16px);
 }
 
 .perspective-content {
-  margin: -16px 15px;
+  margin: -16px 40px;
 }
 
 .perspective-content p {
   padding-bottom: 30px;
+}
+
+.perspective-content:last-child {
+  padding-bottom: 50px;
 }
 
 .header {
@@ -356,12 +373,12 @@ $mobile-big-font: calc(6vw + 16px);
 .logo-overview img {
   width: 90%;
   padding: 5%;
-  margin-top: 75px;
+  // margin-top: 50px;
   margin-bottom: 30px;
 }
 
 .overview-content {
-  margin: 0 15px;
+  margin: 0 45px;
 }
 
 .overview-title {
@@ -389,182 +406,48 @@ $mobile-big-font: calc(6vw + 16px);
   width: 70vw;
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 819px) {
+@media screen and (min-width: 500px) {
+  .mobile-banner-background {
+    top: calc(-20vw + 20px);
+  }
+
   .main-container {
-    min-width: 481px;
+    background-color: transparent;
+    height: 90vw;
+    img.stripes1,
+    img.stripes2 {
+      margin: $basic-stripes-margin;
+      width: calc(10vw + 10px);
+    }
   }
-
-  .launchpad-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
+  .mobile-how-button {
+    background-color: transparent;
   }
-
-  .sourcing-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
-  }
-
+  .sourcing-img,
   .assistance-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
-  }
-
-  .overview {
-    margin-top: 50px;
-  }
-
-  .overview-title-wrapper {
-    margin-top: 100px;
-  }
-  perspectives-circle {
-    top: 0;
+    width: 60vw;
   }
 }
 
-@media screen and (min-device-width: 820px) and (max-device-width: 1023px) {
-  .stripes1,
-  .stripes2 {
-    width: 10%;
-  }
-
-  .sourcing-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
-  }
-
-  .assistance-img {
-    padding: 15% 10%;
-    width: 50vw;
-    height: 50vw;
-  }
-
-  div.how {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (min-device-width: 481px) and (max-device-width: 600px) {
-  .main-container {
-    position: relative;
-    top: 15vh;
-    left: 0;
-    min-width: 320px;
-    max-height: 500px;
-    height: 90vh;
-    overflow: hidden;
-  }
-
-  .baner-circle {
-    position: absolute;
-    top: -105%;
-    left: -147%;
-    width: 340%;
-    height: 159%;
-    border-radius: 50%;
-    background-color: rgba(35, 23, 45, 255);
-    z-index: -1;
-  }
-
-  .baner-img {
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
-
-  .main-baner {
-    width: 60%;
-    margin-left: 5%;
-    font-weight: normal;
-    font-size: 2em;
-  }
-
-  .main-mission {
-    width: 40%;
-    margin-left: 5%;
-  }
-
-  .stripes1 {
-    position: absolute;
-    width: 25%;
-    margin: 10% 5%;
-    top: 0;
-    right: 0;
-  }
-
-  .stripes2 {
-    position: absolute;
-    width: 25%;
-    margin: 5% 5% 10% 5%;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-@media screen and (min-device-width: 481px) and (max-device-width: 700px) {
-  .main-container {
-    position: relative;
-    top: 15vh;
-    left: 0;
-    min-width: 320px;
-    max-height: 500px;
-    height: 90vh;
-    overflow: hidden;
-  }
-
-  .baner-circle {
-    position: absolute;
-    top: -105%;
-    left: -147%;
-    width: 340%;
-    height: 159%;
-    border-radius: 50%;
-    background-color: rgba(35, 23, 45, 255);
-    z-index: -1;
-  }
-
-  .baner-img {
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
-
-  .main-baner {
-    width: 60%;
-    margin-left: 5%;
-    font-weight: normal;
-    font-size: 2em;
-  }
-
-  .main-mission {
-    width: 40%;
-    margin-left: 5%;
-  }
-
-  .stripes1 {
-    position: absolute;
-    width: 25%;
-    margin: 10% 5%;
-    top: 0;
-    right: 0;
-  }
-
-  .stripes2 {
-    position: absolute;
-    width: 25%;
-    margin: 5% 5% 10% 5%;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 800px) {
   * {
     font-size: $desktops-small-font;
   }
+
+  .mobile-banner-background {
+    display: none;
+  }
+
+  .banner-background {
+    display: block;
+    position: absolute;
+    top: -7vw;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+  }
+
   .mobile-how-button,
   .mobile-rounder {
     display: none;
@@ -593,21 +476,6 @@ $mobile-big-font: calc(6vw + 16px);
         max-height: 50vh;
       }
 
-      .desktop-banner-circle {
-        display: block;
-        position: absolute;
-        top: -160vw;
-        left: -60vw;
-        width: 200vw;
-        height: 200vw;
-        background-color: #23172d;
-        border-radius: 50%;
-        z-index: -10000;
-      }
-      .baner-circle {
-        display: none;
-      }
-
       .main-mission {
         width: 25%;
         font-size: calc(1vw + 4px);
@@ -616,7 +484,7 @@ $mobile-big-font: calc(6vw + 16px);
       h1.main-baner,
       h1.main-baner strong {
         width: 40%;
-        font-size: calc(4vw + 16px);
+        font-size: calc(4vw + 8px);
         padding-top: calc(1vw);
 
         line-height: calc(2.5vw + 36px);
@@ -644,6 +512,10 @@ $mobile-big-font: calc(6vw + 16px);
     }
   }
 
+  .desktop-button {
+    display: block;
+  }
+
   .how {
     position: absolute;
     display: block;
@@ -664,6 +536,10 @@ $mobile-big-font: calc(6vw + 16px);
 
     .how-button.top-button a {
       font-size: $desktops-button-font;
+      background-color: #25192e;
+    }
+    .how-button.top-button a {
+      color: white;
     }
 
     .how-button img {
@@ -928,7 +804,7 @@ $mobile-big-font: calc(6vw + 16px);
       left: 0;
       transform-origin: 0 0;
       transform: rotate(270deg);
-      height: 20vw;
+      height: 19vw;
     }
     .flag-border {
       margin: calc(1vw + 16px) auto 0;

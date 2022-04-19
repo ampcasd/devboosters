@@ -1,13 +1,16 @@
 <div class="bar" [class.locked]="navigationBarLocked">
   <a class="logo" href="/">DevBoosters</a>
 
-  <ul>
+  <ul class="desktop-ul">
     <li
       *ngFor="let menuItem of menuItems"
       [class.selected]="menuItem.selected"
       [routerLink]="menuItem.path"
     >
-      <a>{{ menuItem.displayValue }}</a>
+      <a>
+        <div class="border-left"></div>
+        {{ menuItem.displayValue }}</a
+      >
     </li>
   </ul>
 
@@ -23,16 +26,37 @@
 </div>
 <div [className]="hamburgerActive ? 'popup in' : 'popup out'">
   <div>
+    <img
+      class="rounder top"
+      src="../../assets/images/mobile-nav-top.png"
+      alt=""
+    />
     <ul class="ul-container" (click)="hamburgerActive = false">
-      <li><a routerLink="/" routerLinkActive="active">HOMEPAGE</a></li>
       <li>
+        <div class="border-left"></div>
+        <a routerLink="/" routerLinkActive="active">HOMEPAGE</a>
+      </li>
+      <li>
+        <div class="border-left"></div>
         <a routerLink="/launchpad" routerLinkActive="active">LAUNCHPAD</a>
       </li>
       <li>
+        <div class="border-left"></div>
         <a routerLink="/assistants" routerLinkActive="active">ASSISTANCE</a>
       </li>
-      <li><a routerLink="/sourcing" routerLinkActive="active">SOURCING</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">CONTACT</a></li>
+      <li>
+        <div class="border-left"></div>
+        <a routerLink="/sourcing" routerLinkActive="active">SOURCING</a>
+      </li>
+      <li>
+        <div class="border-left"></div>
+        <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
+      </li>
     </ul>
+    <img
+      class="rounder bottom"
+      src="../../assets/images/mobile-nav-rounder-bottom.svg"
+      alt=""
+    />
   </div>
 </div>
