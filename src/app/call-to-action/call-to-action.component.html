@@ -23,8 +23,8 @@
       </div>
 
       <div class="inputs">
-        <ng-container *ngIf="showForm; else redirectButton" >
-          <form *ngIf="!formSubmitted; else thankYou"  (submit)="submit()">
+        <ng-container *ngIf="showForm; else redirectButton">
+          <form *ngIf="!formSubmitted; else thankYou" (submit)="submit()">
             <div class="first-input">
               <div class="name"><b>Name</b></div>
               <input
@@ -69,12 +69,14 @@
         </ng-template>
       </div>
     </div>
+
     <div class="rectangle-container reversed">
       <div class="rectangle-cyan"></div>
       <div class="rectangle-yellow"></div>
       <div class="rectangle-purple"></div>
     </div>
   </div>
+  <img src="assets/images/grey-rounder-top.svg" class="rounder" />
 </div>
 
 <!-- <div class="actions">

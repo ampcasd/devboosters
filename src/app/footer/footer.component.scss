@@ -1,16 +1,12 @@
 .background {
   overflow-x: clip;
+  margin-top: -50px;
 }
 
 .footer {
-  padding-top: 50px;
   position: relative;
   overflow: clip;
-  border-radius: 100% 100% 0% 0%;
-  background-color: #433f51;
-  width: 120vw;
-  margin-top: -110px;
-  margin-left: -10vw;
+  padding-top: -110px;
   display: flex;
   justify-content: center;
 
@@ -21,6 +17,10 @@
   .divider {
     margin: 0 5px;
   }
+}
+
+.footer-wrapper {
+  background-color: #433f51;
 }
 
 .contact-container {
@@ -88,9 +88,9 @@ li {
 .credits {
   position: relative;
   display: inline-block;
-  width: 100%;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -111,8 +111,6 @@ li {
   div.above-credits {
     flex-direction: row;
     align-items: space-around;
-    margin-left: 10vw;
-    margin-top: 30px;
   }
   ul.menu-list {
     align-items: center;
@@ -126,5 +124,8 @@ li {
   div.footer {
     flex-direction: row;
     display: block;
+  }
+  div.rounder {
+    margin-top: -10vh !important;
   }
 }

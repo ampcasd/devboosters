@@ -1,8 +1,17 @@
 .background {
   overflow-x: hidden;
   color: white;
-  min-width: 400px;
+  // min-width: 400px;
   justify-content: center;
+}
+
+.rounder-top {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.rounder-bottom {
+  width: 100%;
 }
 
 .header1 {
@@ -172,12 +181,11 @@
   display: flex;
   flex-direction: row;
   margin-top: 5%;
-  margin-left: 40px;
   margin-bottom: 40px;
 }
 
 .how-it-works {
-  background-color: rgba(35, 23, 45, 255);
+  background-color: #25192e;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -213,15 +221,37 @@
 }
 
 .numbers {
-  border: solid 2px blueviolet;
-  border-radius: 100%;
   text-align: center;
   font-size: max(45px, 4vw);
   font-weight: 600;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-  margin-right: 10vw;
-  margin-left: 10vw;
+  border: solid 2px blueviolet;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #221a31;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+}
+
+.stick {
+  height: 50vh;
+  width: 2px;
+  background-color: #bb30ee;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 1;
+}
+
+.numbers-and-sticks {
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -233,7 +263,7 @@
 @media screen and (min-width: 1024px) {
   div.how-it-works-explanation {
     align-items: flex-start;
-    width: 100vw;
+    width: 85vw;
   }
 }
 
@@ -258,12 +288,10 @@
 .explanation-blocks .text {
   font-size: 15px;
   font-weight: 500;
-  padding: 20px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   width: 70vw;
-  align-self: inherit;
 }
 
 @media screen and (max-width: 1024px) {
@@ -291,7 +319,6 @@
 }
 
 .explanation-blocks {
-  margin-left: 30px;
   margin-top: 20px;
   width: 90%;
   display: flex;
@@ -315,10 +342,26 @@
   margin-left: 30px;
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin: 15px;
   align-items: center;
   color: white;
 }
+
+.launchpad-perks-bulletpoints {
+  background-color: #33303f;
+  border-radius: 15px;
+  box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.167);
+  width: 90%;
+  padding: 2%;
+}
+
+.bulletpoints-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
 @media screen and (min-width: 1024px) {
   div.launchpad-perks-bulletpoints {
     display: flex;
@@ -326,11 +369,9 @@
     justify-content: center;
     margin-top: 50px;
     text-align: justify;
-    background-color: #33303f;
     border-radius: 15px;
     margin-left: 10%;
     margin-right: 10%;
-    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.167);
   }
 
   div.explanation-blocks2 {
@@ -351,12 +392,6 @@
   padding: 20px;
   width: 80%;
   color: white !important;
-}
-
-@media screen and (min-width: 601px) {
-  div.explanation-blocks2 .text {
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -416,12 +451,12 @@
 
 .stars {
   border: solid 2px blueviolet;
-  min-width: 45px;
+  min-width: 40px;
   min-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 100%;
   text-align: center;
   background-color: #2e2b39;
@@ -641,14 +676,14 @@
 }
 
 .explained-image {
-  width: 50vw;
+  width: 60vw;
   height: auto;
-  min-width: 250px;
   max-width: 350px;
+  margin: 10%;
 }
 @media screen and (min-width: 1024px) {
   img.explained-image {
-    width: 30vw;
+    width: 40vw;
     max-width: none;
   }
 }
