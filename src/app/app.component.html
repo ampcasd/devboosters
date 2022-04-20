@@ -4,6 +4,6 @@
 
 <router-outlet></router-outlet>
 
-<call-to-action [configuration]="callToActionConfiguration"></call-to-action>
+<call-to-action *ngIf="path !== '/contact'" [configuration]="callToActionConfiguration"></call-to-action>
 
 <footer></footer>

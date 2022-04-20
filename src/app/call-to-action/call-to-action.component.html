@@ -6,7 +6,10 @@
       alt=""
     />
   </div>
-  <div class="are-you-interested-container">
+  <div
+    class="are-you-interested-container"
+    [style.height.px]="showForm ? 750 : 450"
+  >
     <div class="rectangle-container second">
       <div class="rectangle-cyan"></div>
       <div class="rectangle-yellow"></div>
@@ -70,7 +73,10 @@
       </div>
     </div>
 
-    <div class="rectangle-container reversed">
+    <div
+      class="rectangle-container reversed"
+      [style.top.px]="showForm ? 682 : 384"
+    >
       <div class="rectangle-cyan"></div>
       <div class="rectangle-yellow"></div>
       <div class="rectangle-purple"></div>

@@ -16,5 +16,3 @@ export const callToAction: { [key: string]: CTAConfiguration } = {
     showForm: false,
   },
 };
-
-
