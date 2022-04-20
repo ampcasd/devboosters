@@ -1,8 +1,8 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 .contact-component {
-  background: #222526;
-
+  background: #25192e;
+  overflow: hidden;
   padding-top: 100px;
 
   &::before {
@@ -17,8 +17,7 @@
 }
 
 .contact-form {
-  background-color: #2e2e35;
-  border-radius: 8px;
+  background-color: #33303f;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -89,7 +88,7 @@
 }
 
 .address-and-map {
-  background-color: #2e2e35;
+  background-color: #33303f;
   border-radius: 8px;
   width: 90%;
   display: flex;
@@ -110,6 +109,7 @@
 .address {
   padding: 4%;
   font-size: 18px;
+  color: gray;
 }
 
 .icon {
@@ -118,4 +118,10 @@
 
 .address2 {
   margin-left: 15%;
+}
+
+.rounder {
+  width: 100vw;
+  margin-top: 50px;
+  margin-bottom: -5px;
 }

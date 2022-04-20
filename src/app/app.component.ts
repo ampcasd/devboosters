@@ -12,6 +12,7 @@ import {
 } from '@angular/router';
 import { CTAConfiguration } from './call-to-action/call-to-action.component';
 import { debounceTime, filter } from 'rxjs/operators';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ export class AppComponent {
 
   title = 'devboosters';
   callToActionConfiguration: CTAConfiguration;
+  path: string;
 
   constructor(public modalService: ModalService, public router: Router) {
     firebase.initializeApp(environment.firebase);
@@ -36,6 +38,7 @@ export class AppComponent {
       .pipe(filter((p) => p instanceof NavigationEnd))
       .subscribe((params: NavigationEnd) => {
         console.log(params.url);
+        this.path = params.url;
         switch (params.url) {
           case '/assistants':
             this.callToActionConfiguration =
