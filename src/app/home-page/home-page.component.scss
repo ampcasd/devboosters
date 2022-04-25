@@ -373,7 +373,6 @@ $mobile-big-font: calc(6vw + 16px);
 .logo-overview img {
   width: 90%;
   padding: 5%;
-  // margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -514,6 +513,15 @@ $mobile-big-font: calc(6vw + 16px);
 
   .desktop-button {
     display: block;
+    transition: 200ms;
+  }
+
+  .how-button-text {
+    margin: 0;
+  }
+
+  .desktop-button:hover {
+    background-color: #412c52;
   }
 
   .how {
@@ -530,8 +538,13 @@ $mobile-big-font: calc(6vw + 16px);
       line-height: calc(2vw + 16px);
       font-weight: bold;
       border-radius: calc(2vw + 20px);
-
+      transition: 100ms;
       font-size: $desktops-button-font;
+    }
+
+    .how-button:hover {
+      background-color: #673590;
+      border-color: #502870;
     }
 
     .how-button.top-button a {
