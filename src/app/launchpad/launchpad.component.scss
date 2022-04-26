@@ -1,8 +1,153 @@
 .background {
   overflow-x: hidden;
   color: white;
-  // min-width: 400px;
   justify-content: center;
+}
+
+/////////////////////////////////////----------------------////////////////////////////
+//////////////////////////////////// TOP CIRCLE AND TITLE ////////////////////////////
+///////////////////////////////////----------------------////////////////////////////
+
+.laptop-image {
+  margin-left: -55vw;
+  margin-top: 150px;
+  width: auto;
+  height: calc(45vw + 100px);
+}
+
+.purple-circle-segment {
+  width: 400px;
+  margin-left: 0vw;
+  margin-top: 50px;
+  height: auto;
+}
+
+div.launchpad-header-and-image {
+  display: flex;
+  flex-direction: row;
+  margin-top: -250px;
+  display: flex;
+  justify-content: center;
+}
+
+div.header1 {
+  color: white;
+  font-size: calc(2vw + 10px);
+  padding: 6%;
+}
+
+.stripes-top {
+  width: calc(60px + 4vw);
+  height: auto;
+  margin-top: 5%;
+  position: absolute;
+}
+
+.more-button {
+  background-color: rgba(35, 23, 45, 255);
+
+  border: solid 1px white;
+  border-radius: 85px;
+  color: aliceblue;
+  letter-spacing: 2.5px;
+  display: none;
+  margin-top: 100px;
+}
+.more-button-arrow {
+  padding-left: 5px;
+}
+@media screen and (min-width: 601px) {
+  .laptop-image {
+    margin-left: -10vw;
+    margin-top: 150px;
+    width: auto;
+    height: calc(45vw);
+  }
+  .purple-circle-segment {
+    width: 90vw;
+    margin-left: 0vw;
+    height: auto;
+  }
+  .more-button {
+    display: block;
+    width: 165px;
+    height: 55px;
+    font-size: 17px;
+  }
+
+  div.launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.header1 {
+    color: white;
+    font-size: calc(2.5vw + 10px);
+    padding: 6%;
+  }
+
+  .stripes-top {
+    width: calc(50px + 4vw);
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .laptop-image {
+    margin-left: 0vw;
+    margin-top: 200px;
+    width: auto;
+    height: calc(45vw);
+  }
+  .purple-circle-segment {
+    width: 80vw;
+    margin-left: 0vw;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  div.launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.header1 {
+    color: white;
+    font-size: calc(2.5vw + 10px);
+    padding: 6%;
+  }
+
+  .stripes-top {
+    width: calc(50px + 4vw);
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
+  }
+  .more-button {
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
+    display: block;
+  }
+}
+
+/////////////////////////////////////------------//////////////////////////////////////
+//////////////////////////////////// WHAT IS IT //////////////////////////////////////
+///////////////////////////////////------------//////////////////////////////////////
+
+.what-is-it {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10%;
 }
 
 .rounder-top {
@@ -14,128 +159,6 @@
   width: 100%;
 }
 
-.header1 {
-  color: white;
-  font-size: 25px;
-  margin-top: -330px;
-  padding: 6%;
-}
-
-@media screen and (min-width: 601px) {
-  div.header1 {
-    color: white;
-    font-size: 30px;
-    margin-top: -420px;
-    padding: 6%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.header1 {
-    color: white;
-    font-size: 35px;
-    padding: 6%;
-  }
-}
-
-.top-circle {
-  height: 1000px;
-  width: 1000px;
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  margin-left: -400px;
-  margin-top: -600px;
-  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.295);
-}
-
-@media screen and (min-width: 601px) {
-  div.top-circle {
-    height: 1200px;
-    width: 1200px;
-    background-color: rgba(35, 23, 45, 255);
-    border-radius: 100%;
-    margin-left: -400px;
-    margin-top: -700px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.top-circle {
-    height: 1400px;
-    width: 1400px;
-    background-color: rgba(35, 23, 45, 255);
-    border-radius: 100%;
-    margin-left: -500px;
-    margin-top: -800px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  div.bottom-circle-gray {
-    margin-left: -80vw;
-  }
-}
-
-.stripes-top {
-  width: 100px;
-  height: auto;
-  margin-top: 30px;
-}
-
-.bottom-rectangle-gray {
-  height: 300px;
-  width: 150vw;
-  background-color: rgba(67, 64, 82, 255);
-  margin-top: -100px;
-  margin-left: -50vw;
-}
-
-.laptop-image {
-  margin-top: 20px;
-  margin-left: 60px;
-  height: calc(150px + 25vw);
-  width: auto;
-}
-
-@media screen and (min-width: 601px) {
-  .laptop-image {
-    margin-top: -20px;
-    margin-left: 30vw;
-    height: calc(120px + 25vw);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .laptop-image {
-    margin-top: -400px;
-    margin-left: 0vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .launchpad-header-and-image {
-    display: flex;
-    flex-direction: row;
-    margin-top: -100px;
-  }
-}
-
-.what-is-it {
-  margin-left: 10vw;
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 1024px) {
-  div.what-is-it {
-    margin-left: 0vw;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 50px;
-  }
-}
-
 .what-is-it-text {
   font-size: 17px;
   display: flex;
@@ -145,458 +168,8 @@
   margin-bottom: 100px;
 }
 
-@media screen and (min-width: 1024px) {
-  div.what-is-it-text {
-    font-size: 30px;
-    width: 40vw;
-    margin-left: 0px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 601px) {
-  div.description {
-    font-size: 20px;
-    width: 85%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.description {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.description {
-    font-size: 17px;
-    width: 85%;
-  }
-}
-
-.how-it-works-header {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
-  margin-bottom: 40px;
-}
-
-.how-it-works {
-  background-color: #25192e;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  padding-bottom: 100px;
-  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.295);
-}
-
-@media screen and (min-width: 1024px) {
-  .header-text {
-    font-size: 45px;
-  }
-  div.how-it-works .image-and-number {
-    flex-direction: row-reverse;
-  }
-  div.how-it-works-header {
-    justify-content: center;
-    width: 100vw;
-    margin-left: 0px;
-  }
-}
-
-@media screen and (min-width: 601px) {
-  div.how-it-works-header {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.how-it-works-header {
-    font-size: 30px;
-  }
-}
-
-.numbers {
-  text-align: center;
-  font-size: max(45px, 4vw);
-  font-weight: 600;
-  border: solid 2px blueviolet;
-  border-radius: 50%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  background-color: #221a31;
-  padding-top: 0.15em;
-  padding-bottom: 0.15em;
-}
-
-.stick {
-  height: 50vh;
-  width: 2px;
-  background-color: #bb30ee;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  z-index: 1;
-}
-
-.numbers-and-sticks {
-  position: relative;
-  min-width: 100px;
-  min-height: 100px;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 1024px) {
-  div.numbers {
-    margin-left: 5%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.how-it-works-explanation {
-    align-items: flex-start;
-    width: 85vw;
-  }
-}
-
-.image-and-number {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-@media screen and (max-width: 1024px) {
-  div.image-and-number {
-    justify-content: space-around;
-    width: 100vw;
-  }
-}
-
-.image-and-number2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.explanation-blocks .text {
-  font-size: 15px;
-  font-weight: 500;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  width: 70vw;
-}
-
-@media screen and (max-width: 1024px) {
-  div.explanation-blocks .text {
-    padding-left: 7vw;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  div.explanation-blocks .text {
-    font-size: 17px;
-  }
-}
-
-@media screen and (min-width: 601px) {
-  div.explanation-blocks .text {
-    width: 50vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.explanation-blocks .text {
-    width: 30vw;
-  }
-}
-
-.explanation-blocks {
-  margin-top: 20px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-
-.deco-4 {
-  margin-left: 100px;
-  margin-bottom: -100px;
-}
-
-@media screen and (min-width: 1024px) {
-  div.explanation-blocks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.explanation-blocks2 {
-  margin-left: 30px;
-  display: flex;
-  flex-direction: row;
-  margin: 15px;
-  align-items: center;
-  color: white;
-}
-
-.launchpad-perks-bulletpoints {
-  background-color: #33303f;
-  border-radius: 15px;
-  box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.167);
-  width: 90%;
-  padding: 2%;
-}
-
-.bulletpoints-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10vh;
-}
-
-@media screen and (min-width: 1024px) {
-  div.launchpad-perks-bulletpoints {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-    text-align: justify;
-    border-radius: 15px;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  div.explanation-blocks2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    padding: 2%;
-  }
-
-  div.explanation-blocks2 .text {
-    width: 17vw;
-  }
-}
-
-.explanation-blocks2 .text {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 20px;
-  width: 80%;
-  color: white !important;
-}
-
-@media screen and (max-width: 600px) {
-  div.explanation-blocks2 .text {
-    font-size: 17px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.explanation-blocks2 .text {
-    font-size: 15px;
-  }
-}
-
-.header {
-  font-size: 25px;
-  margin-left: 0px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  margin-left: 40px;
-  align-items: center;
-}
-
-@media screen and (min-width: 601px) {
-  div.header {
-    font-size: 35px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  div.header {
-    font-size: 45px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0;
-    margin-bottom: 70px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.header {
-    font-size: 30px;
-  }
-}
-
-.launchpad-perks .explanation-blocks {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
-  justify-items: center;
-}
-
-.launchpad-perks .image-and-number {
-  margin-top: -80px;
-}
-
-.stars {
-  border: solid 2px blueviolet;
-  min-width: 40px;
-  min-height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5em;
-  border-radius: 100%;
-  text-align: center;
-  background-color: #2e2b39;
-}
-
-@media screen and (min-width: 1024px) {
-  div.launchpad-perks-explanation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
-.launchpad-perks .summary {
-  font-size: 20px;
-  padding: 40px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: rgb(178, 178, 178);
-}
-
-@media screen and (min-width: 1024px) {
-  div.launchpad-perks .summary {
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    font-size: 17px;
-    color: rgb(178, 178, 178);
-    margin-top: 5%;
-    margin-bottom: 3%;
-  }
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.explanation-blocks .summary {
-    font-size: 20px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.explanation-blocks .summary {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  div.explanation-blocks .summary {
-    font-size: 17px;
-  }
-}
-
-.call-to-action {
-  font-size: 25px;
-  text-align: center;
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  width: 200vw;
-  padding-top: 7vh;
-  padding-bottom: 23vh;
-  margin-left: -50vw;
-}
-
-@media screen and (min-width: 601px) {
-  div.call-to-action {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.call-to-action {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  div.call-to-action {
-    font-size: 25px;
-    padding-left: 20px;
-  }
-}
-
-.button {
-  background-image: linear-gradient(40deg, #bb30ee 0%, #671cf3 100%);
-  font-size: 14px;
-  padding: 20px;
-  width: 300px;
-  border-radius: 70px;
-  color: white;
-  margin-top: 50px;
-  border: none;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.incentive {
-  color: white;
-  font-weight: 500;
-  font-size: 25px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.incentive {
-    font-size: 30px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.incentive {
-    font-size: 25px;
-  }
-}
-
-.image {
-  width: 17vw;
-  min-width: 100px;
-  max-width: 240px;
-  height: auto;
-  margin-right: 5vw;
-}
-
-.launchpad-perks .header .image {
-  width: 17vw;
-  min-width: 100px;
-  max-width: 140px;
-  height: auto;
-  margin-right: 5vw;
-}
-
-@media screen and (max-width: 1024px) {
-  div.what-is-it .image {
-    display: none;
-  }
+div.what-is-it .header-image {
+  display: none;
 }
 
 .mobile-header {
@@ -615,75 +188,413 @@
   margin-right: 5vw;
 }
 
+.description {
+  font-size: 16px;
+  width: 85%;
+}
+
+@media screen and (min-width: 601px) {
+  div.description {
+    font-size: 20px;
+    width: 85%;
+  }
+  div.what-is-it {
+    margin-bottom: 0vh;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  img.mobile-image {
-    display: none;
+  div.what-is-it {
+    margin-left: 0vw;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0vh;
   }
-  div.mobile-header {
-    padding-bottom: 0px;
+  div.what-is-it-text {
+    font-size: 30px;
+    width: 40vw;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 60%;
+  }
+  div.description {
+    font-size: 20px;
+    width: 35vw;
+  }
+  div.what-is-it .header-image {
+    display: flex;
   }
 }
 
-.phone-block {
+/////////////////////////////////////--------------////////////////////////////////////
+//////////////////////////////////// HOW IT WORKS ////////////////////////////////////
+///////////////////////////////////--------------////////////////////////////////////
+
+.how-it-works-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-top: 44px;
+  font-size: 30px;
 }
 
-.phone-image {
-  height: 40px;
-  width: auto;
-}
-
-.phone-number {
-  margin-left: 30px;
-}
-
-.email-block {
+.how-it-works {
+  background-color: #25192e;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
   align-items: center;
+  padding-bottom: 100px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.295);
 }
 
-.email-image {
-  height: 40px;
-  width: auto;
-}
-
-.email-address {
-  margin-left: 30px;
-}
-
-.contact {
-  margin-left: 40px;
-}
-
-.address-block {
+.numbers {
+  text-align: center;
+  font-size: max(35px, 4vw);
+  font-weight: 600;
+  border: solid 1px #ac00ff;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: #2e2b39;
+  width: 1.7em;
+  height: 1.7em;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-.address {
-  padding-left: 40px;
-}
-
-.location-image {
-  height: 30px;
-  width: auto;
-  padding-left: 3px;
-  align-self: center;
+.stick {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 74%;
+  background-color: #ac00ff;
+  right: 29px;
+  top: 110px;
 }
 
 .explained-image {
-  width: 60vw;
+  width: 180px;
   height: auto;
   max-width: 350px;
   margin: 10%;
 }
-@media screen and (min-width: 1024px) {
+
+.stick2-desktop {
+  position: absolute;
+  width: 1px;
+  height: calc(75% - 32px - 44px);
+  background-color: #ac00ff;
+  display: none;
+  left: 0px;
+  top: calc(32px + 15%);
+}
+
+.stick2-mobile {
+  position: absolute;
+  width: 1px;
+  height: calc(75% - 32px - 44px);
+  background-color: #ac00ff;
+  display: flex;
+  left: 54px;
+  top: calc(32px + 15%);
+}
+
+.how-it-works-explanation {
+  position: relative;
+}
+
+.image-and-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.explanation-blocks {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation-blocks .text {
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-left: 15%;
+  width: 60vw;
+}
+
+.deco-4 {
+  display: none;
+}
+
+@media screen and (min-width: 601px) {
+  div.how-it-works-header {
+    font-size: 35px;
+  }
+  div.explanation-blocks .text {
+    width: 50vw;
+  }
   img.explained-image {
-    width: 40vw;
+    width: 300px;
+    height: auto;
+  }
+
+  .stick {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 75%;
+    right: 29px;
+    top: 185px;
+  }
+  .how-it-works-explanation {
+    max-width: 750px;
+  }
+  div.how-it-works .image-and-number {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-text {
+    font-size: 60px;
+  }
+  div.how-it-works .image-and-number {
+    flex-direction: row-reverse;
+    width: 75vw;
+  }
+  div.how-it-works-header {
+    justify-content: center;
+    width: 100vw;
+    margin-left: 0px;
+    margin-bottom: 44px;
+  }
+  div.numbers {
+    margin-left: 64px;
+    margin-right: 64px;
+    font-size: 40px;
+    padding: 50px;
+  }
+  div.how-it-works-explanation {
+    align-items: flex-start;
+    width: 85vw;
+    max-width: 1348px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stick {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 72%;
+    left: 147px;
+    top: 225px;
+  }
+
+  div.stick2-desktop {
+    position: absolute;
+    display: block;
+    width: calc(69% - 32px);
+    height: 1px;
+    background-color: #ac00ff;
+    left: calc(32px + 15%);
+    top: 97px;
+    z-index: 0;
+  }
+  div.explanation-blocks .text {
+    font-size: 20px;
+    margin-left: 64px;
+  }
+  div.explanation-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  img.explained-image {
+    width: 472px;
     max-width: none;
+  }
+  .stick2-mobile {
+    display: none;
+  }
+  .deco-4 {
+    top: 1550px;
+    left: 0px;
+    display: block;
+    position: absolute;
+  }
+}
+
+/////////////////////////////////////-----------------////////////////////////////////////
+//////////////////////////////////// LAUNCHPAD PERKS ////////////////////////////////////
+///////////////////////////////////-----------------////////////////////////////////////
+
+.launchpad-perks-bulletpoints {
+  background-color: #33303f;
+  border-radius: 16px;
+  box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.167);
+  width: 90%;
+  padding: 32px 16px 44px;
+  position: relative;
+}
+
+.bulletpoints-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.explanation-blocks2 {
+  position: relative;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  align-items: center;
+  color: white;
+}
+
+.explanation-blocks2 .text {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+  width: 90%;
+  color: white !important;
+}
+
+.header {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.star-wrapper {
+  border: solid 1px #ac00ff;
+  min-width: 30px;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.55em;
+  border-radius: 100%;
+  background-color: #2e2b39;
+  z-index: 10;
+}
+
+.star-image {
+  width: 30px;
+  height: auto;
+}
+
+.launchpad-perks .summary {
+  font-size: 16px;
+  padding: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: rgb(178, 178, 178);
+}
+
+.launchpad-perks .image-and-number {
+  margin-top: -80px;
+}
+
+.header-image {
+  width: 17vw;
+  min-width: 100px;
+  max-width: 240px;
+  height: auto;
+  margin-right: 5vw;
+}
+
+.launchpad-perks .header .image {
+  width: 17vw;
+  min-width: 100px;
+  max-width: 210px;
+  height: auto;
+  margin-right: 5vw;
+}
+
+@media screen and (min-width: 601px) {
+  div.header {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.launchpad-perks-bulletpoints {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    width: 75%;
+  }
+
+  div.explanation-blocks2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0 24px;
+  }
+
+  div.explanation-blocks2 .text {
+    width: 14vw;
+    font-size: 16px;
+  }
+  div.header {
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 70px;
+  }
+  div.launchpad-perks-explanation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  img.star-image {
+    width: 52px;
+    height: auto;
+  }
+  .star-wrapper {
+    padding: 1.5em;
+  }
+  div.launchpad-perks .summary {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 17px;
+    color: rgb(178, 178, 178);
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  div.mobile-header {
+    padding-bottom: 0px;
+  }
+  img.mobile-image {
+    display: none;
   }
 }
