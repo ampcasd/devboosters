@@ -1,99 +1,74 @@
-<div class="contact-component">
-  <div class="contact-form">
-    <div class="left-column">
-      <img
-        src="/assets/images/contact.png"
-        alt="contact-image"
-        width="490vw"
-        height="490vh"
-        class="contact-image"
-      />
-    </div>
-    <div class="right-column">
-      <div class="text">
-        <h1>Contact us</h1>
-        <i class="fa-solid-fa-location-dot"></i>
-      </div>
-
-      <div class="actions">
-        <ng-container *ngIf="showForm; else thankYou">
-          <form (submit)="submit()">
-            <div class="input-short">
-              <input
-                [(ngModel)]="name"
-                [class.invalid]="nameInvalid"
-                type="text"
-                name="name"
-                placeholder="Name"
-              />
-            </div>
-            <div class="input">
-              <input
-                [(ngModel)]="email"
-                type="email"
-                name="email"
-                placeholder="Email"
-                [class.invalid]="emailInvalid"
-              />
-            </div>
-
-            <textarea class="message-input"></textarea>
-            <button class="button">Send your message</button>
-          </form>
-        </ng-container>
-
-        <ng-template #thankYou>
-          <span class="thank-you"
-            >Thank you for your interest, we will reach out to you as soon as
-            humanly possible.</span
-          >
-        </ng-template>
-      </div>
-    </div>
+<div class="all">
+  <img
+    src="assets/images/purple-circle-segment-mobile.svg"
+    class="purple-circle-segment-mobile"
+  />
+  <div class="header1">
+    <h1>Contact</h1>
+    <p style="margin-top: -30px" class="subheader">
+      Hey, guy. Just contact us, ok? Please
+    </p>
+    <img class="stripes-top" src="assets/images/Deco-1.svg" />
   </div>
-  <div class="address-and-map">
-    <div class="map">
-      <div class="mapouter">
-        <div #map class="gmap_canvas">
-          <iframe
-            style="filter: invert(90%)"
-            width="550"
-            height="300"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps/embed/v1/view?key=AIzaSyAqj6srjdOlHhsQHWsIorAbOwU2QrIWAu4&center=51.127057,16.9218246&zoom=4"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe
-          ><style>
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 300px;
-              width: 550px;
-            }
-          </style>
+  <div class="contact-form-wrapper">
+    <div class="name-input">Your name: <input class="contact-input" /></div>
+    <div class="name-input">Your e-mail: <input class="contact-input" /></div>
+    <div class="name-input">Your message: <input class="message-input" /></div>
+
+    <button class="send-a-message-button">SEND A MESSAGE!</button>
+  </div>
+  <div class="here-we-are">
+    <div class="background">
+      <div class="rounder">
+        <img
+          class="purple-rounder-top"
+          src="../../assets/images/purple-rounder-top.svg"
+          alt=""
+        />
+      </div>
+      <div class="here-we-are-container">
+        <div class="map-wrapper">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="502"
+                height="309"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=irkucka%2011%20wroclaw&t=&z=3&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://putlocker-is.org">putlocker</a><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 209px;
+                  width: 332px;
+                }</style
+              ><a href="https://www.embedgooglemap.net"></a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 209px;
+                  width: 332px;
+                }
+              </style>
+            </div>
+          </div>
         </div>
+        <div class="here-we-are-wrapper">
+          <div class="here-we-are-header">Here we <strong>are!</strong></div>
+        </div>
+        <span class="address"
+          >Devboosters <br />
+          Wrocław, ul. Irkucka 11 <br />
+          51-210</span
+        >
       </div>
+      <img src="assets/images/grey-rounder-top.svg" class="rounder" />
     </div>
-    <div class="address">
-      <p>
-        <span class="icon fas fa-envelope"> </span
-        ><a href="mailto:contact@devboosters.com">contact@devboosters.com</a>
-      </p>
-      <p>
-        <span class="icon fas fa-phone"></span>
-        <a href="tel:+48732253993">+48 732 253 993</a>
-      </p>
-      <span class="icon fas fa-home"></span>Irkucka 11<br />
-      <div class="address2">
-        51-210 Wrocław<br />
-        POLAND, EU
-      </div>
-    </div>
-  </div>
-  <div class="page-extension">
-    <img src="assets/images/grey-rounder-top.svg" class="rounder" />
   </div>
 </div>

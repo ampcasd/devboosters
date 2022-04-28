@@ -1,3 +1,6 @@
+/////////////////////////////////////--------//////////////////////////////////////
+//////////////////////////////////// GLOBAL //////////////////////////////////////
+///////////////////////////////////--------//////////////////////////////////////////
 .background {
   overflow-x: hidden;
   color: white;
@@ -30,10 +33,15 @@ div.launchpad-header-and-image {
   justify-content: center;
 }
 
-div.header1 {
-  color: white;
-  font-size: calc(2vw + 10px);
-  padding: 6%;
+.h1 {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.subheader {
+  font-size: 16px;
+  color: #e3e1de;
+  padding-top: 10px;
 }
 
 .stripes-top {
@@ -83,10 +91,9 @@ div.header1 {
     justify-content: center;
   }
 
-  div.header1 {
+  .h1 {
     color: white;
-    font-size: calc(2.5vw + 10px);
-    padding: 6%;
+    font-size: 30px;
   }
 
   .stripes-top {
@@ -112,10 +119,15 @@ div.header1 {
     height: auto;
   }
 
+  .h1 {
+    margin-top: 150px;
+    font-size: 40px;
+  }
+
   div.launchpad-header-and-image {
     display: flex;
     flex-direction: row;
-    margin-top: -40%;
+    margin-top: -45%;
     display: flex;
     justify-content: center;
   }
@@ -207,19 +219,18 @@ div.what-is-it .header-image {
 @media screen and (min-width: 1024px) {
   div.what-is-it {
     margin-left: 0vw;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-bottom: 0vh;
+    margin-top: 7%;
   }
   div.what-is-it-text {
     font-size: 30px;
-    width: 40vw;
     margin-left: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    width: 60%;
   }
   div.description {
     font-size: 16px;
@@ -233,11 +244,11 @@ div.what-is-it .header-image {
 @media screen and (min-width: 1400px) {
   div.what-is-it {
     margin-left: 0vw;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-bottom: 0vh;
-    margin-top: 10vh;
+    margin-top: 7%;
   }
 }
 
@@ -265,7 +276,7 @@ div.what-is-it .header-image {
 
 .numbers {
   text-align: center;
-  font-size: max(35px, 4vw);
+  font-size: 36px;
   font-weight: 600;
   border: solid 1px #ac00ff;
   border-radius: 50%;
@@ -413,16 +424,16 @@ div.what-is-it .header-image {
     width: 1px;
     height: 72%;
     left: 147px;
-    top: 225px;
+    top: 210px;
   }
 
   div.stick2-desktop {
     position: absolute;
     display: block;
-    width: calc(70% - 32px);
+    width: calc(75% - 32px);
     height: 1px;
     background-color: #ac00ff;
-    left: calc(32px + 14%);
+    left: calc(32px + 12%);
     top: 97px;
     z-index: 0;
   }
@@ -436,7 +447,7 @@ div.what-is-it .header-image {
     justify-content: center;
   }
   img.explained-image {
-    width: 472px;
+    width: 370px;
     max-width: none;
   }
   .stick2-mobile {
@@ -532,7 +543,7 @@ div.what-is-it .header-image {
 .header-image {
   width: 17vw;
   min-width: 100px;
-  max-width: 240px;
+  max-width: 200px;
   height: auto;
   margin-right: 5vw;
 }
@@ -565,12 +576,15 @@ div.what-is-it .header-image {
     display: flex;
     flex-direction: column;
     margin-left: 0;
-    padding: 0 24px;
+    padding: 0;
+    max-width: 355px;
+    width: inherit;
   }
 
   div.explanation-blocks2 .text {
-    width: 14vw;
     font-size: 16px;
+    padding: 0;
+    padding-top: 20px;
   }
   div.header {
     font-size: 60px;
@@ -607,5 +621,11 @@ div.what-is-it .header-image {
   }
   img.mobile-image {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .launchpad-perks-bulletpoints {
+    max-width: 1500px;
   }
 }

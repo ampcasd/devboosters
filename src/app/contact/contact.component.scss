@@ -1,127 +1,156 @@
-@import "@fortawesome/fontawesome-free/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.contact-component {
-  background: #25192e;
-  overflow: hidden;
-  padding-top: 100px;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 56rem;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background: #222526;
-  }
-}
-
-.contact-form {
-  background-color: #33303f;
-  width: 90%;
+.all {
   display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-bottom: 80px;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.contact-form .right-column {
-  width: 70%;
-  padding-left: 6%;
+.purple-circle-segment-mobile {
+  width: 100vw;
+  max-width: min-content;
 }
 
-.contact-form .text {
+.contact-form-wrapper {
+  background-color: #33303f;
+  border-radius: 16px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1);
   width: 90%;
-  padding-top: 5%;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px 16px 44px;
 }
 
-.contact-image {
-  padding-top: 50px;
+.h1 {
+  margin-top: -300px;
+  padding: 20px;
+  font-size: 24px;
 }
 
-.input-short {
-  width: 80%;
-  margin-bottom: 5px;
-  padding-top: 20px;
+.subheader {
+  font-size: 16px;
+  color: #e3e1de;
+  padding-top: 10px;
 }
 
-.input {
-  width: 80%;
-  margin-bottom: 5px;
+.stripes-top {
+  width: calc(70px + 4vw);
+  height: auto;
+  top: 330px;
+  left: 30px;
+  position: absolute;
+}
+
+.contact-input {
+  background-color: #281b32;
+  border: 1px solid #ad00ff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 48px;
 }
 
 .message-input {
+  background-color: #281b32;
+  border: 1px solid #ad00ff;
+  border-radius: 4px;
   height: 200px;
-  width: 76.8%;
-  background-color: transparent;
-  border-radius: 8px;
-  color: lightgray;
-  font-family: inherit;
-  font-size: inherit;
-  resize: none;
-  outline: none;
-  padding: 10px;
-  border: solid 2px rgba(110, 110, 122, 0.5);
-}
-
-.button {
   margin-top: 20px;
-  margin-left: 60px;
-  margin-bottom: 20px;
-  display: block;
-  -webkit-appearance: none;
-  border: 0px;
-  border-radius: 50px;
-  padding: 1em 3em;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-clip: padding-box;
-  background: linear-gradient(90deg, #f17006, #eca622);
-  color: #fff;
-  margin-left: 27%;
 }
 
-.button:hover {
-  background: linear-gradient(90deg, #ff7300, #f59313);
-  color: #fff;
-  cursor: pointer;
-}
-
-.address-and-map {
-  background-color: #33303f;
-  border-radius: 8px;
+.send-a-message-button {
   width: 90%;
-  display: flex;
-  overflow: hidden;
-  margin-left: 5%;
+  height: 53px;
+  left: calc(50% - 292.33px / 2 - 0.84px);
+  top: 679px;
+  border: none;
+  background: #ac00ff;
+  border-radius: 60px;
+  color: white;
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
-.address-and-map.right-column {
+.name-input {
+  width: 100%;
 }
 
-.map {
-  border-radius: 8px;
-  display: flex;
-  justify-content: end;
-  filter: grayscale(75%);
-}
+.here-we-are {
+  .background {
+    overflow: hidden;
+    margin-bottom: -50px;
+  }
 
-.address {
-  padding: 4%;
-  font-size: 18px;
-  color: gray;
-}
+  .here-we-are-container {
+    background-color: rgba(35, 23, 45, 255);
+    margin-top: 100px;
+    height: 500px;
+    background-color: #25192e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.icon {
-  margin-right: 15px;
-}
+  .purple-rounder-top {
+    width: 100vw;
+    margin-top: 12vh;
+    margin-bottom: -105px;
+  }
 
-.address2 {
-  margin-left: 15%;
-}
+  .here-we-are-header {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
 
-.rounder {
-  width: 100vw;
-  margin-top: 50px;
-  margin-bottom: -5px;
+  .rectangle {
+    width: 6vw;
+    min-width: 80px;
+    max-width: 120px;
+    height: auto;
+    padding-left: 3vw;
+  }
+  .map-wrapper {
+    border-radius: 9px;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .address {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    img.rectangle {
+      width: 8vw;
+    }
+  }
+
+  .rounder {
+    width: 100vw;
+    margin-top: -7%;
+    min-height: 100%;
+    margin-bottom: 45px;
+  }
 }
