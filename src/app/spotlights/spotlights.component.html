@@ -1,15 +1,21 @@
-
 <div class="spotlights-background">
   <div *ngFor="let spotlight of spotlights" class="spotlights">
     <div class="spotlights">
       <div class="header-spotlights">
-        <img class="image-spotlights" [src]="spotlight.image" />
-        <p><strong>{{ spotlight.header }}</strong></p>
-      </div>
-      <div class="description-spotlights">
-        <span>
-          {{ spotlight.description }}
-        </span>
+        <img
+          class="image-spotlights"
+          [src]="spotlight.image"
+          class="image-spotlights"
+        />
+        <div class="spotlights-text-wrapper">
+          <p class="header">
+            <strong>{{ spotlight.header }}</strong>
+          </p>
+        <div class="description-spotlights">
+          <span>
+            {{ spotlight.description }}
+          </span>
+        </div>
       </div>
     </div>
   </div>
