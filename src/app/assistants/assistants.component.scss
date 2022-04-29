@@ -1,124 +1,146 @@
 .background {
-  overflow-x: hidden;
   color: white;
   justify-content: center;
   overflow: hidden;
 }
 
-.top-circle {
-  height: 700px;
-  width: 200vw;
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  margin-left: -90vw;
-  margin-top: -300px;
+.laptop-image {
+  margin-left: -55vw;
+  margin-top: 150px;
+  width: 264.32px;
+  height: calc(45vw + 100px);
 }
 
-.header {
-  color: white;
-  font-size: 25px;
-  margin-top: -362px;
-  padding: 30px;
+.purple-circle-segment {
+  width: 400px;
+  margin-left: 0vw;
+  margin-top: 50px;
+  height: auto;
 }
 
-.header-assistant-image {
-  width: 100vw;
-  height: 486px;
+div.launchpad-header-and-image {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: row;
+  margin-top: -250px;
+  display: flex;
+  justify-content: center;
 }
 
-.arrow {
+div.header1 {
+  color: white;
+  font-size: calc(2vw + 10px);
+  padding: 6%;
+}
+
+.stripes-top {
+  width: calc(60px + 4vw);
+  height: auto;
+  margin-top: 5%;
   position: absolute;
-  margin: 30px;
-  top: 300px;
+}
+
+.more-button {
+  background-color: rgba(35, 23, 45, 255);
+
+  border: solid 1px white;
+  border-radius: 85px;
+  color: aliceblue;
+  letter-spacing: 2.5px;
+  display: none;
+  margin-top: 100px;
   cursor: pointer;
 }
+.more-button-arrow {
+  padding-left: 5px;
+}
+@media screen and (min-width: 601px) {
+  .laptop-image {
+    margin-left: -10vw;
+    margin-top: 150px;
+    width: auto;
+    height: calc(45vw);
+  }
+  .purple-circle-segment {
+    width: 90vw;
+    margin-left: 0vw;
+    height: auto;
+  }
+  .more-button {
+    display: block;
+    width: 165px;
+    height: 55px;
+    font-size: 17px;
+  }
 
-.header-image {
-  margin-top: -170px;
+  div.launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.header1 {
+    color: white;
+    font-size: calc(2.5vw + 10px);
+    padding: 6%;
+  }
+
+  .stripes-top {
+    width: calc(50px + 4vw);
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
+  }
 }
 
-.rectangle-purple-one {
-  position: absolute;
-  width: 56px;
-  height: 8px;
-  right: 9px;
-  top: 239px;
+@media screen and (min-width: 1024px) {
+  .laptop-image {
+    margin-left: 0vw;
+    margin-top: 200px;
+    width: auto;
+    height: calc(25vw);
+    min-height: 400px;
+  }
+  .purple-circle-segment {
+    width: 80vw;
+    margin-left: 0;
+    margin-top: -10%;
+    height: auto;
+  }
 
-  background: #ad00ff;
-}
-.rectangle-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 531px;
-  right: 240px;
-}
+  div.launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -40%;
+    display: flex;
+    justify-content: center;
+  }
 
-.rectangle-container.second {
-  position: relative;
-  top: -20px;
-  right: auto;
-  width: 0vh;
-}
+  div.header1 {
+    color: white;
+    font-size: calc(2vw + 8px);
+    padding: 6%;
+  }
 
-.rectangle-container.reversed {
-  position: relative;
-  right: auto;
-  top: 701px;
-  align-items: end;
-  width: 0vw;
-}
-
-.rectangle-cyan {
-  width: 63px;
-  height: 8px;
-  background: #00ffd1;
-}
-
-.rectangle-yellow {
-  width: 35px;
-  height: 8px;
-  margin: 20px 0;
-  background: #ffa800;
+  .stripes-top {
+    width: calc(50px + 4vw);
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
+  }
+  .more-button {
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
+    display: block;
+  }
 }
 
-.rectangle-purple {
-  width: 63px;
-  height: 8px;
-  background: #ad00ff;
+.rounder-top {
+  width: 100%;
+  margin-bottom: -5px;
 }
-
-
-
-.bottom-circle-gray {
-  height: 900px;
-  width: 300vw;
-  background-color: rgba(67, 64, 82, 255);
-  border-radius: 100%;
-  position: absolute;
-  overflow: hidden;
-}
-
-.menus {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  margin: 0 auto;
-}
-
-.menus-list {
-  margin: 20px;
-  margin-top: 48px;
-}
-
-.adress {
-  position: relative;
-  top: 124px;
-  margin: 20px;
-  margin-top: 48px;
-  text-align: right;
+.rounder-bottom {
+  width: 100%;
 }

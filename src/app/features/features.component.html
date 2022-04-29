@@ -1,9 +1,13 @@
 <div class="what-can-we-do-container">
   <div class="header-what-we-can">
+    <img
+      src="assets/images/features-header-image.svg"
+      class="features-header-image"
+    />
     <p>What can we <strong>do for You?</strong></p>
   </div>
   <div class="features-wrapper">
-    <div *ngFor="let feature of features" class="features" >
+    <div *ngFor="let feature of features" class="features">
       <img class="features-image" [src]="feature.image" />
       <div class="features-text-wrapper">
         <div class="features-header">

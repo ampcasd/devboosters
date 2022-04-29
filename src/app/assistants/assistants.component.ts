@@ -46,18 +46,21 @@ export class AssistantsComponent implements OnInit {
 
   spotlights = [
     {
+      id: 1,
       header: 'Career analysis',
       description:
         'First, we determine your needs. We define what should be done to get you the work you want.',
       image: 'assets/images/career-analysis.png',
     },
     {
+      id: 2,
       header: 'Career management',
       description:
         'Next, we take ownership of driving your growth fast forward. We max out your online presence, talk with recruiters and apply to jobs for you.',
       image: 'assets/images/career-management.png',
     },
     {
+      id: 3,
       header: 'Retrospections',
       description:
         'After each of your job interviews we do a retro and prepare a summary of what should be done for you to improve.',

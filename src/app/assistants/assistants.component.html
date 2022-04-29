@@ -1,27 +1,29 @@
 <div class="background">
-  <div class="top-circle"></div>
-  <div class="header">
-    <h1>
-      Let us boost<br />
-      your career
-    </h1>
-    <p style="margin-top: -30px">
-      While you focus<br />
-      on your code
-    </p>
+  <div class="purple-circle-segment-wrapper">
+    <img
+      src="assets/images/purple-circle-segment-desktop.svg"
+      class="purple-circle-segment"
+    />
   </div>
-  <div class="rectangle-purple-one"></div>
-  <a pageScroll href="assistants#features">
-    <img src="assets/images/arrow.png" class="arrow" />
-  </a>
-  <div class="header-assistant-image">
-    <img src="assets/images/header-assistant.png" class="header-image" />
+  <div class="launchpad-header-and-image">
+    <div class="header1">
+      <h1>Assistants</h1>
+      <p style="margin-top: -30px">Let Us boost Your career</p>
+      <a pageScroll href="assistants#features"
+        ><button class="more-button">
+          MORE
+          <img
+            src="assets/images/more-button-arrow.svg"
+            class="more-button-arrow"
+          /></button
+      ></a>
+      <img class="stripes-top" src="assets/images/Deco-1.svg" />
+    </div>
+    <img class="laptop-image" src="assets/images/header-assistants-image.svg" />
   </div>
-  <div class="rectangle-container">
-    <div class="rectangle-cyan"></div>
-    <div class="rectangle-yellow"></div>
-    <div class="rectangle-purple"></div>
-  </div>
+  <img src="assets/images/purple-rounder-top.svg" class="rounder-top" />
+
   <spotlights [spotlights]="spotlights"></spotlights>
+  <img src="assets/images/purple-rounder-bottom.svg" class="rounder-bottom" />
   <features [features]="features" id="features"></features>
 </div>
