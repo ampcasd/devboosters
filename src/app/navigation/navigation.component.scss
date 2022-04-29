@@ -1,3 +1,5 @@
+$logo-desktop-font: 24px;
+$h3-font: 14px;
 @import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 @media screen and (max-width: 799px) {
   .bar {
@@ -14,7 +16,7 @@
 
   .logo {
     display: inline-block;
-    font-size: 25px;
+    font-size: $logo-desktop-font;
     margin-left: 15px;
     line-height: 10vh;
     font-weight: 600;
@@ -56,7 +58,7 @@
     position: relative;
     margin-bottom: 35px;
     margin-left: 40px;
-    font-size: 20px;
+    font-size: $h3-font;
     list-style: none;
     padding: 5px 0;
     line-height: 30px;
@@ -91,7 +93,7 @@
 
   .out {
     position: fixed;
-    font-size: 24px;
+    font-size: $logo-desktop-font;
     top: -100vh;
     margin: 0;
     transition: 0.5s;
@@ -136,7 +138,7 @@
     }
 
     .logo {
-      font-size: calc(5vw +0px);
+      font-size: $logo-desktop-font;
       font-weight: 700;
       color: #e3e1de;
     }
@@ -213,12 +215,16 @@
     height: 5vh;
     .logo,
     .logo:hover {
-      line-height: calc(1vw + 30px);
-      font-size: calc(1vw + 10px);
+      font-size: $logo-desktop-font;
       margin: 0;
     }
+
+    .logo:hover {
+      color: white;
+    }
+
     li {
-      font-size: calc(1vw + 20px);
+      font-size: $h3-font;
       margin: 0 0.8vw;
       transition: 0.5s;
       .border-left {
@@ -250,6 +256,6 @@
     }
   }
   a {
-    font-size: calc(1vw + 5px);
+    font-size: $h3-font;
   }
 }
