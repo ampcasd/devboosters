@@ -1,5 +1,8 @@
 <div class="spotlights-background">
-  <div *ngFor="let spotlight of spotlights" class="spotlights">
+  <div
+    *ngFor="let spotlight of spotlights; let i = index; second as isSecond"
+    class="spotlights"
+  >
     <div class="spotlights">
       <div class="header-spotlights">
         <img
@@ -11,10 +14,11 @@
           <p class="header">
             <strong>{{ spotlight.header }}</strong>
           </p>
-        <div class="description-spotlights">
-          <span>
-            {{ spotlight.description }}
-          </span>
+          <div class="description-spotlights">
+            <span>
+              {{ spotlight.description }}
+            </span>
+          </div>
         </div>
       </div>
     </div>
