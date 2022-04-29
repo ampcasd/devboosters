@@ -102,6 +102,7 @@ $mobile-h1-font: 40px;
 .how-button {
   width: 75%;
   line-height: 40px;
+  // height: 56px;
   text-transform: uppercase;
   font-size: $button-font;
   background-color: #433f51;
@@ -151,8 +152,6 @@ $mobile-h1-font: 40px;
 .launchpad-txt-container {
   margin: 0 auto;
   width: 80%;
-  padding-right: 60px;
-
   display: flex;
   flex-direction: column;
 }
@@ -298,8 +297,9 @@ $mobile-h1-font: 40px;
 }
 
 .ourway-title {
-  font-size: $h2-font;
+  font-size: 40px;
   margin: 5%;
+  padding-right: 40px;
 }
 
 .ourway-slogan {
@@ -448,7 +448,7 @@ $mobile-h1-font: 40px;
 @media screen and (min-width: 960px) {
   .wrapper {
     min-width: 960px;
-    margin: 0 5%;
+    margin: 0 50px;
     max-width: 1032px;
   }
 
@@ -472,10 +472,12 @@ $mobile-h1-font: 40px;
   }
 
   .desctop-wrapper {
+    position: relative;
     width: 100%;
     overflow: hidden;
 
     .wrapper {
+      position: relative;
       width: 80%;
       margin: 0 auto;
       overflow: visible;
@@ -624,6 +626,7 @@ $mobile-h1-font: 40px;
     .launchpad-txt-container {
       width: 50%;
       position: relative;
+      padding-right: 60px;
     }
 
     .launchpad-title {
@@ -673,7 +676,7 @@ $mobile-h1-font: 40px;
 
     .sourcing-txt-container {
       position: relative;
-      margin: 0 5%;
+      margin-right: 0%;
       width: 50%;
     }
 
@@ -709,7 +712,7 @@ $mobile-h1-font: 40px;
       display: block;
       position: relative;
       top: 25px;
-      left: -50px;
+      left: 70px;
       margin: 0;
       width: 410px;
       height: auto;
@@ -804,7 +807,6 @@ $mobile-h1-font: 40px;
   }
 
   .top-rounder {
-    position: relative;
     margin: 0 0 -8px -10vw;
 
     img {
@@ -812,17 +814,28 @@ $mobile-h1-font: 40px;
     }
   }
 
+  .top-rounder .desktop {
+    position: absolute;
+    top: 0;
+  }
+
+  .top-rounder-purple {
+    position: absolute;
+    left: 0;
+  }
+
   .ourway-container {
     margin: 0 auto;
     width: 80%;
+    max-width: 1032px;
 
     .ourway-circle {
       display: none;
     }
 
     .signpost {
-      width: calc(16vw + 20px);
-      margin: 0;
+      width: 230px;
+      margin-left: 13vw;
     }
 
     .header {
@@ -835,11 +848,12 @@ $mobile-h1-font: 40px;
       margin: 0 5vw;
       p,
       strong {
-        font-size: $txt-font;
+        font-size: $h2-font;
       }
 
       .ourway-slogan {
-        margin-top: -5vh;
+        margin-top: 4vh 0;
+        font-size: $h3-font;
       }
     }
 
@@ -864,7 +878,7 @@ $mobile-h1-font: 40px;
       left: 0;
       transform-origin: 0 0;
       transform: rotate(270deg);
-      height: 19vw;
+      height: calc(4vw + 180px);
     }
     .flag-border {
       margin: calc(1vw + 16px) auto 0;
@@ -882,7 +896,7 @@ $mobile-h1-font: 40px;
 
     .ourway-desktop-message {
       display: block;
-      margin: 5vw;
+      margin: 4vw;
     }
 
     .ourway-desktop-message p {
@@ -892,16 +906,16 @@ $mobile-h1-font: 40px;
   }
 
   .ourway-desktop-wrapper {
+    margin-top: 9.1vw;
     width: 100vw;
-    position: absolute;
     left: 0;
     background-color: #25192e;
 
     .perspectives-container {
-      width: 80vw;
-      margin: 0 auto;
+      display: flex;
+      justify-content: center;
       .ourway-title-wrapper {
-        width: 100%;
+        max-width: 1032px;
       }
 
       .stars {
@@ -916,6 +930,7 @@ $mobile-h1-font: 40px;
 
       .ourway-slogan {
         margin: 5vw 0;
+        font-size: $h3-font;
       }
 
       .perspective-content {
@@ -927,24 +942,25 @@ $mobile-h1-font: 40px;
         font-size: $txt-font;
       }
 
-      .perspectives-stripes {
-        display: block;
-        position: relative;
-        top: 0;
-        left: 20vw;
-        z-index: 2;
-        width: calc(5vw + 20px);
-        height: calc(5vw + 20px);
-      }
-
       .perspectives-circle {
         display: none;
       }
     }
   }
 
+  .perspectives-stripes {
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    z-index: 10;
+    width: 80px;
+    height: auto;
+  }
   .overview {
-    margin: 5vw;
+    margin: 200px auto;
+    position: relative;
+    max-width: 1032px;
 
     .overview-title,
     .overview-title strong {
