@@ -219,7 +219,7 @@ $h3-font: 14px;
       margin: 0;
     }
 
-    .logo:hover {
+    .logo:hover, .active {
       color: white;
     }
 
@@ -239,7 +239,7 @@ $h3-font: 14px;
         transition: 0.2s;
       }
     }
-    li:hover {
+    li:hover, .active {
       .border-left {
         opacity: 1;
       }
