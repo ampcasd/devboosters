@@ -488,7 +488,7 @@ $mobile-h1-font: 40px;
       top: 5vh;
       left: 0;
       height: auto;
-      min-height: 50vh;
+      min-height: 80vh;
       overflow: visible;
       padding-bottom: 2vw;
       .main-baner {
@@ -533,7 +533,7 @@ $mobile-h1-font: 40px;
       right: 0;
       display: block;
       height: auto;
-      width: 60%;
+      width: 55%;
     }
   }
 
@@ -589,7 +589,7 @@ $mobile-h1-font: 40px;
     margin: 20vh 5% 10vh;
     position: relative;
     width: 100%;
-    height: 35vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     .desktop-launchpad-laptop {
@@ -658,7 +658,7 @@ $mobile-h1-font: 40px;
     margin: 20vh 0 10vh 5%;
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
 
@@ -711,8 +711,9 @@ $mobile-h1-font: 40px;
     .desktop-girl {
       display: block;
       position: relative;
-      top: 25px;
-      left: 70px;
+      top: 35px;
+      left: 40px;
+
       margin: 0;
       width: 410px;
       height: auto;
@@ -720,8 +721,8 @@ $mobile-h1-font: 40px;
 
     .desktop-sourcing-circle {
       position: absolute;
-      top: -4vh;
-      right: -200px;
+      top: -5vh;
+      right: -160px;
       width: 500px;
       height: 500px;
       background-color: #23172d;
@@ -740,7 +741,7 @@ $mobile-h1-font: 40px;
     margin: 20vh 5% 10vh;
     position: relative;
     width: 100%;
-    height: 35vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     .assistace-logo .img {
@@ -760,8 +761,9 @@ $mobile-h1-font: 40px;
 
     .assistance-circle {
       position: absolute;
-      top: -7vh;
-      left: -300px;
+      top: -13vh;
+      left: -250px;
+
       width: 500px;
       height: 500px;
       background-color: rgba(35, 23, 45);
