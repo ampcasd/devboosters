@@ -990,3 +990,17 @@ $mobile-h1-font: 40px;
     }
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .wrapper .main-container {
+    min-height: 57vh;
+  }
+  .launchpad-container,
+  .sourcing-container,
+  .assistance-container {
+    height: 40vh;
+  }
+  .assistance-container .assistance-circle {
+    top: -9vh;
+  }
+}
