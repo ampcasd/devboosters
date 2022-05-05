@@ -1,10 +1,7 @@
 <div class="spotlights-background">
-  <div
-    *ngFor="let spotlight of spotlights; let i = index; second as isSecond"
-    class="spotlights"
-  >
+  <div *ngFor="let spotlight of spotlights; let i = index" class="spotlights">
     <div class="spotlights">
-      <div class="header-spotlights">
+      <div class="spotlight-wrapper" [class.reversed-spotlight]="i === 1">
         <img
           class="image-spotlights"
           [src]="spotlight.image"
@@ -14,12 +11,21 @@
           <p class="header">
             <strong>{{ spotlight.header }}</strong>
           </p>
-          <div class="description-spotlights">
+          <div class="description">
             <span>
               {{ spotlight.description }}
             </span>
           </div>
         </div>
+      </div>
+      <div class="cyan-and-yellow-sticks">
+        <img src="assets/images/stricks-one.svg" [class.hide-img]="i === 1" />
+      </div>
+      <div class="purple-and-yellow-sticks">
+        <img
+          src="assets/images/stricks-two.svg"
+          [class.hide-img]="i === 0 || i === 2"
+        />
       </div>
     </div>
   </div>
