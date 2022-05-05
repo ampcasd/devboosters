@@ -18,6 +18,14 @@
   height: auto;
 }
 
+.rounder-top {
+  width: 100%;
+  margin-bottom: -5px;
+}
+.rounder-bottom {
+  width: 100%;
+}
+
 div.launchpad-header-and-image {
   display: flex;
   flex-direction: row;
@@ -50,9 +58,13 @@ div.header1 {
   margin-top: 100px;
   cursor: pointer;
 }
+.more-button:hover {
+  background-color: #673590;
+}
 .more-button-arrow {
   padding-left: 5px;
 }
+
 @media screen and (min-width: 601px) {
   .laptop-image {
     margin-left: -10vw;
@@ -130,17 +142,23 @@ div.header1 {
     position: absolute;
   }
   .more-button {
-    width: 250px;
-    height: 75px;
-    font-size: 20px;
-    display: block;
+    width: 178px;
+    height: 56px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-.rounder-top {
-  width: 100%;
-  margin-bottom: -5px;
-}
-.rounder-bottom {
-  width: 100%;
+  .more-button:hover {
+    background-color: #673590;
+  }
+
+  .rounder-top {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  .rounder-bottom {
+    width: 100%;
+  }
 }

@@ -53,6 +53,7 @@ div.header1 {
   display: none;
   margin-top: 100px;
 }
+
 .more-button-arrow {
   padding-left: 5px;
 }
@@ -133,10 +134,16 @@ div.header1 {
     position: absolute;
   }
   .more-button {
-    width: 250px;
-    height: 75px;
-    font-size: 20px;
-    display: block;
+    width: 178px;
+    height: 56px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .more-button:hover {
+    background-color: #673590;
   }
 }
 
