@@ -5,6 +5,8 @@
 }
 
 .laptop-image {
+  position: relative;
+  left: 40px;
   margin-left: -55vw;
   margin-top: 150px;
   width: 264.32px;
@@ -35,7 +37,6 @@ div.launchpad-header-and-image {
 
 div.header1 {
   color: white;
-  font-size: calc(2vw + 10px);
   padding: 6%;
 }
 
@@ -44,6 +45,14 @@ div.header1 {
   height: auto;
   margin-top: 5%;
   position: absolute;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
 }
 
 .more-button {
@@ -120,6 +129,14 @@ div.header1 {
     height: auto;
   }
 
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
   div.launchpad-header-and-image {
     display: flex;
     flex-direction: row;
@@ -159,5 +176,11 @@ div.header1 {
   }
   .rounder-bottom {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .rounder-top {
+    margin-top: 274px;
   }
 }
