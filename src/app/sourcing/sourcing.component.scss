@@ -2,10 +2,9 @@
   overflow-x: hidden;
   box-sizing: border-box;
   color: white;
-  min-width: 400px;
   display: grid;
-  grid-template-columns: 15% 20% 15% 15% 20% 15%;
-  grid-template-rows: 100px 400px 50px 300px 100px auto;
+  grid-template-columns: auto 16px 500px 500px 16px auto;
+  grid-template-rows: 2% 400px 100px auto;
   grid-template-areas:
     "top top top top top top"
     ". header header header-img-mobile header-img  . "
@@ -19,13 +18,10 @@
 
 // HEADER
 .sourcing-header-top-circle {
-  overflow-x: hidden;
-  height: 1500px;
-  width: calc(50% + 1742px);
-  background-color: rgba(35, 23, 45, 255);
-  border-radius: 100%;
-  margin-left: -1200px;
-  margin-top: -800px;
+  width: 80vw;
+  margin-left: 0;
+  margin-top: -10%;
+  height: auto;
 }
 .sourcing-header-top-circle-wrapper {
   grid-area: top;
@@ -36,19 +32,25 @@
 .sourcing-header {
   grid-area: header;
   color: white;
-  font-size: 35px;
 }
 
+.sourcing-header-title {
+  font-weight: 700;
+  font-size: 80px;
+}
 .sourcing-header-description {
-  font-size: 18px;
   margin-top: -30px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  font-weight: 400;
   color: #ffffff80;
 }
 
 .sourcing-header-image {
+  padding-top: 100px;
   grid-area: header-img;
   justify-self: end;
-  width: calc(60% + 500px);
+  width: 616px;
 }
 
 .rectangle-container-header {
@@ -56,12 +58,12 @@
   place-self: end start;
 }
 
-.rectangle-container-header-img {
-  grid-area: header-img-rectangle;
-  place-self: end;
-}
-
 // BUTTON
+.more-button-link {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+}
 
 .more-button {
   width: 178px;
@@ -79,6 +81,7 @@
   align-items: center;
   justify-content: center;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .more-button:hover {
@@ -100,7 +103,7 @@
   grid-area: middle;
   background-color: rgba(37, 25, 46, 1);
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: auto 1032px auto;
   grid-template-areas: ". middle-content .";
 }
 
@@ -146,7 +149,8 @@
 }
 
 .sourcing-middle-description {
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .sourcing-middle-halfcircle-top {
@@ -159,24 +163,18 @@
   width: 100%;
 }
 
-.rectangle-container-middle-first {
+.rectangle-container-middle-right {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.rectangle-container-middle-second {
+.rectangle-container-middle-left {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.rectangle-container-middle-third {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
 }
 
 // BOTTOM
@@ -189,7 +187,6 @@
     ". . entry . ."
     ". bulletpoints bulletpoints bulletpoints ."
     ". description description description .";
-  margin-top: 100px;
   place-items: center;
 }
 
@@ -209,7 +206,8 @@ div.sourcing-bottom-description {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 // BOTTOM BULLET LIST
@@ -232,8 +230,8 @@ div.sourcing-bottom-description {
 }
 
 .sourcing-bottom-entry-bulletpoints-description {
-  font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 16px;
   padding: 20px;
   width: 100%;
   color: white;
@@ -257,39 +255,20 @@ div.sourcing-bottom-description {
   position: absolute;
   margin-top: 60px;
   height: 1px;
-  width: 40%;
+  width: 680px;
   border: solid 2px blueviolet;
-}
-
-// COMMON - COLORFUL RECTANGLES
-
-.rectangle-cyan {
-  width: 80px;
-  height: 8px;
-  background: #00ffd1;
-  border-radius: 10px;
-}
-
-.rectangle-yellow {
-  width: 45px;
-  height: 8px;
-  margin: 20px 0;
-  background: #ffa800;
-  border-radius: 10px;
-}
-
-.rectangle-purple {
-  width: 140px;
-  height: 8px;
-  background: #ad00ff;
-  border-radius: 10px;
 }
 
 // W 1280-1024
 @media screen and (max-width: 1280px) {
-  .sourcing-header-image {
-    margin-top: 150px;
-    width: 600px;
+  .background {
+    grid-template-columns: 5% 20% 25% 25% 20% 5%;
+  }
+  .sourcing-middle-wrapper {
+    grid-template-columns: 5% 90% 5%;
+  }
+  .sourcing-bottom-bulletpoints-line {
+    width: 60%;
   }
 }
 
@@ -313,6 +292,7 @@ div.sourcing-bottom-description {
     grid-column: 5;
     margin-bottom: -80px;
   }
+
   .sourcing-bottom-bulletpoints-line {
     width: 60%;
   }
@@ -320,35 +300,59 @@ div.sourcing-bottom-description {
 
 // W <600
 @media screen and (max-width: 600px) {
+  .background {
+    grid-template-columns: 5% 0 65% 25% 0 5%;
+    grid-template-rows: 2% 20px 0px 20px 400px auto 100px auto;
+  }
+
+  .more-button-link {
+    display: none;
+  }
+
+  .sourcing-header-top-circle {
+    width: 400px;
+    margin-left: 0;
+    margin-top: 50px;
+    height: auto;
+  }
+
   .sourcing-header-image {
     grid-area: header-img-mobile;
-    margin-top: 200px;
-    margin-left: -200px;
+    margin-top: 0px;
+    margin-left: -200%;
     justify-self: start;
-    width: 600px;
+    width: 350px;
   }
 
-  .rectangle-container-header-img {
+  .sourcing-header-description {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .sourcing-header-title {
+    font-weight: normal;
+    font-size: 40px;
+  }
+
+  .rectangle-container-header {
     margin-bottom: -180px;
+    grid-area: header-rectangle-mobile;
+    place-self: end start;
+    width: 80px;
+  }
+  .rectangle-container-middle-right {
+    display: none;
   }
 
-  .more-button {
-    width: 50px;
-    height: 50px;
-  }
-
-  .more-button img {
-    height: 2rem;
-    margin-left: 0;
-  }
-
-  .more-button-text {
-    visibility: hidden;
-    line-height: 0;
+  .rectangle-container-middle-left {
+    display: none;
   }
 
   .sourcing-middle-wrapper {
     grid-template-columns: 5% 90% 5%;
+  }
+  .sourcing-middle-entry {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .source-middle-image {
@@ -387,19 +391,7 @@ div.sourcing-bottom-description {
   .sourcing-bottom-bulletpoints-line {
     margin-top: 0px;
     margin-left: 43px;
-    height: 42%;
+    height: calc(600px - 25%);
     width: 1px;
-  }
-
-  .rectangle-cyan {
-    width: 40px;
-  }
-
-  .rectangle-yellow {
-    width: 25px;
-  }
-
-  .rectangle-purple {
-    width: 70px;
   }
 }
