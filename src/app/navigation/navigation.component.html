@@ -2,12 +2,8 @@
   <a class="logo" href="/">DevBoosters</a>
 
   <ul class="desktop-ul">
-    <li
-      *ngFor="let menuItem of menuItems"
-      [class.selected]="menuItem.selected"
-      [routerLink]="menuItem.path"
-    >
-      <a>
+    <li *ngFor="let menuItem of menuItems" [class.selected]="menuItem.selected">
+      <a [routerLink]="menuItem.path" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         <div class="border-left"></div>
         {{ menuItem.displayValue }}</a
       >
@@ -49,7 +45,7 @@
         <a routerLink="/sourcing" routerLinkActive="active">SOURCING</a>
       </li>
       <li>
-        <div class="border-left"></div>
+        <div class="border-left" ></div>
         <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
       </li>
     </ul>

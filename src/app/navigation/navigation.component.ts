@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'navigation',
@@ -10,7 +10,7 @@ export class NavigationComponent implements OnInit {
   readonly menuItems = [
     { displayValue: 'HOME', path: '/' },
     { displayValue: 'LAUNCHPAD', path: '/launchpad' },
-    { displayValue: 'ASSISTANTS', path: '/assistants' },
+    { displayValue: 'ASSISTANTS', path: '/assistants', },
     { displayValue: 'SOURCING', path: '/sourcing' },
     { displayValue: 'CONTACT', path: '/contact' },
   ];
