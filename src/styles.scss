@@ -54,34 +54,6 @@ button {
   }
 }
 
-input {
-  display: block;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 7px;
-  border: none;
-  border: solid 2px rgba(110, 110, 122, 0.5);
-  box-sizing: border-box;
-  line-height: 1.65;
-  height: 3rem;
-  color: #ffffff;
-  color: inherit;
-  outline: 0;
-  padding: 0 1rem;
-  text-decoration: none;
-  width: 100%;
-  font-weight: 300;
-  font-size: 1rem;
-
-  &:focus {
-    border: 2px solid #edb92e;
-  }
-
-  &.invalid {
-    border: 2px solid #d54857;
-  }
-}
-
 .inner {
   position: relative;
   display: flex;
@@ -95,5 +67,3 @@ input {
     max-width: calc(100% - 6rem);
   }
 }
-
-
