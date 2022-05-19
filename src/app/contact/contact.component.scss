@@ -59,6 +59,8 @@
   height: 48px;
   border-radius: 7px;
   color: white;
+  outline: none;
+  font-size: 20px;
 }
 
 .message-input {
@@ -72,6 +74,8 @@
   vertical-align: top;
   text-align: left;
   resize: none;
+  outline: none;
+  font-family: "Source Sans 3";
 }
 
 .checkbox-text {
