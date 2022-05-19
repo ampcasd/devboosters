@@ -55,7 +55,7 @@
   border: 1px solid #ad00ff;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 98%;
   height: 48px;
   border-radius: 7px;
 }
@@ -64,10 +64,9 @@
   background-color: #281b32;
   border: 1px solid #ad00ff;
   border-radius: 7px;
-  padding: 20px;
   height: 200px;
   margin-top: 20px;
-  width: 88%;
+  width: 98%;
   color: #e3e1de;
   vertical-align: top;
   text-align: left;
@@ -96,6 +95,7 @@
 .statement {
   display: flex;
   flex-direction: row;
+  width: 95%;
 }
 
 .send-a-message-button {
