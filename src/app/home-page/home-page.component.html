@@ -81,12 +81,12 @@
         <div class="launchpad-title">Launchpad</div>
         <div class="launchpad-content">
           <p>
-            Launchpads allow experienced Software Engineers totake on the
+            Launchpads allow experienced Software Engineers to take on the
             responsibility of educating Junior Developers and reap the rewards
             of that commitment.
           </p>
           <p>
-            Launchpads are set up as an on-site office that is run bythe mentor
+            Launchpads are set up as an on-site office that is run by the mentor
             as a side gig to their day job.
           </p>
           <div class="how launchpad-how">
@@ -121,11 +121,10 @@
         <div class="sourcing-content">
           <p>
             Apart from streams created by the dynamics of Launchpads and
-            Assistants, there is a growing number ofexperienced Software
-            Engineers that are willing to workwith us. With the growth of our
+            Assistants, there is a growing number of experienced Software
+            Engineers that are willing to work with us. With the growth of our
             people, more people are coming.
           </p>
-          <p>With the growth of our people, more people are coming.</p>
         </div>
         <div class="how">
           <a href="/sourcing">
@@ -155,34 +154,34 @@
         <div class="desktop-sourcing-circle"></div>
       </div>
     </div>
-    <div class="assistance-container">
-      <div class="assistance-logo">
-        <div class="desktop-assistance-img">
+    <div class="assistants-container">
+      <div class="assistants-logo">
+        <div class="desktop-assistants-img">
           <img src="../../assets/images/desktop-guys.png" alt="" class="img" />
         </div>
 
         <img
-          class="assistance-img"
+          class="assistants-img"
           src="../../assets/images/boyslaptop.png"
           alt="laptop"
         />
-        <div class="assistance-circle"></div>
+        <div class="assistants-circle"></div>
       </div>
-      <div class="assistance-txt-container">
-        <div class="assistance-title">Assistance</div>
-        <div class="assistance-content">
+      <div class="assistants-txt-container">
+        <div class="assistants-title">Assistants</div>
+        <div class="assistants-content">
           <p>
             Launchpads allow experienced Software Engineers to take on the
             responsibility of educating Junior Developers and reap the rewards
             of that commitment.
           </p>
           <p>
-            Launchpads are set up as an on-site office that is run bythe mentor
+            Launchpads are set up as an on-site office that is run by the mentor
             as a side gig to their day job.
           </p>
           <div class="how sourcing-how">
             <a href="/assistants">
-              <button class="how-button assistance-button">
+              <button class="how-button assistants-button">
                 View more<img
                   src="../../assets/images/strzalka-w-prawo.svg"
                   alt=""
@@ -192,7 +191,7 @@
           </div>
         </div>
         <img
-          class="desktop-assistance-stripes"
+          class="desktop-assistants-stripes"
           src="../../assets/images/stripes1.svg"
           alt=""
         />
@@ -242,7 +241,7 @@
           </div>
           <div class="flag-content">
             <p>
-              In a world of too many Juniors and not enough Seniors,we provide
+              In a world of too many Juniors and not enough Seniors, we provide
               experience to inexperienced developers.
             </p>
           </div>
@@ -254,8 +253,8 @@
           </div>
           <div class="flag-content">
             <p>
-              In a world of high rotation, we offer retention in formsof Loyalty
-              Agreements and continuous growth.
+              In a world of high rotation, we offer retention in forms of
+              Loyalty Agreements and continuous growth.
             </p>
           </div>
         </div>
@@ -266,7 +265,7 @@
           </div>
           <div class="flag-content">
             <p>
-              In a world where job hunting can take a year, we offerhelp with
+              In a world where job hunting can take a year, we offer help with
               the process to take on tedious tasks.
             </p>
           </div>
@@ -277,7 +276,7 @@
           </div>
           <div class="flag-content">
             <p>
-              We bring proper sourcing-related incentives toSoftware Engineers.
+              We bring proper sourcing-related incentives to Software Engineers.
             </p>
           </div>
         </div>
@@ -293,20 +292,14 @@
                 Our <strong>perspective</strong>
               </p>
               <p class="ourway-slogan">
-                Scratching the itches of SoftwareEngineers.
+                Scratching the itches of Software Engineers.
               </p>
-              <div class="perspective-content-desktop">
-                <p>
-                  Our selection of services comes from first-handexperience of a
-                  Software Engineer who has spent yearspaying attention to the
-                  IT landscape, researching, and talking to his friends and
-                  colleagues in pursuit ofinnovative contributions.
-                </p>
-                <p>
-                  Knowing the market and needs of Software Engineers, we know
-                  how to make engineers happier.
-                </p>
-              </div>
+              <ng-container
+                *ngTemplateOutlet="
+                  perspectiveContent;
+                  context: perspectiveDesktop
+                "
+              ></ng-container>
             </div>
             <img
               class="perspectives-stripes"
@@ -315,18 +308,20 @@
             />
           </div>
         </div>
-        <div class="perspective-content">
-          <p>
-            Our selection of services comes from first-handexperience of a
-            Software Engineer who has spent yearspaying attention to the IT
-            landscape, researching, and talking to his friends and colleagues in
-            pursuit ofinnovative contributions.
-          </p>
-          <p>
-            Knowing the market and needs of Software Engineers, we know how to
-            make engineers happier.
-          </p>
-        </div>
+        <ng-template #perspectiveContent let-class>
+          <div [class]="class">
+            <p>
+              Our selection of services comes from first-hand experience of a
+              Software Engineer who has spent years paying attention to the IT
+              landscape, researching, and talking to his friends and colleagues
+              in pursuit of innovative contributions.
+            </p>
+            <p>
+              Knowing the market and needs of Software Engineers, we know how to
+              make engineers happier.
+            </p>
+          </div>
+        </ng-template>
       </div>
     </div>
   </div>
@@ -352,13 +347,13 @@
           <p class="overview-title">Skills <strong>overview</strong></p>
           <p class="overview-slogan">What to expect.</p>
           <p>
-            Launchpad trains mainly Web Developers, with anemphasis on Front
+            Launchpad trains mainly Web Developers, with an emphasis on Front
             End. Javascript, Typescript, React, Angular, Java. The technology
-            stack is expected to growwith opening the next branches.
+            stack is expected to grow with opening the next branches.
           </p>
           <p>
-            Assistants, as well as Sourcing, get access to whoever isinterested,
-            bringing wider skills to the table.
+            Assistants, as well as Sourcing, get access to whoever is
+            interested, bringing wider skills to the table.
           </p>
         </div>
       </div>
@@ -369,16 +364,16 @@
         <div class="overview-content">
           <div class="overview-title-wrapper">
             <p class="overview-title">Workflow <strong>overview</strong></p>
-            <p class="overview-slogan">Cooperation desription</p>
+            <p class="overview-slogan">Cooperation description</p>
           </div>
           <p>
-            Each Launchpad is expected to source a new batch ofengineers every 6
-            - 12 months. We give our partnersadequate heads up with skills and
-            timeframes forpotential hires so that partners have enough time
-            forfinding the right placement.
+            Each Launchpad is expected to source a new batch of engineers every
+            6 - 12 months. We give our partners adequate heads up with skills
+            and time frames for potential hires so that partners have enough
+            time for finding the right placement.
           </p>
           <p>
-            Our Assistants pass the profiles and expectations ofengineers as
+            Our Assistants pass the profiles and expectations of engineers as
             they express willingness to work with us.
           </p>
         </div>

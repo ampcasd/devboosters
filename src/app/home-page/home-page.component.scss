@@ -10,7 +10,7 @@ $mobile-h1-font: 40px;
 .desktop-banner-circle,
 .mobile,
 .desktop-girl,
-.desktop-assistance-img,
+.desktop-assistants-img,
 .desktop-sourcing-stripes {
   display: none;
 }
@@ -125,12 +125,12 @@ $mobile-h1-font: 40px;
   transform: translateY(15%);
 }
 
-.assistance-button {
+.assistants-button {
   margin-bottom: 50px;
 }
 
 .launchpad-button,
-.assistance-button,
+.assistants-button,
 .sourcing-button {
   width: 90vw;
 }
@@ -141,7 +141,7 @@ $mobile-h1-font: 40px;
 
 .launchpad-logo,
 .sourcing-logo,
-.assistance-logo {
+.assistants-logo {
   margin-top: 50px;
 }
 
@@ -227,15 +227,15 @@ $mobile-h1-font: 40px;
   padding: 25% 10%;
 }
 
-.assistance-logo {
+.assistants-logo {
   position: relative;
 }
 
-.desktop-assistance-stripes {
+.desktop-assistants-stripes {
   display: none;
 }
 
-.assistance-circle {
+.assistants-circle {
   position: absolute;
   top: 18%;
   left: 26%;
@@ -246,28 +246,28 @@ $mobile-h1-font: 40px;
   z-index: -1;
 }
 
-.assistance-txt-container {
+.assistants-txt-container {
   margin: 0 auto;
   width: 80%;
 }
 
-.assistance-title {
+.assistants-title {
   font-size: $h2-font;
   font-weight: bold;
   margin-bottom: 35px;
 }
 
-.assistance-content p {
+.assistants-content p {
   margin: 20px 0;
 }
 
-.assistance-button {
+.assistants-button {
   background-color: #ac00ff;
   border-color: #ac00ff;
   font-size: $button-font;
 }
 
-.assistance-img {
+.assistants-img {
   padding: 25% 10%;
 }
 
@@ -440,7 +440,7 @@ $mobile-h1-font: 40px;
     background-color: transparent;
   }
   .sourcing-img,
-  .assistance-img {
+  .assistants-img {
     width: 60vw;
   }
 }
@@ -737,7 +737,7 @@ $mobile-h1-font: 40px;
     }
   }
 
-  .assistance-container {
+  .assistants-container {
     margin: 20vh 5% 10vh;
     position: relative;
     width: 100%;
@@ -748,7 +748,7 @@ $mobile-h1-font: 40px;
       display: block;
     }
 
-    .desktop-assistance-img {
+    .desktop-assistants-img {
       display: block;
       position: relative;
       top: -25px;
@@ -759,7 +759,7 @@ $mobile-h1-font: 40px;
       }
     }
 
-    .assistance-circle {
+    .assistants-circle {
       position: absolute;
       top: -13vh;
       left: -250px;
@@ -771,21 +771,21 @@ $mobile-h1-font: 40px;
       z-index: -1;
     }
 
-    .assistance-txt-container {
+    .assistants-txt-container {
       margin: 0;
       padding-right: 60px;
     }
 
-    .assistance-title {
+    .assistants-title {
       font-weight: bold;
     }
 
-    .assistance-content p {
+    .assistants-content p {
       margin: calc(1vw + 10px) 0;
       max-width: 30vw;
     }
 
-    .desktop-assistance-stripes {
+    .desktop-assistants-stripes {
       display: block;
       position: absolute;
       bottom: 0;
@@ -799,7 +799,7 @@ $mobile-h1-font: 40px;
       margin: 0;
     }
 
-    .assistance-img {
+    .assistants-img {
       display: none;
     }
   }
@@ -997,10 +997,10 @@ $mobile-h1-font: 40px;
   }
   .launchpad-container,
   .sourcing-container,
-  .assistance-container {
+  .assistants-container {
     height: 40vh;
   }
-  .assistance-container .assistance-circle {
+  .assistants-container .assistants-circle {
     top: -9vh;
   }
 }
