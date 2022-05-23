@@ -4,10 +4,12 @@ $h3-font: 14px;
 @media screen and (max-width: 799px) {
   .bar {
     position: fixed;
-    height: 10vh;
+    height: 64px;
     width: 100vw;
     background-color: #33303f;
     z-index: 1000;
+    display: flex;
+    align-items: center;
   }
 
   .bar .desktop-ul {
@@ -25,8 +27,8 @@ $h3-font: 14px;
 
   .hamburger-box {
     position: fixed;
-    top: 5vh;
-    right: 5vh;
+    top: 32px;
+    right: 44px;
     width: 5vh;
     height: 5vh;
     transform: translate(50%, -50%);
@@ -68,24 +70,11 @@ $h3-font: 14px;
     a {
       color: white;
     }
-
-    .border-left {
-      position: relative;
-      top: 10px;
-      left: 0;
-      display: inline-block;
-      opacity: 0.5;
-      margin-right: 15px;
-      width: 2px;
-      height: 40px;
-      background-color: #ad00ff;
-      border-radius: 5px;
-    }
   }
 
   .in {
     position: fixed;
-    top: 10vh;
+    top: 64px;
     height: 90vh;
     transition: 0.5s;
     transition-timing-function: ease-in;
@@ -117,6 +106,19 @@ $h3-font: 14px;
 @media screen and (min-width: 800px) {
   .out {
     display: none;
+  }
+
+  .border-left {
+    position: relative;
+    top: 10px;
+    left: 0;
+    display: inline-block;
+    opacity: 0.5;
+    margin-right: 15px;
+    width: 2px;
+    height: 40px;
+    background-color: #ad00ff;
+    border-radius: 5px;
   }
 
   .bar {
@@ -219,7 +221,8 @@ $h3-font: 14px;
       margin: 0;
     }
 
-    .logo:hover, .active {
+    .logo:hover,
+    .active {
       color: white;
     }
 
@@ -239,7 +242,8 @@ $h3-font: 14px;
         transition: 0.2s;
       }
     }
-    li:hover, .active {
+    li:hover,
+    .active {
       .border-left {
         opacity: 1;
       }

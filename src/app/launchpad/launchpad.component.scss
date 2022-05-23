@@ -434,7 +434,7 @@ div.what-is-it .header-image {
     height: 1px;
     background-color: #ac00ff;
     left: calc(32px + 12%);
-    top: 97px;
+    top: 88px;
     z-index: 0;
   }
   div.explanation-blocks .text {
@@ -581,7 +581,8 @@ div.what-is-it .header-image {
     justify-content: center;
     margin-top: 50px;
     text-align: center;
-    width: 75%;
+    width: 90%;
+    max-width: 1119px;
   }
 
   div.explanation-blocks2 {
@@ -611,11 +612,11 @@ div.what-is-it .header-image {
     flex-direction: column;
   }
   img.star-image {
-    width: 52px;
+    width: 48px;
     height: auto;
   }
   .star-wrapper {
-    padding: 1.5em;
+    padding: 1em;
   }
   div.launchpad-perks .summary {
     max-width: 551px;
