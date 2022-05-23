@@ -11,7 +11,7 @@ export const callToAction: { [key: string]: CTAConfiguration } = {
 
   default: {
     header: 'Are you interested?',
-    description: 'Or maybe you have questions?',
+    description: 'Do you have any questions?',
     buttonText: 'CONTACT US!',
     showForm: false,
   },
