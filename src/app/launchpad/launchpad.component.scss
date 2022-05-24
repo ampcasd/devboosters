@@ -52,7 +52,7 @@ div.launchpad-header-and-image {
 
 .more-button {
   background-color: rgba(35, 23, 45, 255);
-
+  gap: 16px;
   border: solid 1px white;
   border-radius: 85px;
   color: aliceblue;
@@ -278,14 +278,14 @@ div.what-is-it .header-image {
 
 .numbers {
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   border: solid 1px #ac00ff;
   border-radius: 50%;
   z-index: 2;
   background-color: #2e2b39;
-  width: 1.7em;
-  height: 1.7em;
+  width: 2em;
+  height: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,8 +297,8 @@ div.what-is-it .header-image {
   width: 1px;
   height: 74%;
   background-color: #ac00ff;
-  right: 29px;
-  top: 110px;
+  right: 24px;
+  top: 120px;
 }
 
 .explained-image {
@@ -337,7 +337,7 @@ div.what-is-it .header-image {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 96vw;
 }
 
 .explanation-blocks {
@@ -378,7 +378,7 @@ div.what-is-it .header-image {
     display: block;
     width: 1px;
     height: 75%;
-    right: 29px;
+    right: 24px;
     top: 185px;
   }
   .how-it-works-explanation {
