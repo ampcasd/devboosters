@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  overflow: clip;
+  overflow: hidden;
   min-width: 100vw;
 }
 
@@ -185,7 +185,7 @@
   }
 
   .rounder {
-    width: 103vw;
+    width: 101vw;
     margin-top: -7%;
     min-height: 100%;
     margin-bottom: 44px;
