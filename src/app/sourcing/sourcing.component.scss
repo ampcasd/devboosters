@@ -137,7 +137,7 @@
 
 .sourcing-middle-header {
   text-align: center;
-  font-size: 45px;
+  font-size: 48px;
 }
 
 .sourcing-middle-description {
@@ -276,6 +276,11 @@ div.sourcing-bottom-description {
     justify-self: start;
     width: 800px;
   }
+
+  .sourcing-middle-header{
+    font-size: 24px;
+  }
+
   .rectangle-container-header {
     grid-area: header-rectangle-mobile;
   }
@@ -321,8 +326,9 @@ div.sourcing-bottom-description {
     font-weight: 400;
   }
   .sourcing-header-title {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 40px;
+
   }
 
   .rectangle-container-header {
@@ -343,12 +349,14 @@ div.sourcing-bottom-description {
     grid-template-columns: 5% 90% 5%;
   }
   .sourcing-middle-entry {
-    // margin-top: 40px;
-    // margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
   }
 
   .source-middle-image {
-    width: 100%;
+    width: 195px;
+    height: 156.13px;
   }
 
   #source-middle-image-desktop {
@@ -361,6 +369,8 @@ div.sourcing-bottom-description {
     visibility: visible;
     width: 100%;
     height: auto;
+    width: 195px;
+    height: 156.13px;
   }
 
   .sourcing-middle-text {

@@ -37,12 +37,13 @@ export class AppComponent {
     this.router.events
       .pipe(filter((p) => p instanceof NavigationEnd))
       .subscribe((params: NavigationEnd) => {
-        console.log(params.url);
+        window.scrollTo({ top: 0 });
         this.path = params.url;
         switch (params.url) {
           case '/assistants':
             this.callToActionConfiguration =
               this.callToActionConfigurations.assistants;
+
             break;
           case '/assistants#features':
             this.callToActionConfiguration =

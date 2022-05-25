@@ -38,7 +38,7 @@ div.launchpad-header-and-image {
 }
 
 .subheader {
-  font-size: 16px;
+  font-size: 20px;
   color: #e3e1de;
   padding-top: 10px;
 }
@@ -59,6 +59,11 @@ div.launchpad-header-and-image {
   letter-spacing: 2.5px;
   display: none;
   margin-top: 100px;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  background-color: #673590;
 }
 
 .more-button-arrow {
