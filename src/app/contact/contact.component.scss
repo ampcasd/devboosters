@@ -101,7 +101,7 @@
 .statement {
   display: flex;
   flex-direction: row;
-  width: 95%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -201,11 +201,10 @@
 
 .map-wrapper-mobile {
   border-radius: 9px;
-  width: 350px;
-  height: 200px;
+  width: 327px;
+  height: 206px;
   overflow: hidden;
   margin-top: 40px;
-  justify-content: center;
   align-items: center;
   display: flex;
   justify-content: flex-end;
