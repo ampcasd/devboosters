@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  overflow: clip;
+  overflow: hidden;
   min-width: 100vw;
 }
 
@@ -61,7 +61,7 @@
   border-radius: 7px;
   color: white;
   outline: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .contact-input:-webkit-autofill,
@@ -185,7 +185,7 @@
   }
 
   .rounder {
-    width: 103vw;
+    width: 101vw;
     margin-top: -7%;
     min-height: 100%;
     margin-bottom: 44px;
@@ -269,7 +269,7 @@
   .header1 {
     margin-top: -630px;
     padding: 60px;
-    font-size: 48px;
+    font-size: 40px;
     padding-top: 0;
   }
   .above-here-we-are {

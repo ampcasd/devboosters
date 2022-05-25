@@ -102,6 +102,7 @@
   grid-area: middle-content;
   display: flex;
   flex-wrap: wrap;
+  margin-top: -20px;
 }
 
 .sourcing-middle-entry {
@@ -111,8 +112,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .source-middle-image {
   align-self: center;
@@ -148,6 +149,7 @@
   grid-area: middle-halfcircle-top;
   place-self: end;
   width: 100%;
+  margin-top: -50px;
 }
 .sourcing-middle-halfcircle-bottom {
   grid-area: middle-halfcircle-bottom;
@@ -179,13 +181,12 @@
     ". bulletpoints bulletpoints bulletpoints ."
     ". description description description .";
   place-items: center;
+  margin-top: -70px;
 }
 
 .sourcing-bottom-entry {
   grid-area: entry;
-  align-self: end;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .sourcing-bottom-text {
@@ -244,10 +245,10 @@ div.sourcing-bottom-description {
 
 .sourcing-bottom-bulletpoints-line {
   position: absolute;
-  margin-top: 60px;
+  margin-top: 64px;
   height: 1px;
   width: 680px;
-  border: solid 2px blueviolet;
+  border: solid 1px blueviolet;
 }
 
 // W 1280-1024
@@ -342,8 +343,8 @@ div.sourcing-bottom-description {
     grid-template-columns: 5% 90% 5%;
   }
   .sourcing-middle-entry {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    // margin-top: 40px;
+    // margin-bottom: 40px;
   }
 
   .source-middle-image {
