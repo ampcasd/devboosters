@@ -86,27 +86,23 @@
 
 .checkbox-text {
   height: 117px;
-  left: 54.54px;
-  top: 514px;
   color: #adadad;
-  font-family: "Source Sans 3";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  margin-top: 22.5px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 18.5px;
 }
 
 .checkbox {
-  margin-right: 22.5px;
-  margin-top: 22.5px;
+  margin-right: 12.5px;
+  margin-top: 19.5px;
   accent-color: #ad00ff;
 }
 
 .statement {
   display: flex;
   flex-direction: row;
-  width: 95%;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .send-a-message-button {
@@ -125,7 +121,6 @@
   line-height: 21px;
   letter-spacing: 0.05em;
   margin: 0 auto;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -206,11 +201,10 @@
 
 .map-wrapper-mobile {
   border-radius: 9px;
-  width: 350px;
-  height: 200px;
+  width: 327px;
+  height: 206px;
   overflow: hidden;
   margin-top: 40px;
-  justify-content: center;
   align-items: center;
   display: flex;
   justify-content: flex-end;

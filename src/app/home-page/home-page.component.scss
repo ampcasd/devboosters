@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap");
+
 $button-font: 15px;
 $txt-font: 16px;
 $h1-font: 80px;
@@ -100,9 +102,10 @@ $mobile-h1-font: 40px;
 }
 
 .how-button {
+  font-family: "Source Sans Pro";
   width: 75%;
   line-height: 40px;
-  // height: 56px;
+  height: 56px;
   text-transform: uppercase;
   font-size: $button-font;
   background-color: #433f51;
@@ -110,10 +113,13 @@ $mobile-h1-font: 40px;
   border: 1px solid white;
   border-radius: 20px;
   margin-top: 5vh;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 60px;
 }
 .how-button.top-button {
   margin-top: 17vh;
-  background-color: #25192e;
+  background-color: #25192e00;
 }
 .how-button.top-button a {
   color: white;
@@ -884,7 +890,8 @@ $mobile-h1-font: 40px;
     }
     .flag-border {
       margin: calc(1vw + 16px) auto 0;
-
+      width: 88px;
+      height: 88px;
       background-color: #2e2b39;
     }
 
