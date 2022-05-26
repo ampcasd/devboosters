@@ -224,19 +224,19 @@ div.sourcing-bottom-description {
 .sourcing-bottom-entry-bulletpoints-description {
   font-weight: 400;
   font-size: 16px;
-  padding: 20px;
+  padding: 10px;
+  margin-left: 10px;
   width: 100%;
   color: white;
 }
 
 .sourcing-bottom-bulletpoints-star {
-  border: solid 2px blueviolet;
-  min-width: 15px;
+  border: solid 1px blueviolet;
   min-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw;
+  padding: 10px;
   border-radius: 100%;
   text-align: center;
   background-color: #2e2b39;
@@ -245,10 +245,11 @@ div.sourcing-bottom-description {
 
 .sourcing-bottom-bulletpoints-line {
   position: absolute;
-  margin-top: 64px;
+  margin-top: 54px;
+  margin-left: 20px;
   height: 1px;
-  width: 680px;
-  border: solid 1px blueviolet;
+  width: 650px;
+  background-color: blueviolet;
 }
 
 // W 1280-1024
@@ -377,13 +378,14 @@ div.sourcing-bottom-description {
   }
 
   .sourcing-bottom-bulletpoints-star img {
-    scale: 70%;
+    width: 30px;
+    height: 30px;
   }
 
   .sourcing-bottom-bulletpoints-line {
-    margin-top: 0px;
-    margin-left: 43px;
-    height: calc(600px - 25%);
+    margin-top: 26px;
+    margin-left: 45.5px;
+    height: calc(530px - 25%);
     width: 1px;
   }
 }
