@@ -126,6 +126,9 @@
 
 .purple-input {
   width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .here-we-are {
@@ -209,6 +212,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  z-index: 10;
 }
 
 .map-wrapper-desktop {
