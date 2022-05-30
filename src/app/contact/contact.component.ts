@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Banner } from '../banner/banner.component';
 import { DatabaseService } from '../database.service';
 
 @Component({

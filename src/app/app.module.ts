@@ -36,6 +36,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     ModalComponent,
     AssistantsComponent,
     SourcingComponent,
+    LaunchpadComponent
   ],
   imports: [
     BrowserModule,

@@ -1,29 +1,8 @@
 <div class="background">
-  <div class="purple-circle-segment-wrapper">
-    <img
-      src="assets/images/purple-circle-segment-desktop.svg"
-      class="purple-circle-segment"
-    />
-  </div>
-  <div class="launchpad-header-and-image">
-    <div class="header1">
-      <h1>Assistants</h1>
-      <p style="margin-top: -30px">Let us boost your career</p>
-      <a pageScroll href="assistants#features"
-        ><button class="more-button">
-          MORE
-          <img
-            src="assets/images/more-button-arrow.svg"
-            class="more-button-arrow"
-          /></button
-      ></a>
-      <img class="stripes-top" src="assets/images/sticks-assistants.svg" />
-    </div>
-    <img class="laptop-image" src="assets/images/header-assistants-image.svg" />
-  </div>
+  <banner [banner]="banner"></banner>
   <img src="assets/images/Ellipse 16.png" class="rounder-top" />
 
   <spotlights [spotlights]="spotlights"></spotlights>
   <img src="assets/images/Ellipse 17.png" class="rounder-bottom" />
-  <features [features]="features" id="features"></features>
+  <features [features]="features"></features>
 </div>

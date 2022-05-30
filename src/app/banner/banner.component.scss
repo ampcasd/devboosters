@@ -1,43 +1,166 @@
-.inner {
-  top: 16rem;
+.laptop-image {
+  position: relative;
+  left: 40px;
+  margin-left: -55vw;
+  margin-top: 150px;
+  width: 267px;
+  height: 220px;
 }
 
-.text {
-  width: 50%;
+.purple-circle-segment {
+  width: 400px;
+  margin-left: 0vw;
+  margin-top: 50px;
+  height: auto;
+}
+
+div.launchpad-header-and-image {
+  display: flex;
+  flex-direction: row;
+  margin-top: -250px;
+  display: flex;
+  justify-content: center;
+}
+
+div.header1 {
+  color: white;
+  padding: 6%;
+}
+
+.stripes-top {
+  width: calc(60px + 4vw);
+  height: auto;
+  margin-top: 5%;
+  position: absolute;
 }
 
 h1 {
-  font-size: 3.75rem;
-  line-height: 1.2;
+  font-size: 40px;
 }
 
-span {
+p {
   font-size: 20px;
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-  padding-right: 2.75rem;
 }
 
-.image {
-  height: auto;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.more-button {
+  background-color: rgba(35, 23, 45, 255);
 
-  img {
-    width: 100%;
+  border: solid 1px white;
+  border-radius: 85px;
+  color: aliceblue;
+  letter-spacing: 0.05em;
+  display: none;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.more-button:hover {
+  background-color: #673590;
+}
+.more-button-arrow {
+  padding-left: 5px;
+}
+
+.wrapper-button {
+  width: min-content;
+  height: max-content;
+}
+
+@media screen and (min-width: 601px) {
+  .laptop-image {
+    margin-left: -10vw;
+    margin-top: 150px;
+    width: auto;
+    height: calc(45vw);
+  }
+  .purple-circle-segment {
+    width: 90vw;
+    margin-left: 0vw;
+    height: auto;
+  }
+  .more-button {
+    display: block;
+    width: 165px;
+    height: 55px;
+    font-size: 17px;
+  }
+
+  div.launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.header1 {
+    color: white;
+    font-size: calc(2.5vw + 10px);
+    padding: 6%;
+  }
+
+  .stripes-top {
+    width: calc(50px + 4vw);
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
   }
 }
 
-@media screen and (max-width: 720px) {
-  .image {
-    display: none;
+@media screen and (min-width: 1024px) {
+  .laptop-image {
+    margin-left: 0vw;
+    margin-top: 200px;
+    width: auto;
+    height: calc(25vw);
+    min-height: 400px;
   }
-  .text {
-    width: 100%;
+  .purple-circle-segment {
+    width: 80vw;
+    margin-left: 0;
+    margin-top: -10%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  div.launchpad-header-and-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: -40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.header1 {
+    color: white;
+    font-size: calc(2vw + 8px);
+    padding: 6%;
+  }
+
+  .stripes-top {
+    width: calc(50px + 4vw);
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
+  }
+  .more-button {
+    width: 178px;
+    height: 56px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 48px;
+  }
+
+  .more-button:hover {
+    background-color: #673590;
   }
 }

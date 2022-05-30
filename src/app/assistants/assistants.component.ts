@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Banner } from '../banner/banner.component';
 
 @Component({
   selector: 'assistants',
@@ -11,7 +12,7 @@ export class AssistantsComponent implements OnInit {
       image: 'assets/images/feed.svg',
       header: 'Feed',
       description:
-      'We prepare a personalized feed based on your specialization, vector, and performance.',
+        'We prepare a personalized feed based on your specialization, vector, and performance.',
     },
     {
       image: 'assets/images/candidate-analysis.svg',
@@ -67,6 +68,13 @@ export class AssistantsComponent implements OnInit {
       image: 'assets/images/retrospections.svg',
     },
   ];
+
+  banner: Banner = {
+    image: 'assets/images/header-assistants-image.svg',
+    header: 'Assistants',
+    subheader: 'Let Us boost Your career.',
+    redirectionButton: 'assistants#more',
+  };
   constructor() {}
   ngOnInit(): void {}
 }
