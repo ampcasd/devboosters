@@ -1,17 +1,27 @@
-<div class="inner">
-  <div class="text">
-    <h1>{{ header }}</h1>
-    <!-- // Let us boost your career -->
-
-    <!-- <h1>Let us focus on your career</h1> -->
-
-    <!-- <span>While we focus on boosting your career</span> -->
-    <span>{{ subHeader }}</span>
-    <!-- While you focus on your code -->
-  </div>
-  <div class="image">
-    <img [src]="imageUrl" [alt]="imageDescription" />
-    <!-- assets/images/laptop.png
-    Laptop with IDE -->
+<div class="purple-circle-segment-wrapper">
+  <img
+    src="assets/images/purple-circle-segment-desktop.svg"
+    class="purple-circle-segment"
+  />
+</div>
+<div class="wrapper">
+  <div class="launchpad-header-and-image">
+    <div class="header1">
+      <h1>{{ banner.header }}</h1>
+      <p style="margin-top: -30px">{{ banner.subheader }}</p>
+      <div class="wrapper-button">
+        <a pageScroll [href]="banner.redirectionButton">
+          <button class="more-button">
+            MORE
+            <img
+              src="assets/images/more-button-arrow.svg"
+              class="more-button-arrow"
+            />
+          </button>
+        </a>
+      </div>
+      <img class="stripes-top" src="assets/images/sticks-assistants.svg" />
+    </div>
+    <img class="laptop-image" [src]="banner.image" />
   </div>
 </div>

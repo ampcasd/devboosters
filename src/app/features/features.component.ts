@@ -12,5 +12,5 @@ export interface Feature {
   styleUrls: ['./features.component.scss'],
 })
 export class FeaturesComponent {
-  @Input() features: Feature[] | any;
+  @Input() features: Feature
 }
