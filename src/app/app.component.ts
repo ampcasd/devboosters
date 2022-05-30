@@ -50,12 +50,18 @@ export class AppComponent {
             break;
           case '/homepage':
             window.scrollTo({ top: 0 });
+            this.callToActionConfiguration =
+              this.callToActionConfigurations.default;
             break;
           case '/sourcing':
             window.scrollTo({ top: 0 });
+            this.callToActionConfiguration =
+              this.callToActionConfigurations.default;
             break;
           case '/launchpad':
             window.scrollTo({ top: 0 });
+            this.callToActionConfiguration =
+              this.callToActionConfigurations.default;
             break;
           default:
             this.callToActionConfiguration =
