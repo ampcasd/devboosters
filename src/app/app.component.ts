@@ -41,12 +41,12 @@ export class AppComponent {
         switch (params.url) {
           case '/assistants':
             this.callToActionConfiguration =
-              this.callToActionConfigurations.assistants;
+              this.callToActionConfigurations.default;
             window.scrollTo({ top: 0 });
             break;
           case '/assistants#features':
             this.callToActionConfiguration =
-              this.callToActionConfigurations.assistants;
+              this.callToActionConfigurations.default;
             break;
           case '/homepage':
             window.scrollTo({ top: 0 });
