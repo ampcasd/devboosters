@@ -72,7 +72,7 @@ export class AssistantsComponent implements OnInit {
   banner: Banner = {
     image: 'assets/images/header-assistants-image.svg',
     header: 'Assistants',
-    subheader: 'Let Us boost Your career.',
+    subheader: 'Let us boost your career.',
     redirectionButton: 'assistants#more',
   };
   constructor() {}
